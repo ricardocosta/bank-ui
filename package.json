@@ -1,0 +1,97 @@
+{
+  "name": "react-template",
+  "author": {
+    "name": "Ricardo Costa",
+    "url": "https://github.com/ricardocosta"
+  },
+  "description": "Template repository for React Apps, based on Create React App",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^7.26.6",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.1.2",
+    "@testing-library/user-event": "^12.2.2",
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "@types/jest": "^26.0.15",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.0",
+    "typescript": "^4.0.5",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@storybook/addon-a11y": "^6.1.0-rc.2",
+    "@storybook/addon-actions": "^6.1.0-rc.2",
+    "@storybook/addon-docs": "^6.1.0-rc.2",
+    "@storybook/addon-knobs": "^6.1.0-rc.2",
+    "@storybook/addon-links": "^6.1.0-rc.2",
+    "@storybook/addon-storysource": "^6.1.0-rc.2",
+    "@storybook/addon-viewport": "^6.1.0-rc.2",
+    "@storybook/addons": "^6.1.0-rc.2",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.0-rc.2",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-mdx": "^1.8.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "standard-version": "^9.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "CI=true yarn test",
+    "eject": "react-scripts eject",
+    "lint": "yarn lint:format && yarn lint:eslint && yarn lint:tsc",
+    "lint:dry": "yarn lint:format:dry && yarn lint:eslint && yarn lint:tsc",
+    "lint:eslint": "eslint --ext .js,.ts,.tsx,.mdx src/",
+    "lint:format": "prettier --write 'src/**/*.{ts,tsx,mdx}'",
+    "lint:format:dry": "prettier --check 'src/**/*.{ts,tsx,mdx}'",
+    "lint:tsc": "tsc --noEmit",
+    "storybook": "start-storybook -p 9009 -s public",
+    "storybook:build": "build-storybook -s public",
+    "release": "standard-version --no-verify"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --ext .js,.ts,.tsx,.mdx",
+      "bash -c 'tsc --noEmit --jsx react --lib dom,dom.iterable,esnext --allowSyntheticDefaultImports --forceConsistentCasingInFileNames --resolveJsonModule'"
+    ],
+    "src/**/*.{mdx}": [
+      "prettier --write",
+      "eslint --ext .js,.ts,.tsx,.mdx"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "CI=true yarn test"
+    }
+  }
+}
