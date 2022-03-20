@@ -20,7 +20,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css}'",
+    "lint": "pnpm lint:format && pnpm lint:eslint && pnpm lint:tsc",
+    "lint:dry": "pnpm lint:format:dry && pnpm lint:eslint && pnpm lint:tsc",
+    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:format": "prettier --write '**/*.{ts,tsx,js,jsx,json,css}",
+    "lint:format:dry": "prettier --check '**/*.{ts,tsx,js,jsx,json,css}",
+    "lint:tsc": "tsc --noEmit",
+    "release": "standard-version --sign --skip.tag",
+    "release:dry": "standard-version --dry-run",
+    "release:tag": "standard-version --skip.bump --skip.changelog --skip.commit"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -30,6 +40,7 @@
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "@vitejs/plugin-react": "^1.2.0",
+    "standard-version": "^9.3.2",
     "typescript": "^4.6.2",
     "vite": "^2.8.6"
   }
