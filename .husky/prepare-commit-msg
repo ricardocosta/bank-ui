@@ -1,0 +1,22 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# This hook works for branches named such as "123-description" and will add "[#123]" to the commit message.
+
+# get current branch
+branchName=`git rev-parse --abbrev-ref HEAD`
+
+# search issue id in the branch name, such a "123-description" or "XXX-123-description"
+issueId=$(echo $branchName | sed -nE 's,([A-Z]?-?[0-9]+)-.+,\1,p')
+
+# do not prefix fixup! squash! commits
+# or if "Issue <id>" is already present, e.g. on amend commits
+if cat "$1" | grep -E -i "^(fixup|squash)!|Issue #$issueId" > /dev/null; then
+  exit 0
+fi
+
+# only prepare commit message if pattern matched and issue id was found
+if [[ ! -z $issueId ]]; then
+ # $1 is the name of the file containing the commit message
+ echo "\\n\\nIssue #$issueId""$(cat $1)" > "$1"
+fi

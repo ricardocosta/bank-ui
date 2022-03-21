@@ -20,7 +20,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "prepare": "husky install",
     "preview": "vite preview",
+    "pre-commit": "echo pre-commit",
     "lint": "pnpm lint:format && pnpm lint:eslint && pnpm lint:tsc",
     "lint:dry": "pnpm lint:format:dry && pnpm lint:eslint && pnpm lint:tsc",
     "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx",
@@ -51,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-sonarjs": "^0.12.0",
     "eslint-plugin-testing-library": "^5.1.0",
+    "husky": "^7.0.4",
     "prettier": "^2.6.0",
     "standard-version": "^9.3.2",
     "typescript": "^4.6.2",
