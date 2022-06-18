@@ -8,60 +8,31 @@ on:
     branches: [main]
 
 env:
-  node_version: 17.x
+  node_version: 18.10.0
 
 jobs:
-  lint:
-    name: Lint
+  pr-check:
+    name: PR Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Setup
         uses: ./.github/actions/setup
         with:
           node_version: ${{ env.node_version }}
+      - name: NX Set SHAs
+        uses: nrwl/nx-set-shas@v2
       - name: Lint
-        run: pnpm lint:eslint
-
-  style:
-    name: Check Style
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup
-        uses: ./.github/actions/setup
-        with:
-          node_version: ${{ env.node_version }}
+        run: pnpm nx affected --target=lint --parallel=3
       - name: Check Style
-        run: pnpm lint:format:dry
-
-  types:
-    name: Check Types
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup
-        uses: ./.github/actions/setup
-        with:
-          node_version: ${{ env.node_version }}
-      - name: Type Checking
-        run: pnpm lint:tsc
-
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup
-        uses: ./.github/actions/setup
-        with:
-          node_version: ${{ env.node_version }}
+        run: pnpm nx affected --target=formatDry --parallel=3
+      - name: Check Types
+        run: pnpm nx affected --target=ts --parallel=3
       - name: Test
-        run: pnpm test:coverage
+        run: pnpm nx affected --target=testCoverage --parallel=3
       - name: Upload coverage report
         uses: codecov/codecov-action@v2
         with:

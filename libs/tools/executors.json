@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "executors": {
+    "validate": {
+      "implementation": "./src/executors/validate/executor",
+      "schema": "./src/executors/validate/schema.json",
+      "description": "Validate the project by running ESLint, Prettier and TSC"
+    }
+  }
+}

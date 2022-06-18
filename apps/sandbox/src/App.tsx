@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import logo from "./logo.svg";
 
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0);
 
   return (

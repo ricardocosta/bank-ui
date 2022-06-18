@@ -12,7 +12,6 @@ $ pnpm dev
 
 The application will be available at [http://localhost:3000/](http://localhost:3000/).
 
-
 ## 📦 Publishing
 
 To publish a new version of the project:

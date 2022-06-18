@@ -1,0 +1,85 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/tools/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/tools",
+        "main": "libs/tools/src/index.ts",
+        "tsConfig": "libs/tools/tsconfig.lib.json",
+        "assets": [
+          "libs/tools/*.md",
+          {
+            "input": "./libs/tools/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/tools/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/tools",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/tools",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "validate": {
+      "executor": "@ricardocosta/tools:validate"
+    },
+    "validateDry": {
+      "executor": "@ricardocosta/tools:validate",
+      "options": {
+        "dryRun": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/tools/**/*.ts",
+          "libs/tools/generators.json",
+          "libs/tools/executors.json",
+          "libs/tools/package.json"
+        ]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p ./tsconfig.json",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}
