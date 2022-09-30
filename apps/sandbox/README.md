@@ -7,7 +7,7 @@ UI for the Bank application.
 You can run the application locally with:
 
 ```
-$ pnpm dev
+$ yarn dev
 ```
 
 The application will be available at [http://localhost:3000/](http://localhost:3000/).
@@ -25,13 +25,13 @@ $ git checkout -b release_$(date -u +"%Y%m%d")
 2. Preview the changes to `CHANGELOG` and predicted tag:
 
 ```
-$ pnpm run release:dry
+$ yarn run release:dry
 ```
 
 3. Update the `CHANGELOG` file automatically based on the commits:
 
 ```
-$ pnpm run release
+$ yarn run release
 ```
 
 4. Open a Pull Request against `main` and have it merged.
@@ -41,6 +41,6 @@ $ pnpm run release
 ```
 $ git checkout main
 $ git pull
-$ pnpm release:tag
+$ yarn release:tag
 $ git push --tags
 ```
