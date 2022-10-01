@@ -13,17 +13,12 @@ runs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ inputs.node_version }}
+        cache: 'yarn'
 
-    - name: Cache PNPM modules
-      uses: actions/cache@v3
-      with:
-        path: ~/.pnpm-store
-        key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-
+    - name: Setup Yarn
+      run: corepack enable && corepack prepare yarn@3.2.3 --activate
+      shell: bash
 
-    - name: Setup PNPM
-      uses: pnpm/action-setup@v2
-      with:
-        version: latest
-        run_install: true
+    - name: Install
+      run: yarn --version && yarn install --immutable
+      shell: bash

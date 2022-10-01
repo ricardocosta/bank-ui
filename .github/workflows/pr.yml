@@ -8,7 +8,7 @@ on:
     branches: [main]
 
 env:
-  node_version: 17.x
+  node_version: 18.10.x
 
 jobs:
   lint:
@@ -22,7 +22,7 @@ jobs:
         with:
           node_version: ${{ env.node_version }}
       - name: Lint
-        run: pnpm lint:eslint
+        run: yarn lint:eslint
 
   style:
     name: Check Style
@@ -35,7 +35,7 @@ jobs:
         with:
           node_version: ${{ env.node_version }}
       - name: Check Style
-        run: pnpm lint:format:dry
+        run: yarn lint:format:dry
 
   types:
     name: Check Types
@@ -48,7 +48,7 @@ jobs:
         with:
           node_version: ${{ env.node_version }}
       - name: Type Checking
-        run: pnpm lint:tsc
+        run: yarn lint:tsc
 
   test:
     name: Test
@@ -61,7 +61,7 @@ jobs:
         with:
           node_version: ${{ env.node_version }}
       - name: Test
-        run: pnpm test:coverage
+        run: yarn test:coverage
       - name: Upload coverage report
         uses: codecov/codecov-action@v2
         with:
