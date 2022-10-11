@@ -1,0 +1,135 @@
+{
+  "name": "apps/sandbox",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/sandbox/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx-plugin-vite:build",
+      "options": {
+        "outDir": "dist",
+        "configFile": "apps/sandbox/vite.config.ts",
+        "watch": false,
+        "write": true,
+        "emitAtRootLevel": false,
+        "manifest": true
+      }
+    },
+    "dev": {
+      "executor": "nx-plugin-vite:serve",
+      "options": {
+        "configFile": "apps/sandbox/vite.config.ts",
+        "port": 3000,
+        "host": false,
+        "https": false
+      }
+    },
+    "preview": {
+      "executor": "nx-plugin-vite:preview",
+      "options": {
+        "configFile": "apps/sandbox/vite.config.ts"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest run --reporter verbose -c ./vite.config.ts",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "testCoverage": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "vitest run --coverage",
+          "rm -rf ../../coverage/apps/sandbox",
+          "mkdir -p ../../coverage/apps/sandbox",
+          "mv -v coverage/* ../../coverage/apps/sandbox"
+        ],
+        "parallel": false,
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "testUi": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest --ui --open",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "testWatch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest watch --reporter verbose",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "apps/sandbox/.eslintrc.js",
+        "lintFilePatterns": ["apps/sandbox/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p ./tsconfig.json",
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "seedDb": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "tsm ./server/initJsonDb.mts",
+          "prettier --write ./server/db.base.json ./server/db.json"
+        ],
+        "cwd": "apps/sandbox",
+        "color": true
+      }
+    },
+    "release": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "postTargets": ["sandbox:releaseGithub"]
+      }
+    },
+    "releaseDry": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "dryRun": true
+      }
+    },
+    "releaseGithub": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}",
+        "title": "$(projectName) ${tag}"
+      }
+    }
+  }
+}
