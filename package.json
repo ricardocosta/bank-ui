@@ -17,6 +17,7 @@
   "engines": {
     "node": ">=18.10"
   },
+  "packageManager": "yarn@3.2.3",
   "scripts": {
     "prepare": "husky install",
     "pre-commit": "lint-staged",
