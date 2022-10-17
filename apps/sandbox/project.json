@@ -19,10 +19,7 @@
     "dev": {
       "executor": "nx-plugin-vite:serve",
       "options": {
-        "configFile": "apps/sandbox/vite.config.ts",
-        "port": 3000,
-        "host": false,
-        "https": false
+        "configFile": "apps/sandbox/vite.config.ts"
       }
     },
     "preview": {
