@@ -1509,25 +1509,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx-extend/core@npm:1.3.1":
-  version: 1.3.1
-  resolution: "@nx-extend/core@npm:1.3.1"
-  peerDependencies:
-    shelljs: ^0.8.5
-  checksum: e09778f2ff690f686c1ff90713c55b864ee93c3edd7bfcb7eb4b5cb225c26c68c3f3ed1c086cf7ead3ad055abadc86fce3b55613d52ab82a92dcf963d64661c3
-  languageName: node
-  linkType: hard
-
-"@nx-extend/playwright@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@nx-extend/playwright@npm:1.1.0"
-  dependencies:
-    "@nx-extend/core": 1.3.1
-    shelljs: ^0.8.5
-  checksum: 0f9a2346add421173adb84b8b7e59d68ffe3448fc39ac7b26725fb40dd2f0d7cceaa640ad96de132de51b0e0e4b27560685ea223e86a895828dc55119beb758e
-  languageName: node
-  linkType: hard
-
 "@parcel/watcher@npm:2.0.4":
   version: 2.0.4
   resolution: "@parcel/watcher@npm:2.0.4"
@@ -1547,6 +1528,18 @@ __metadata:
   peerDependencies:
     typescript: ^3 || ^4
   checksum: 64eb6d90aafa889f62fe73d128b7be2b3295dffde4d5dff63bad75d512b6bc1d8419d8fc784a1a60b45aba4cda2eaf6e233bf59797a1d91b26fac27d99dae047
+  languageName: node
+  linkType: hard
+
+"@playwright/test@npm:^1.25.0":
+  version: 1.27.1
+  resolution: "@playwright/test@npm:1.27.1"
+  dependencies:
+    "@types/node": "*"
+    playwright-core: 1.27.1
+  bin:
+    playwright: cli.js
+  checksum: 92f219a78c21da03c6599d92c313c914e73cc374306366130fb3bd4701555179394ec5a3000d9375ce59f5a03c00f20d1ddaae50c85583ce475e17795a622699
   languageName: node
   linkType: hard
 
@@ -3117,7 +3110,7 @@ __metadata:
     "@nrwl/nx-plugin": ^14.8.3
     "@nrwl/tao": ^14.8.3
     "@nrwl/workspace": ^14.8.3
-    "@nx-extend/playwright": ^1.1.0
+    "@playwright/test": ^1.25.0
     "@testing-library/dom": ^8.11.4
     "@testing-library/jest-dom": ^5.16.3
     "@testing-library/react": ^12.1.4
@@ -3147,6 +3140,7 @@ __metadata:
     lint-staged: ^12.3.7
     nx: ^14.8.3
     nx-plugin-vite: ^2.2.1
+    playwright: ^1.25.0
     prettier: ^2.6.0
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -6351,7 +6345,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
+"glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -6891,13 +6885,6 @@ __metadata:
     has: ^1.0.3
     side-channel: ^1.0.4
   checksum: 1944f92e981e47aebc98a88ff0db579fd90543d937806104d0b96557b10c1f170c51fb777b97740a8b6ddeec585fca8c39ae99fd08a8e058dfc8ab70937238bf
-  languageName: node
-  linkType: hard
-
-"interpret@npm:^1.0.0":
-  version: 1.4.0
-  resolution: "interpret@npm:1.4.0"
-  checksum: 2e5f51268b5941e4a17e4ef0575bc91ed0ab5f8515e3cf77486f7c14d13f3010df9c0959f37063dcc96e78d12dc6b0bb1b9e111cdfe69771f4656d2993d36155
   languageName: node
   linkType: hard
 
@@ -9477,6 +9464,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"playwright-core@npm:1.27.1":
+  version: 1.27.1
+  resolution: "playwright-core@npm:1.27.1"
+  bin:
+    playwright: cli.js
+  checksum: fd65d3eb29978e0e7a755158625e8922a66ca9d599b7c24ddf920822b261d81c51a5964ef8e0e5ed9b2b12dc64541c5949b6a898d965e107f43261964e8c29a0
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.25.0":
+  version: 1.27.1
+  resolution: "playwright@npm:1.27.1"
+  dependencies:
+    playwright-core: 1.27.1
+  bin:
+    playwright: cli.js
+  checksum: 7bb31998e1783f96443bd1a38f0d7838d1b6fd0cf410ac83ef480c0f0e3e930b809b7e42ccda35b9e272c84aaa8f15e0ee8bdddc19a60b224eecc57d285bf92f
+  languageName: node
+  linkType: hard
+
 "postcss-calc@npm:^8.2.3":
   version: 8.2.4
   resolution: "postcss-calc@npm:8.2.4"
@@ -10176,15 +10183,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rechoir@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "rechoir@npm:0.6.2"
-  dependencies:
-    resolve: ^1.1.6
-  checksum: fe76bf9c21875ac16e235defedd7cbd34f333c02a92546142b7911a0f7c7059d2e16f441fe6fb9ae203f459c05a31b2bcf26202896d89e390eda7514d5d2702b
-  languageName: node
-  linkType: hard
-
 "recrawl-sync@npm:^2.0.3":
   version: 2.2.2
   resolution: "recrawl-sync@npm:2.2.2"
@@ -10283,7 +10281,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.1.6, resolve@npm:^1.1.7, resolve@npm:^1.10.0, resolve@npm:^1.20.0, resolve@npm:^1.22.1":
+"resolve@npm:^1.1.7, resolve@npm:^1.10.0, resolve@npm:^1.20.0, resolve@npm:^1.22.1":
   version: 1.22.1
   resolution: "resolve@npm:1.22.1"
   dependencies:
@@ -10309,7 +10307,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.1
   resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
   dependencies:
@@ -10747,19 +10745,6 @@ __metadata:
   version: 3.0.0
   resolution: "shebang-regex@npm:3.0.0"
   checksum: 1a2bcae50de99034fcd92ad4212d8e01eedf52c7ec7830eedcf886622804fe36884278f2be8be0ea5fde3fd1c23911643a4e0f726c8685b61871c8908af01222
-  languageName: node
-  linkType: hard
-
-"shelljs@npm:^0.8.5":
-  version: 0.8.5
-  resolution: "shelljs@npm:0.8.5"
-  dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: bin/shjs
-  checksum: 7babc46f732a98f4c054ec1f048b55b9149b98aa2da32f6cf9844c434b43c6251efebd6eec120937bd0999e13811ebd45efe17410edb3ca938f82f9381302748
   languageName: node
   linkType: hard
 

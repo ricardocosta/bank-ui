@@ -45,3 +45,33 @@ jobs:
           directory: ./coverage
           fail_ci_if_error: true
           verbose: true
+  e2e:
+    name: E2E Tests
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox]
+        os: [macos-12, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node_version: ${{ env.node_version }}
+      - name: Set NX SHAs
+        uses: nrwl/nx-set-shas@v3
+      - name: Run in ${{ matrix.browser }} [${{ matrix.os }}]
+        run: yarn nx affected --target=e2e
+        env:
+          OS: ${{ matrix.os }}
+          BROWSER: ${{ matrix.browser }}
+      - uses: actions/upload-artifact@v3
+        if: ${{ always() }}
+        with:
+          name: ${{ matrix.browser }}-${{ matrix.os }}-test-results
+          path: ./e2e
+          retention-days: 1

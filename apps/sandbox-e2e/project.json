@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "apps/sandbox-e2e",
+  "projectType": "application",
+  "sourceRoot": "apps/sandbox-e2e/src",
+  "implicitDependencies": ["apps/sandbox"],
+  "targets": {
+    "e2e": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "playwright test",
+        "cwd": "apps/sandbox-e2e",
+        "color": true
+      }
+    },
+    "codegen": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx run apps/sandbox:dev", "playwright codegen http://localhost:3001"],
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}
