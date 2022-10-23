@@ -41,17 +41,24 @@ const getLcovFiles = async (dirName: string) => {
 
 (async () => {
   await deleteMergedFile();
-  const files = await getLcovFiles("coverage");
-  let mergedReport = "";
-
-  for (const file of files) {
-    const fileContent = await fs.readFile(file);
-    mergedReport += fileContent;
-  }
-
-  console.log(chalk("Writing merged report to", WRITE_PATH));
 
   try {
+    const files = await getLcovFiles("coverage");
+
+    if (files.length === 0) {
+      console.log(chalk("No coverage files to merge. Skipping..."));
+      return;
+    }
+
+    let mergedReport = "";
+
+    for (const file of files) {
+      const fileContent = await fs.readFile(file);
+      mergedReport += fileContent;
+    }
+
+    console.log(chalk("Writing merged report to", WRITE_PATH));
+
     await fs.writeFile(WRITE_PATH, mergedReport);
     console.log(chalk.green("Merged report saved to", WRITE_PATH));
   } catch (e: unknown) {
