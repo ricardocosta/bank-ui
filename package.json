@@ -35,7 +35,7 @@
     "@jscutlery/semver": "^2.27.1",
     "@nrwl/cli": "^14.8.3",
     "@nrwl/devkit": "^14.8.3",
-    "@nrwl/eslint-plugin-nx": "^14.8.3",
+    "@nrwl/eslint-plugin-nx": "^15.0.2",
     "@nrwl/js": "^14.8.3",
     "@nrwl/linter": "^14.8.3",
     "@nrwl/node": "^14.8.3",
