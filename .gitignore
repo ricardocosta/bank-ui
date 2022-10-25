@@ -39,3 +39,12 @@ Thumbs.db
 
 # Runtime development database
 src/server/db.json
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
