@@ -65,7 +65,7 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sonarjs": "^0.16.0",
-    "eslint-plugin-testing-library": "^5.7.0",
+    "eslint-plugin-testing-library": "^5.9.1",
     "glob": "^8.0.3",
     "husky": "^7.0.4",
     "jsdom": "^19.0.0",
