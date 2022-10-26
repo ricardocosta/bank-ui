@@ -1963,7 +1963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.7.23":
+"@types/node@npm:*":
   version: 18.7.23
   resolution: "@types/node@npm:18.7.23"
   checksum: 2c8df0830d8345e5cd1ca17feb9cf43fa667aae749888e0a068c5c1b35eaedd2f9b24ed987a0758078395edf7a03681e5e0b7790a518ff7afe1ff6d8459f7b4a
@@ -1974,6 +1974,13 @@ __metadata:
   version: 14.18.32
   resolution: "@types/node@npm:14.18.32"
   checksum: 45463114bf85d06dc12925d876dd90b7fff43d9ee10a40e48fd16aece3d0201c76426c128e41230b2818d386422be06c5be33b3d94d90ee924b6fa4d54574035
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.6":
+  version: 18.11.6
+  resolution: "@types/node@npm:18.11.6"
+  checksum: 25713209b5f8758e782348514e7bd2342bd8edb38038380c66f37b41b12d6840763edb17d81f6451591791c9d59c8255be54591333fc302f473beadada0023e6
   languageName: node
   linkType: hard
 
@@ -3193,7 +3200,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@trivago/prettier-plugin-sort-imports": ^3.2.0
     "@types/glob": ^8
-    "@types/node": ^18.7.23
+    "@types/node": ^18.11.6
     "@types/react": ^17.0.40
     "@types/react-dom": ^17.0.13
     "@typescript-eslint/eslint-plugin": ^5.40.1
