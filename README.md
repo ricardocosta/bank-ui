@@ -1,47 +1,51 @@
 # Bank UI
 
-UI for the Bank application.
+[![codecov](https://codecov.io/gh/ricardocosta/bank-ui/branch/main/graph/badge.svg?token=T5FJHNAKPA)](https://codecov.io/gh/ricardocosta/bank-ui)
+
+[Nx](https://nx.dev/) monorepo for the Bank project UI.
+
+## 🗂 Structure
+
+- The `apps` directory contains all the apps and correspondent E2E tests.
+- The `tools` directory contains generic tooling and scripts that can be used through the project.
 
 ## 🔌 Running
 
-You can run the application locally with:
+The apps have a set of targets configured, depending on the app type. \
+Check the `project.json` file in each app to see the details, including the value of `<app-name>`.
 
-```
-$ yarn dev
-```
+Run a target with:
+`yarn nx run <app-name>:<target>`
 
-The application will be available at [http://localhost:3000/](http://localhost:3000/).
+Example:
+`yarn nx run apps/sandbox:lint`
 
+**Regular Apps**
 
-## 📦 Publishing
+| Target         | Description                                     |
+| :------------- | :---------------------------------------------- |
+| `build`        | Build the application.                          |
+| `dev`          | Run the application in dev mode.                |
+| `preview`      | Locally preview production build.               |
+| `test`         | Run the test.                                   |
+| `testCoverage` | Run the tests generating a coverage report.     |
+| `testUi`       | Run the tests with the UI dashboard.            |
+| `testWatch`    | Run the tests in watch mode.                    |
+| `lint`         | Lint the application with ESLint.               |
+| `format`       | Format the application with Prettier.           |
+| `formatDry`    | Check if the application is properly formatted. |
+| `ts`           | Check if the application is compiling.          |
+| `seedDb`       | Generate a seed DB for a local REST server.     |
 
-To publish a new version of the project:
+**E2E Apps**
 
-1. Create a branch for the release:
+| Target    | Description                         |
+| :-------- | :---------------------------------- |
+| `e2e`     | Run the E2E tests.                  |
+| `codegen` | Launch Playwright's code generator. |
 
-```
-$ git checkout -b release_$(date -u +"%Y%m%d")
-```
+## Coverage
 
-2. Preview the changes to `CHANGELOG` and predicted tag:
+This project is configured with Codecov to automatically check if Pull Requests keep code coverage levels.
 
-```
-$ yarn run release:dry
-```
-
-3. Update the `CHANGELOG` file automatically based on the commits:
-
-```
-$ yarn run release
-```
-
-4. Open a Pull Request against `main` and have it merged.
-
-5. Update your local `main` branch, generate the new tag and push it:
-
-```
-$ git checkout main
-$ git pull
-$ yarn release:tag
-$ git push --tags
-```
+<img src="https://codecov.io/gh/ricardocosta/bank-ui/branch/main/graphs/icicle.svg?token=T5FJHNAKPA" alt="Current code coverage">
