@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["@commitlint/config-conventional"],
+  extends: ["@commitlint/config-conventional", "@commitlint/config-nx-scopes"],
   rules: {
     "subject-case": [2, "always", "sentence-case"],
     "body-max-line-length": [2, "always", 80],
