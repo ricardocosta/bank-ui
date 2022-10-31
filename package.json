@@ -45,7 +45,7 @@
     "@nrwl/tao": "^15.0.2",
     "@nrwl/workspace": "^15.0.2",
     "@playwright/test": "^1.25.0",
-    "@testing-library/dom": "^8.11.4",
+    "@testing-library/dom": "^8.19.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
