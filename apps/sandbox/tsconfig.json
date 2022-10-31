@@ -1,22 +1,8 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "esModuleInterop": false,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": ["apps/sandbox/src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "noEmit": true
+  }
 }
