@@ -705,15 +705,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-nx-scopes@npm:^17.0.0":
-  version: 17.0.0
-  resolution: "@commitlint/config-nx-scopes@npm:17.0.0"
+"@commitlint/config-nx-scopes@npm:^17.2.0":
+  version: 17.2.0
+  resolution: "@commitlint/config-nx-scopes@npm:17.2.0"
   peerDependencies:
-    nx: ^14.0.0
+    nx: ^14.0.0 || ^15.0.0
   peerDependenciesMeta:
     nx:
       optional: true
-  checksum: f7dbac0df289b7785259293e12dbcd2f020de0cf198f5c3afa22ae096ec37ff38f5725c1a4da4ab28a73cb6e386e24e38bf63f92f98dd2d1a6b4e688b7af92cb
+  checksum: 982222fb27b7d8beca565c7fef09c0c13a93857d21b01a20b51a82f30056533ea7b033ce2b92097d2ebd5528c473931c98070c62dbeb6664d1004e6d31c3b4dd
   languageName: node
   linkType: hard
 
@@ -3496,7 +3496,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
-    "@commitlint/config-nx-scopes": ^17.0.0
+    "@commitlint/config-nx-scopes": ^17.2.0
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
     "@jscutlery/semver": ^2.27.2
     "@nrwl/cli": ^15.0.2
