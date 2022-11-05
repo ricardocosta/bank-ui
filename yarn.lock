@@ -1410,7 +1410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/devkit@npm:15.0.2, @nrwl/devkit@npm:^15.0.2":
+"@nrwl/devkit@npm:15.0.2":
   version: 15.0.2
   resolution: "@nrwl/devkit@npm:15.0.2"
   dependencies:
@@ -1422,6 +1422,21 @@ __metadata:
   peerDependencies:
     nx: ">= 14 <= 16"
   checksum: 8f7c39abdff3142da53ae03541d80333656b540117d4213911d3c58c485ccc516b2e4084b2caa7ec5cce689dfb11e6a2c490fe4556ad3dab25fba2654d4a59c9
+  languageName: node
+  linkType: hard
+
+"@nrwl/devkit@npm:^15.0.10":
+  version: 15.0.10
+  resolution: "@nrwl/devkit@npm:15.0.10"
+  dependencies:
+    "@phenomnomnominal/tsquery": 4.1.1
+    ejs: ^3.1.7
+    ignore: ^5.0.4
+    semver: 7.3.4
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 14 <= 16"
+  checksum: cde7cb5fb5fe1be2c64b175c984c785e8122b0990ab1bd17b40d866bc2e8ca4a48ffb89e35432524e107b990a8096f35a547e0bc18c82a02cd66d62e60e7f007
   languageName: node
   linkType: hard
 
@@ -3454,7 +3469,7 @@ __metadata:
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
     "@jscutlery/semver": ^2.27.2
     "@nrwl/cli": ^15.0.2
-    "@nrwl/devkit": ^15.0.2
+    "@nrwl/devkit": ^15.0.10
     "@nrwl/eslint-plugin-nx": ^15.0.2
     "@nrwl/js": ^15.0.2
     "@nrwl/linter": ^15.0.2
