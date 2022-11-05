@@ -31,7 +31,7 @@ const config: PlaywrightTestConfig = {
   },
 
   webServer: {
-    command: "yarn nx run apps/sandbox:dev",
+    command: "yarn nx run sandbox:dev",
     cwd: "../..",
     port: 3001,
   },

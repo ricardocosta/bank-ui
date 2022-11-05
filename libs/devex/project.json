@@ -1,0 +1,72 @@
+{
+  "name": "devex",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/devex/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/devex",
+        "main": "libs/devex/src/index.ts",
+        "tsConfig": "libs/devex/tsconfig.lib.json",
+        "assets": [
+          "libs/devex/*.md",
+          {
+            "input": "./libs/devex/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/devex/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/devex",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/devex",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "libs/devex/.eslintrc.js",
+        "lintFilePatterns": ["libs/devex/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "libs/devex",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "libs/devex",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p ./tsconfig.json",
+        "cwd": "libs/devex",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}
