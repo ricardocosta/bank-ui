@@ -18,7 +18,7 @@ Run a target with:
 `yarn nx run <app-name>:<target>`
 
 Example:
-`yarn nx run apps/sandbox:lint`
+`yarn nx run sandbox:lint`
 
 **Regular Apps**
 

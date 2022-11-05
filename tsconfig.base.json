@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "allowJs": false,
+    "baseUrl": ".",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -23,7 +24,9 @@
     "strict": true,
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "paths": {}
+    "paths": {
+      "@ricardocosta/devex": ["libs/devex/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
