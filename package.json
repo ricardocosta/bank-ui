@@ -36,7 +36,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@jscutlery/semver": "^2.27.2",
     "@nrwl/cli": "^15.0.2",
-    "@nrwl/devkit": "^15.0.2",
+    "@nrwl/devkit": "^15.0.13",
     "@nrwl/eslint-plugin-nx": "^15.0.2",
     "@nrwl/js": "^15.0.2",
     "@nrwl/linter": "^15.0.2",
