@@ -43,7 +43,7 @@
     "@nrwl/node": "^15.0.2",
     "@nrwl/nx-plugin": "^15.0.2",
     "@nrwl/tao": "^15.0.2",
-    "@nrwl/workspace": "^15.0.2",
+    "@nrwl/workspace": "^15.0.13",
     "@playwright/test": "^1.25.0",
     "@testing-library/dom": "^8.19.0",
     "@testing-library/jest-dom": "^5.16.3",
