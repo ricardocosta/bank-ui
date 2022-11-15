@@ -4,10 +4,12 @@ import { defineConfig } from "vite";
 import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+import configs from "./configs.json";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr(), tsconfigPaths()],
   server: {
-    port: 3001,
+    port: configs.appPort,
   },
 });

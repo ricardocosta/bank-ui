@@ -1,3 +1,5 @@
+import { APP_PORT } from "./constants";
+
 import type { PlaywrightTestConfig } from "@playwright/test";
 
 const browser = process.env.BROWSER ?? "chromium";
@@ -21,7 +23,7 @@ const config: PlaywrightTestConfig = {
   retries: 1,
 
   use: {
-    baseURL: "http://localhost:3001",
+    baseURL: `http://localhost:${APP_PORT}`,
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
     bypassCSP: true,
@@ -33,7 +35,7 @@ const config: PlaywrightTestConfig = {
   webServer: {
     command: "yarn nx run sandbox:dev",
     cwd: "../..",
-    port: 3001,
+    port: APP_PORT,
   },
 };
 

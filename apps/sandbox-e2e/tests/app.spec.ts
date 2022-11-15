@@ -1,11 +1,12 @@
 import { expect, test } from "@playwright/test";
-import type { Page } from "playwright";
+
+import { APP_BASE_URL } from "../constants";
 
 test.describe.serial("App", () => {
   test("should open application", async ({ browser }) => {
     const page = await browser.newPage();
 
-    await page.goto("http://localhost:3001/");
+    await page.goto(APP_BASE_URL);
 
     await expect(page).toHaveURL("/");
     await expect(page).toHaveTitle("Sandbox");
@@ -14,7 +15,7 @@ test.describe.serial("App", () => {
   test("clicking the button should increment the counter", async ({ browser }) => {
     const page = await browser.newPage();
 
-    await page.goto("http://localhost:3001/");
+    await page.goto(APP_BASE_URL);
 
     await expect(page.getByText("Count is: 0")).toBeVisible();
 
