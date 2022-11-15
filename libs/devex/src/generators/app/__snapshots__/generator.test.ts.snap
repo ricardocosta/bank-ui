@@ -1,0 +1,88 @@
+// Vitest Snapshot v1
+
+exports[`Generators / App > adds Vite configuration 1`] = `
+"/// <reference types=\\"vite/client\\" />
+import react from \\"@vitejs/plugin-react\\";
+import { defineConfig } from \\"vite\\";
+import svgr from \\"vite-plugin-svgr\\";
+import tsconfigPaths from \\"vite-tsconfig-paths\\";
+
+import configs from \\"./configs.json\\";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), svgr(), tsconfigPaths()],
+  server: {
+    port: configs.appPort,
+  },
+});
+"
+`;
+
+exports[`Generators / App > adds Vitest configuration 1`] = `
+"import { mergeConfig } from \\"vite\\";
+import { defineConfig } from \\"vitest/config\\";
+
+import viteConfig from \\"./vite.config\\";
+
+export default mergeConfig(
+  viteConfig,
+  defineConfig({
+    test: {
+      globals: true,
+      environment: \\"jsdom\\",
+      setupFiles: \\"./setupTests.ts\\",
+      coverage: {
+        reporter: [\\"lcov\\", \\"text\\"],
+      },
+    },
+  })
+);
+"
+`;
+
+exports[`Generators / App > when E2E app should be created > adds Playwright configuration 1`] = `
+"import { APP_PORT } from \\"./constants\\";
+
+import type { PlaywrightTestConfig } from \\"@playwright/test\\";
+
+const browser = process.env.BROWSER ?? \\"chromium\\";
+const os = process.env.OS ?? process.platform;
+
+const config: PlaywrightTestConfig = {
+  reporter: [
+    [process.env.CI ? \\"github\\" : \\"list\\"],
+    [
+      \\"html\\",
+      {
+        open: \\"on-failure\\",
+        outputFolder: \`../../e2e/reports/apps/demo/\${os}/\${browser}\`,
+      },
+    ],
+  ],
+
+  testDir: \\"tests\\",
+  outputDir: \`../../e2e/results/apps/demo/\${os}/\${browser}\`,
+
+  retries: 1,
+
+  use: {
+    baseURL: \`http://localhost:\${APP_PORT}\`,
+    viewport: { width: 1280, height: 720 },
+    ignoreHTTPSErrors: true,
+    bypassCSP: true,
+
+    trace: \\"on-first-retry\\",
+    screenshot: \\"on\\",
+  },
+
+  webServer: {
+    command: \\"yarn nx run demo:dev\\",
+    cwd: \\"../..\\",
+    port: APP_PORT,
+  },
+};
+
+export default config;
+"
+`;

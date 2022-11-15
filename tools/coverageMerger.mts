@@ -1,10 +1,9 @@
-import chalk from "chalk";
 import * as fs from "fs/promises";
-import g from "glob";
 import path from "path";
-import { promisify } from "util";
 
-const glob = promisify(g);
+import chalk from "chalk";
+import fg from "fast-glob";
+
 const WRITE_PATH = path.resolve("./coverage/lcov.info");
 
 const deleteMergedFile = async () => {
@@ -20,7 +19,7 @@ const deleteMergedFile = async () => {
 const getLcovFiles = async (dirName: string) => {
   console.log(chalk(`Finding coverage files in directory "${dirName}"...`));
   try {
-    const files = await glob(`${dirName}/**/lcov.info`);
+    const files = await fg(`${dirName}/**/lcov.info`);
 
     console.log(chalk.green(`Found ${files.length} file(s):`));
     files.map((file) => {

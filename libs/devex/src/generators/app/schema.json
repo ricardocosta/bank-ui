@@ -2,12 +2,12 @@
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
   "$id": "App",
-  "title": "",
+  "title": "App generator",
   "type": "object",
   "properties": {
     "name": {
       "type": "string",
-      "description": "",
+      "description": "The name of the app",
       "$default": {
         "$source": "argv",
         "index": 0
@@ -16,14 +16,24 @@
     },
     "tags": {
       "type": "string",
-      "description": "Add tags to the project (used for linting)",
-      "alias": "t"
+      "description": "Add tags to the project (used for linting)"
     },
     "directory": {
       "type": "string",
-      "description": "A directory where the project is placed",
-      "alias": "d"
+      "description": "A directory where the project is placed"
+    },
+    "e2e": {
+      "type": "boolean",
+      "description": "Whether or not to create an e2e test app",
+      "default": true,
+      "x-prompt": "Create E2E test app?"
+    },
+    "restServer": {
+      "type": "boolean",
+      "description": "Whether or not to bootstrap a REST server using json-server",
+      "default": false,
+      "x-prompt": "Add development REST server?"
     }
   },
-  "required": ["name"]
+  "required": ["name", "e2e", "restServer"]
 }

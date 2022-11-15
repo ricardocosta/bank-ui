@@ -92,7 +92,7 @@
     "ts": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tsc --noEmit -p ./tsconfig.json",
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
         "cwd": "apps/sandbox",
         "color": true
       }
