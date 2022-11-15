@@ -6,6 +6,12 @@ module.exports = {
     node: true,
   },
   plugins: ["@nrwl/nx", "sonarjs"],
+  extends: [
+    "eslint:recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:compat/recommended",
+    "prettier",
+  ],
   overrides: [
     {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -23,7 +29,7 @@ module.exports = {
             ],
           },
         ],
-        "@typescript-eslint/no-unused-vars": ["error"],
+        "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
       },
     },
     {
@@ -36,11 +42,5 @@ module.exports = {
       extends: ["plugin:@nrwl/nx/javascript"],
       rules: {},
     },
-  ],
-  extends: [
-    "eslint:recommended",
-    "plugin:sonarjs/recommended",
-    "plugin:compat/recommended",
-    "prettier",
   ],
 };

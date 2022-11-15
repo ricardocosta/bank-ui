@@ -36,6 +36,44 @@
         ]
       }
     },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest run --reporter verbose",
+        "cwd": "libs/devex",
+        "color": true
+      }
+    },
+    "testCoverage": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "vitest run --coverage",
+          "rm -rf ../../coverage/libs/devex",
+          "mkdir -p ../../coverage/libs/devex",
+          "mv -v coverage/* ../../coverage/libs/devex"
+        ],
+        "parallel": false,
+        "cwd": "libs/devex",
+        "color": true
+      }
+    },
+    "testUi": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest --ui --open",
+        "cwd": "libs/devex",
+        "color": true
+      }
+    },
+    "testWatch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest watch --reporter verbose",
+        "cwd": "libs/devex",
+        "color": true
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
@@ -62,7 +100,7 @@
     "ts": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tsc --noEmit -p ./tsconfig.json",
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
         "cwd": "libs/devex",
         "color": true
       }

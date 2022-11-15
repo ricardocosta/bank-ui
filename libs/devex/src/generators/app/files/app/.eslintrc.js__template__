@@ -9,6 +9,20 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "../../.eslintrc.js",
   ],
+  overrides: [
+    {
+      files: ["*.ts", "*.js", "*.tsx", "*.jsx"],
+      rules: {},
+    },
+    {
+      files: ["*.ts", "*.js", "*.tsx", "*.jsx"],
+      rules: {},
+    },
+    {
+      files: ["*.ts", "*.js", "*.tsx", "*.jsx"],
+      rules: {},
+    },
+  ],
   settings: {
     react: {
       version: "detect",
