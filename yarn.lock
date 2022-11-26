@@ -1319,17 +1319,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jscutlery/semver@npm:^2.27.2":
-  version: 2.27.2
-  resolution: "@jscutlery/semver@npm:2.27.2"
+"@jscutlery/semver@npm:^2.29.0":
+  version: 2.29.0
+  resolution: "@jscutlery/semver@npm:2.29.0"
   dependencies:
+    conventional-changelog: ^3.1.25
+    conventional-recommended-bump: ^6.1.0
     detect-indent: 6.1.0
     inquirer: 8.2.5
     rxjs: 7.5.7
-    standard-version: 9.5.0
   peerDependencies:
-    "@nrwl/devkit": ^14.0.0
-  checksum: 9ec09da5053dc35397f671d875c0723e15c376a5c0a023e26da3333d565b2fd8263832dbca4672ca959f06ed094d9025e51d3f9e0c91ba84ccb16a1520505f6d
+    "@nrwl/devkit": ^15.0.0
+  checksum: 8aaf9ae46c87d57f82f0fca28588bb65bafbc64c88f76a7cfa7710d42b82a1b335f0005a12c3d98664e5fc3ed47d64d0cfa73cc972e4fb2eebbd4a58df7bc327
   languageName: node
   linkType: hard
 
@@ -3656,7 +3657,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.1.0
     "@commitlint/config-nx-scopes": ^17.2.0
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
-    "@jscutlery/semver": ^2.27.2
+    "@jscutlery/semver": ^2.29.0
     "@nrwl/cli": ^15.2.1
     "@nrwl/devkit": 15.2.1
     "@nrwl/eslint-plugin-nx": ^15.2.1
@@ -4603,7 +4604,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog@npm:3.1.25":
+"conventional-changelog@npm:3.1.25, conventional-changelog@npm:^3.1.25":
   version: 3.1.25
   resolution: "conventional-changelog@npm:3.1.25"
   dependencies:
@@ -4648,7 +4649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-recommended-bump@npm:6.1.0":
+"conventional-recommended-bump@npm:6.1.0, conventional-recommended-bump@npm:^6.1.0":
   version: 6.1.0
   resolution: "conventional-recommended-bump@npm:6.1.0"
   dependencies:
@@ -12165,7 +12166,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"standard-version@npm:9.5.0, standard-version@npm:^9.3.2":
+"standard-version@npm:^9.3.2":
   version: 9.5.0
   resolution: "standard-version@npm:9.5.0"
   dependencies:
