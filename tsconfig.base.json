@@ -14,7 +14,10 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
     "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "rootDir": ".",
@@ -26,7 +29,8 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "paths": {
-      "@ricardocosta/devex": ["libs/devex/src/index.ts"]
+      "@ricardocosta/devex": ["libs/devex/src/index.ts"],
+      "@ricardocosta/ui-provider": ["libs/ui/ui-provider/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

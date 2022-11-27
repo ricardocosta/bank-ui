@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-provider",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-provider.umd.cjs",
+  "module": "./dist/ui-provider.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-provider.js",
+      "require": "./dist/ui-provider.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
