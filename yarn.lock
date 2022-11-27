@@ -1669,15 +1669,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.25.0":
-  version: 1.27.1
-  resolution: "@playwright/test@npm:1.27.1"
+"@playwright/test@npm:^1.28.1":
+  version: 1.28.1
+  resolution: "@playwright/test@npm:1.28.1"
   dependencies:
     "@types/node": "*"
-    playwright-core: 1.27.1
+    playwright-core: 1.28.1
   bin:
     playwright: cli.js
-  checksum: 92f219a78c21da03c6599d92c313c914e73cc374306366130fb3bd4701555179394ec5a3000d9375ce59f5a03c00f20d1ddaae50c85583ce475e17795a622699
+  checksum: dc39dfdf848171a6c65fc32a9dbc95162684a4a1e3401dd157d7d6822a065d8dcb96b2484fc3b223baea4da774450fddaeaa6d4d21546d17d45f01884fa8d7c5
   languageName: node
   linkType: hard
 
@@ -3658,7 +3658,7 @@ __metadata:
     "@nrwl/nx-plugin": ^15.2.1
     "@nrwl/tao": ^15.2.1
     "@nrwl/workspace": ^15.2.1
-    "@playwright/test": ^1.25.0
+    "@playwright/test": ^1.28.1
     "@swc-node/register": ^1.4.2
     "@swc/cli": ~0.1.55
     "@swc/core": ^1.3.20
@@ -3692,7 +3692,7 @@ __metadata:
     lint-staged: ^13.0.4
     nx: ^15.2.1
     nx-plugin-vite: ^2.2.1
-    playwright: ^1.25.0
+    playwright: ^1.28.1
     prettier: ^2.8.0
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -10451,23 +10451,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.27.1":
-  version: 1.27.1
-  resolution: "playwright-core@npm:1.27.1"
+"playwright-core@npm:1.28.1":
+  version: 1.28.1
+  resolution: "playwright-core@npm:1.28.1"
   bin:
     playwright: cli.js
-  checksum: fd65d3eb29978e0e7a755158625e8922a66ca9d599b7c24ddf920822b261d81c51a5964ef8e0e5ed9b2b12dc64541c5949b6a898d965e107f43261964e8c29a0
+  checksum: 8899e0d65de43ee10fadc171e0d48cd514bb574f3505478700094afa8a6e0dcd888a5c87af22acf31ebad455ada1327028909c42e20b8e25908b6255dc143bf0
   languageName: node
   linkType: hard
 
-"playwright@npm:^1.25.0":
-  version: 1.27.1
-  resolution: "playwright@npm:1.27.1"
+"playwright@npm:^1.28.1":
+  version: 1.28.1
+  resolution: "playwright@npm:1.28.1"
   dependencies:
-    playwright-core: 1.27.1
+    playwright-core: 1.28.1
   bin:
     playwright: cli.js
-  checksum: 7bb31998e1783f96443bd1a38f0d7838d1b6fd0cf410ac83ef480c0f0e3e930b809b7e42ccda35b9e272c84aaa8f15e0ee8bdddc19a60b224eecc57d285bf92f
+  checksum: 97c6fff2835878da856bf1f587ec4cdcbcc9aa61c0efcf592633f6df37eabbb9e59d7a2ef994ec9283338e43ef80e278d6d52fed5f7c29abd0408fac0f69b3ca
   languageName: node
   linkType: hard
 
