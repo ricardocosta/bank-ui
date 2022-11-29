@@ -792,7 +792,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/styled-system@npm:2.4.0":
+"@chakra-ui/styled-system@npm:2.4.0, @chakra-ui/styled-system@npm:^2.4.0":
   version: 2.4.0
   resolution: "@chakra-ui/styled-system@npm:2.4.0"
   dependencies:
@@ -843,7 +843,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme@npm:2.2.2":
+"@chakra-ui/theme@npm:2.2.2, @chakra-ui/theme@npm:^2.2.2":
   version: 2.2.2
   resolution: "@chakra-ui/theme@npm:2.2.2"
   dependencies:
@@ -4136,6 +4136,8 @@ __metadata:
   resolution: "bank-ui@workspace:."
   dependencies:
     "@chakra-ui/provider": ^2.0.24
+    "@chakra-ui/styled-system": ^2.4.0
+    "@chakra-ui/theme": ^2.2.2
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
     "@commitlint/config-nx-scopes": ^17.2.0
