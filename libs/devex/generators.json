@@ -7,6 +7,11 @@
       "factory": "./src/generators/app/generator",
       "schema": "./src/generators/app/schema.json",
       "description": "Generate a new app and matching E2E testing application with the defined tech stack."
+    },
+    "chakra-wrapper": {
+      "factory": "./src/generators/chakra-wrapper/generator",
+      "schema": "./src/generators/chakra-wrapper/schema.json",
+      "description": "Generate a new wrapper around a ChakraUI package."
     }
   }
 }
