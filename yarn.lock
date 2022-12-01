@@ -832,7 +832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme-utils@npm:2.0.5":
+"@chakra-ui/theme-utils@npm:2.0.5, @chakra-ui/theme-utils@npm:^2.0.5":
   version: 2.0.5
   resolution: "@chakra-ui/theme-utils@npm:2.0.5"
   dependencies:
@@ -4242,6 +4242,7 @@ __metadata:
     "@chakra-ui/provider": ^2.0.24
     "@chakra-ui/styled-system": ^2.4.0
     "@chakra-ui/theme": ^2.2.2
+    "@chakra-ui/theme-utils": ^2.0.5
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
     "@commitlint/config-nx-scopes": ^17.2.0

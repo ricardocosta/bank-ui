@@ -4,21 +4,13 @@ Wrapper for [`@chakra-ui/theme`](https://github.com/chakra-ui/chakra-ui/tree/mai
 
 ## Usage
 
-```ts
+```tsx
 // 1. import `ChakraProvider` component
-import { UIProvider } from "@ricardocosta/provider";
-import { baseTheme } from "@ricardocosta/ui-theme";
+import { UIProvider } from "@ricardocosta/ui-provider";
+import { extendTheme } from "@ricardocosta/ui-theme";
 
 // 2. build your theme and config
-const theme = {
-  // ... your system-ui theme
-  ...baseTheme,
-  config: {
-    useSystemColorMode: false, // or true
-    initialColorMode: "light", // or "dark"
-    cssVarPrefix: "chakra", // any string
-  },
-};
+const theme = extendTheme();
 
 // 3. Use at the root of your app
 function App({ Component }) {
