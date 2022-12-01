@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "ui-button",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/ui-button/src",
+  "targets": {
+    "build": {
+      "executor": "nx-plugin-vite:build",
+      "outputs": ["{options.outDir}"],
+      "options": {
+        "outDir": "dist",
+        "configFile": "libs/ui/ui-button/vite.config.ts",
+        "watch": false,
+        "write": true,
+        "emitAtRootLevel": false,
+        "manifest": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "libs/ui/ui-button/.eslintrc.json",
+        "lintFilePatterns": ["libs/ui/ui-button/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "libs/ui/ui-button",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "libs/ui/ui-button",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
+        "cwd": "libs/ui/ui-button",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}
