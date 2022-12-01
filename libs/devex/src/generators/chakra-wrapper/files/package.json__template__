@@ -1,0 +1,17 @@
+{
+  "name": "@ricardocosta/<%= projectName %>",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/<%= projectName %>.umd.cjs",
+  "module": "./dist/<%= projectName %>.js",
+  "exports": {
+    ".": {
+      "import": "./dist/<%= projectName %>.js",
+      "require": "./dist/<%= projectName %>.umd.cjs"
+    }
+  },
+  "peerDependencies": <%-  JSON.stringify(peerDependencies) %>
+}

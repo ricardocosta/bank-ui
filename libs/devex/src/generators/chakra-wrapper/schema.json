@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "ChakraWrapper",
+  "title": "Chakra UI Wrapper generator",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the wrapper (ui-<name>)",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "tags": {
+      "type": "string",
+      "description": "Add tags to the project (used for linting)"
+    },
+    "chakraPackage": {
+      "type": "string",
+      "description": "Whether or not to create an e2e test app",
+      "x-prompt": "Which ChakraUI package do you want to wrap?"
+    }
+  },
+  "required": ["name", "chakraPackage"]
+}
