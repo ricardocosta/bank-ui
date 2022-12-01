@@ -26,8 +26,10 @@
     "release:tag": "standard-version --skip.bump --skip.changelog --skip.commit"
   },
   "dependencies": {
+    "@chakra-ui/button": "^2.0.13",
     "@chakra-ui/provider": "^2.0.24",
     "@chakra-ui/styled-system": "^2.4.0",
+    "@chakra-ui/system": "^2.3.4",
     "@chakra-ui/theme": "^2.2.2",
     "@chakra-ui/theme-utils": "^2.0.5",
     "@emotion/react": "^11.10.5",

@@ -702,6 +702,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/button@npm:^2.0.13":
+  version: 2.0.13
+  resolution: "@chakra-ui/button@npm:2.0.13"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.5
+    "@chakra-ui/react-use-merge-refs": 2.0.5
+    "@chakra-ui/spinner": 2.0.11
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 50f52b460a704fd1d538f1f98044ea6ee7c11efa543887ae13ec553c09f0222367292f3dd0e927097f6247b9c007c50d1ff13f8748173d4256105470500630b7
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/color-mode@npm:2.1.10":
   version: 2.1.10
   resolution: "@chakra-ui/color-mode@npm:2.1.10"
@@ -772,6 +786,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-merge-refs@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/react-use-merge-refs@npm:2.0.5"
+  peerDependencies:
+    react: ">=18"
+  checksum: d89be5f7de91a249ac491cda260a5a862d115605daece92df2a41daf96829ec09630a962e0d3f5fbf79949d3e1dc75b02732a4cc411d7e3c8bf840fddc38abae
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-safe-layout-effect@npm:2.0.3":
   version: 2.0.3
   resolution: "@chakra-ui/react-use-safe-layout-effect@npm:2.0.3"
@@ -792,6 +815,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/spinner@npm:2.0.11":
+  version: 2.0.11
+  resolution: "@chakra-ui/spinner@npm:2.0.11"
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 8fedd0638959514c2a7a1693ccfc602bca756ee1aad33621b0f51e833f2ee35dda1e613d4bf9d536d8ef9536dc74401c2c29193f68d2606380a21c96e6b14d3d
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/styled-system@npm:2.4.0, @chakra-ui/styled-system@npm:^2.4.0":
   version: 2.4.0
   resolution: "@chakra-ui/styled-system@npm:2.4.0"
@@ -802,7 +835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/system@npm:2.3.4":
+"@chakra-ui/system@npm:2.3.4, @chakra-ui/system@npm:^2.3.4":
   version: 2.3.4
   resolution: "@chakra-ui/system@npm:2.3.4"
   dependencies:
@@ -4239,8 +4272,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bank-ui@workspace:."
   dependencies:
+    "@chakra-ui/button": ^2.0.13
     "@chakra-ui/provider": ^2.0.24
     "@chakra-ui/styled-system": ^2.4.0
+    "@chakra-ui/system": ^2.3.4
     "@chakra-ui/theme": ^2.2.2
     "@chakra-ui/theme-utils": ^2.0.5
     "@commitlint/cli": ^17.3.0
