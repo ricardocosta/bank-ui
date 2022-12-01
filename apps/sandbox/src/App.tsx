@@ -1,3 +1,4 @@
+import { Button } from "@ricardocosta/ui-button";
 import { useState } from "react";
 
 import "./App.css";
@@ -13,9 +14,9 @@ function App() {
         <Logo className="App-logo" title="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <Button colorScheme="teal" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
-          </button>
+          </Button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
