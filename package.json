@@ -51,7 +51,7 @@
     "@nrwl/js": "15.2.1",
     "@nrwl/linter": "^15.2.1",
     "@nrwl/node": "^15.2.1",
-    "@nrwl/nx-plugin": "^15.2.1",
+    "@nrwl/nx-plugin": "^15.2.4",
     "@nrwl/tao": "^15.2.1",
     "@nrwl/workspace": "^15.2.1",
     "@playwright/test": "^1.28.1",
