@@ -8,8 +8,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "saturday"
     commit-message:
       prefix: "chore: "
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 25
     versioning-strategy: increase
