@@ -702,6 +702,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/breakpoint-utils@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/breakpoint-utils@npm:2.0.5"
+  checksum: 1abac1240156bb05d774659d59565e2cda5a7efc1fe0a704243ba2643caa4de105209a926b8a8819553008df4c37f93cfe7f0d06fe09102d172a8fca8da358af
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/button@npm:^2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/button@npm:2.0.13"
@@ -737,6 +744,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/icon@npm:3.0.13":
+  version: 3.0.13
+  resolution: "@chakra-ui/icon@npm:3.0.13"
+  dependencies:
+    "@chakra-ui/shared-utils": 2.0.3
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 29bb5a0d037a754ea341887e3b1c0699c5168ed50f5a99bc85ce11ecb11990547a582637acf2520f9ea22c2c4c959e777312491f6864aff6dc45555438bc7d33
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/layout@npm:^2.1.11":
+  version: 2.1.11
+  resolution: "@chakra-ui/layout@npm:2.1.11"
+  dependencies:
+    "@chakra-ui/breakpoint-utils": 2.0.5
+    "@chakra-ui/icon": 3.0.13
+    "@chakra-ui/object-utils": 2.0.5
+    "@chakra-ui/react-children-utils": 2.0.4
+    "@chakra-ui/react-context": 2.0.5
+    "@chakra-ui/shared-utils": 2.0.3
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 40069bb8ac4d70609c10759e85547c256f3c539cafd8a0fb4af6c83fd22507127d4ac3767cc89e91171ab4b48d5934cdb1394d2d1e143e68fc3e86bf02e08746
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/object-utils@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/object-utils@npm:2.0.5"
+  checksum: 29e6707dc9c36e2f6784723c37985cd1e53129ebf93f62eb858afe87d70db6bd654142b96552ed123c9989730b85ed07eff6ae648676995910b668167a9c53b7
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/portal@npm:2.0.11":
   version: 2.0.11
   resolution: "@chakra-ui/portal@npm:2.0.11"
@@ -765,6 +808,15 @@ __metadata:
     react: ">=18"
     react-dom: ">=18"
   checksum: 75b45f7ab0433e8b1306528813e440f263b5428a02fc7b644ff1ce3e12d65dba6cce2c0ca0bd5b42677f328872f96dfd3ad14b45c6fbf768a653d53a4f46188c
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-children-utils@npm:2.0.4":
+  version: 2.0.4
+  resolution: "@chakra-ui/react-children-utils@npm:2.0.4"
+  peerDependencies:
+    react: ">=18"
+  checksum: 5beb89ca66b06b283af436965f8d7e7aaab94f6a9310c1029066be019d5cf7d4038a6e1378f3a34146b964c391d0fdc63f39fb30b823f2e0dd24cacc25db7198
   languageName: node
   linkType: hard
 
@@ -812,6 +864,13 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 06952caafdcc226f601f2fbc714591ed081ebed889ae91e0f098a48e77c95908409d94895a6e2ead2e0c3ec28e5bfaf6b7b23e1fd0f96830a2017f0a55cd353e
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/shared-utils@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@chakra-ui/shared-utils@npm:2.0.3"
+  checksum: 08462ef9c92bdc4587efae654a531318d6d57c3f525da06f58fea71c4d21386eda9802fac7ade5cc1bd8dce86804d2658046506e4d8cd336b246bcb4803fae61
   languageName: node
   linkType: hard
 
@@ -4284,6 +4343,7 @@ __metadata:
   resolution: "bank-ui@workspace:."
   dependencies:
     "@chakra-ui/button": ^2.0.13
+    "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/provider": ^2.0.24
     "@chakra-ui/styled-system": ^2.4.0
     "@chakra-ui/system": ^2.3.4
