@@ -1,0 +1,52 @@
+{
+  "name": "ui-layout",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/ui-layout/src",
+  "targets": {
+    "build": {
+      "executor": "nx-plugin-vite:build",
+      "outputs": ["{options.outDir}"],
+      "options": {
+        "outDir": "dist",
+        "configFile": "libs/ui/ui-layout/vite.config.ts",
+        "watch": false,
+        "write": true,
+        "emitAtRootLevel": false,
+        "manifest": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "libs/ui/ui-layout/.eslintrc.json",
+        "lintFilePatterns": ["libs/ui/ui-layout/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-layout",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-layout",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
+        "cwd": "libs/ui/ui-layout",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}

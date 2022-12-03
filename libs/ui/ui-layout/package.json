@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-layout",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-layout.umd.cjs",
+  "module": "./dist/ui-layout.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-layout.js",
+      "require": "./dist/ui-layout.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
