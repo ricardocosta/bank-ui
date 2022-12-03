@@ -13,6 +13,7 @@ on:
 
 env:
   node_version: 18.10.x
+  NX_COMMAND: ${{ github.event_name == 'pull_request' && 'affected' || 'run-many' }}
 
 jobs:
   validate:
@@ -30,13 +31,13 @@ jobs:
       - name: Set NX SHAs
         uses: nrwl/nx-set-shas@v3
       - name: Lint
-        run: yarn nx affected --target=lint --parallel=3
+        run: yarn nx ${{ env.NX_COMMAND }} --target=lint --parallel=3
       - name: Check Style
-        run: yarn nx affected --target=formatDry --parallel=3
+        run: yarn nx ${{ env.NX_COMMAND }} --target=formatDry --parallel=3
       - name: Check Types
-        run: yarn nx affected --target=ts --parallel=3
+        run: yarn nx ${{ env.NX_COMMAND }} --target=ts --parallel=3
       - name: Test
-        run: yarn nx affected --target=testCoverage --parallel=3
+        run: yarn nx ${{ env.NX_COMMAND }} --target=testCoverage --parallel=3
       - name: Merge Coverage reports
         run: yarn tsm ./tools/coverageMerger.mts
       - name: Upload coverage report
@@ -65,7 +66,7 @@ jobs:
       - name: Set NX SHAs
         uses: nrwl/nx-set-shas@v3
       - name: Run in ${{ matrix.browser }} [${{ matrix.os }}]
-        run: yarn nx affected --target=e2e
+        run: yarn nx ${{ env.NX_COMMAND }} --target=e2e
         env:
           OS: ${{ matrix.os }}
           BROWSER: ${{ matrix.browser }}
