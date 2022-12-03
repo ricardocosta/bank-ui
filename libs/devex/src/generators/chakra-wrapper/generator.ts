@@ -84,6 +84,7 @@ function getPeerDependencies(packageName: string): Promise<PeerDependency> {
 
 function createProjectTargets(options: NormalizedSchema) {
   const { projectRoot } = options;
+  const offset = offsetFromRoot(options.projectRoot);
 
   const targets: Record<string, TargetConfiguration> = {
     build: {
@@ -108,8 +109,7 @@ function createProjectTargets(options: NormalizedSchema) {
     format: {
       executor: NX_COMMANDS.run,
       options: {
-        command:
-          "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        command: `prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ${offset}.prettierignore`,
         cwd: projectRoot,
         color: true,
       },
@@ -117,8 +117,7 @@ function createProjectTargets(options: NormalizedSchema) {
     formatDry: {
       executor: NX_COMMANDS.run,
       options: {
-        command:
-          "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        command: `prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ${offset}.prettierignore`,
         cwd: projectRoot,
         color: true,
       },
