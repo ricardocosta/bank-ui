@@ -6,7 +6,7 @@
     "plugin:testing-library/react",
     "plugin:react/jsx-runtime",
     "plugin:jsx-a11y/recommended",
-    "../../../.eslintrc.js"
+    "<%= offsetFromRoot %>.eslintrc.js"
   ],
   "ignorePatterns": ["!**/*"],
   "overrides": [
