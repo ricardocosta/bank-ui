@@ -773,6 +773,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/media-query@npm:3.2.8":
+  version: 3.2.8
+  resolution: "@chakra-ui/media-query@npm:3.2.8"
+  dependencies:
+    "@chakra-ui/breakpoint-utils": 2.0.5
+    "@chakra-ui/react-env": 2.0.11
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 0972facab7029e6a5948c736aaf04f7e7c1fdec60b199acefd7ac567e552554b527c771b4e88811b9d83765ffb944b038a28d1f65b0b1a5425640b8a830dba63
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/object-utils@npm:2.0.5":
   version: 2.0.5
   resolution: "@chakra-ui/object-utils@npm:2.0.5"
@@ -847,6 +860,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-previous@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@chakra-ui/react-use-previous@npm:2.0.3"
+  peerDependencies:
+    react: ">=18"
+  checksum: a5e2857cd91dd1f4760c1c84403720ee9f670f517b013325b2e2fbb3a56f9aa3157190e88f3a163318d6071dbf8f4afda9175ed9fdd081b17c102e002fbb0765
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-safe-layout-effect@npm:2.0.3":
   version: 2.0.3
   resolution: "@chakra-ui/react-use-safe-layout-effect@npm:2.0.3"
@@ -871,6 +893,19 @@ __metadata:
   version: 2.0.3
   resolution: "@chakra-ui/shared-utils@npm:2.0.3"
   checksum: 08462ef9c92bdc4587efae654a531318d6d57c3f525da06f58fea71c4d21386eda9802fac7ade5cc1bd8dce86804d2658046506e4d8cd336b246bcb4803fae61
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/skeleton@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@chakra-ui/skeleton@npm:2.0.18"
+  dependencies:
+    "@chakra-ui/media-query": 3.2.8
+    "@chakra-ui/react-use-previous": 2.0.3
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: c2609e4f0b97d3d675195760a439d3992aefd39a710dd73dc721ead7c6b012360d6842170a9eb9bd414fcd18414e19a4748dcd4fce47438f4f6d15088daace45
   languageName: node
   linkType: hard
 
@@ -4345,6 +4380,7 @@ __metadata:
     "@chakra-ui/button": ^2.0.13
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/provider": ^2.0.24
+    "@chakra-ui/skeleton": ^2.0.18
     "@chakra-ui/styled-system": ^2.4.0
     "@chakra-ui/system": ^2.3.4
     "@chakra-ui/theme": ^2.2.2
