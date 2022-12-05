@@ -1,9 +1,9 @@
-# Provider
+# <%= chakraPackage %>
 
 Wrapper for [`<%= packageName %>`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/<%= chakraPackage %>)
 
 ## Usage
 
-```ts
+```tsx
 // Add usage examples
 ```
