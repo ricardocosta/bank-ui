@@ -1,6 +1,6 @@
 # Provider
 
-Wrapper for [`@chakra-ui/provider`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/provider)
+Wrapper for [`@chakra-ui/provider`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/provider) package.
 
 ## Usage
 
@@ -21,3 +21,5 @@ function App({ Component }) {
   );
 }
 ```
+
+[🔗 ChakraUI Provider](https://chakra-ui.com/getting-started/vite-guide#2-provider-setup)

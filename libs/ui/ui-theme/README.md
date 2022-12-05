@@ -1,6 +1,6 @@
-# Provider
+# Theme
 
-Wrapper for [`@chakra-ui/theme`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/theme)
+Wrapper for [`@chakra-ui/theme`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/theme) package.
 
 ## Usage
 
@@ -21,3 +21,5 @@ function App({ Component }) {
   );
 }
 ```
+
+[🔗 ChakraUI Theme](https://chakra-ui.com/docs/styled-system/theme)
