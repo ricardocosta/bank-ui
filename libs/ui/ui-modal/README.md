@@ -1,6 +1,6 @@
 # Modal
 
-Wrapper for [`@chakra-ui/modal`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/modal)
+Wrapper for [`@chakra-ui/modal`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/modal) package.
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # <%= chakraPackage %>
 
-Wrapper for [`<%= packageName %>`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/<%= chakraPackage %>)
+Wrapper for [`<%= packageName %>`](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/<%= chakraPackage %>) package.
 
 ## Usage
 

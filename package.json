@@ -31,6 +31,7 @@
     "@chakra-ui/modal": "^2.2.4",
     "@chakra-ui/provider": "^2.0.24",
     "@chakra-ui/skeleton": "^2.0.18",
+    "@chakra-ui/spinner": "^2.0.11",
     "@chakra-ui/styled-system": "^2.4.0",
     "@chakra-ui/system": "^2.3.4",
     "@chakra-ui/theme": "^2.2.2",
