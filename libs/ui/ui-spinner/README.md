@@ -7,7 +7,7 @@ Wrapper for [`@chakra-ui/spinner`](https://github.com/chakra-ui/chakra-ui/tree/m
 Spinners provide a visual cue that an action is processing awaiting a course of change or a result.
 
 ```tsx
-import { Spinner } "@ricardocosta/ui-spinner";
+import { Spinner } from "@ricardocosta/ui-spinner";
 
 // Basic
 <Spinner />
@@ -23,7 +23,6 @@ import { Spinner } "@ricardocosta/ui-spinner";
   <Spinner size='lg' />
   <Spinner size='xl' />
 </Stack>
-
 
 // Empty area color
 <Spinner
