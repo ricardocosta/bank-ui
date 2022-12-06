@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-card",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-card.umd.cjs",
+  "module": "./dist/ui-card.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-card.js",
+      "require": "./dist/ui-card.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
