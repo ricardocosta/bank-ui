@@ -855,6 +855,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/popper@npm:3.0.10":
+  version: 3.0.10
+  resolution: "@chakra-ui/popper@npm:3.0.10"
+  dependencies:
+    "@chakra-ui/react-types": 2.0.5
+    "@chakra-ui/react-use-merge-refs": 2.0.5
+    "@popperjs/core": ^2.9.3
+  peerDependencies:
+    react: ">=18"
+  checksum: 817f42e8fbd05103f112e1234473ee7b9413fa37e2f28e077051da88796aff79bf492444494cf84312b0d27ba9a846aa3218ad026dbb1ca36cadbb18dbaf36c2
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/portal@npm:2.0.11":
   version: 2.0.11
   resolution: "@chakra-ui/portal@npm:2.0.11"
@@ -919,6 +932,37 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: d386c268fc80d791e9914a6bce6b913c4075965de3dbcd5b1a4c0cb13e8981af3c651ac9fb04f15e7f61018048e099727d9496499aa7698b9def60255411a975
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-callback-ref@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/react-use-callback-ref@npm:2.0.5"
+  peerDependencies:
+    react: ">=18"
+  checksum: 3b6a48f87ae8253067ab3b76bb0f7bc977bc935fbdd2cbba5553423c5b879f48a8e23cc7e8a7d44ba19b49cb9a86b703f3dae0dbcaeb236d0e8086da22abb383
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-disclosure@npm:2.0.6":
+  version: 2.0.6
+  resolution: "@chakra-ui/react-use-disclosure@npm:2.0.6"
+  dependencies:
+    "@chakra-ui/react-use-callback-ref": 2.0.5
+  peerDependencies:
+    react: ">=18"
+  checksum: 342f96ece0dd2d5fe92244a9a948cfd1084ab14bfdf36d58864d173b993566987f683336701e982f24d3073ce72dc5dda95d8f0b77d1b6aca9034ffe71f0ddb1
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-event-listener@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/react-use-event-listener@npm:2.0.5"
+  dependencies:
+    "@chakra-ui/react-use-callback-ref": 2.0.5
+  peerDependencies:
+    react: ">=18"
+  checksum: ee8c89d0afa78e976ef328207de2990eebf739998ef8dfca8ed7962b0562ca70ffb89e1c913dcc649479488c0aef37707589e3b30befb0cdb6b349ea1ddd98c4
   languageName: node
   linkType: hard
 
@@ -1050,6 +1094,25 @@ __metadata:
   peerDependencies:
     "@chakra-ui/styled-system": ">=2.0.0"
   checksum: 150facefb731f8f2eaa4afb14d2bdeff039521491fffa9c7858a2ca58ab103ba998ea3e7dcaf7bd6116dd40eed47541ada2d39b140b8571f2a4903c497dd1cbc
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/tooltip@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@chakra-ui/tooltip@npm:2.2.2"
+  dependencies:
+    "@chakra-ui/popper": 3.0.10
+    "@chakra-ui/portal": 2.0.11
+    "@chakra-ui/react-types": 2.0.5
+    "@chakra-ui/react-use-disclosure": 2.0.6
+    "@chakra-ui/react-use-event-listener": 2.0.5
+    "@chakra-ui/react-use-merge-refs": 2.0.5
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    framer-motion: ">=4.0.0"
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 0023d02fa0e445dd048f433df65d514a7d7ea3b837086076c276f50d5890feba33a15ba19c7e1249fb8e8c11c87dcf1aea2e987425baf45fa0bfb4257b59a636
   languageName: node
   linkType: hard
 
@@ -2360,6 +2423,13 @@ __metadata:
   version: 1.0.0-next.21
   resolution: "@polka/url@npm:1.0.0-next.21"
   checksum: c7654046d38984257dd639eab3dc770d1b0340916097b2fac03ce5d23506ada684e05574a69b255c32ea6a144a957c8cd84264159b545fca031c772289d88788
+  languageName: node
+  linkType: hard
+
+"@popperjs/core@npm:^2.9.3":
+  version: 2.11.6
+  resolution: "@popperjs/core@npm:2.11.6"
+  checksum: 47fb328cec1924559d759b48235c78574f2d71a8a6c4c03edb6de5d7074078371633b91e39bbf3f901b32aa8af9b9d8f82834856d2f5737a23475036b16817f0
   languageName: node
   linkType: hard
 
@@ -4483,6 +4553,7 @@ __metadata:
     "@chakra-ui/system": ^2.3.4
     "@chakra-ui/theme": ^2.2.2
     "@chakra-ui/theme-utils": ^2.0.5
+    "@chakra-ui/tooltip": ^2.2.2
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
     "@commitlint/config-nx-scopes": ^17.2.0
