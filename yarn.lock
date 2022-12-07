@@ -1074,6 +1074,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/table@npm:^2.0.12":
+  version: 2.0.12
+  resolution: "@chakra-ui/table@npm:2.0.12"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.5
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: a47d235ad2483c3994a95992dd2f22c16e1cf35fddc0901dd156bae9faa9071ef28be864b37e373f49b4bdb434e0befaeaec9de50a41f17be5e106ac30321356
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/theme-tools@npm:2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/theme-tools@npm:2.0.14"
@@ -4564,6 +4576,7 @@ __metadata:
     "@chakra-ui/spinner": ^2.0.11
     "@chakra-ui/styled-system": ^2.4.0
     "@chakra-ui/system": ^2.3.4
+    "@chakra-ui/table": ^2.0.12
     "@chakra-ui/theme": ^2.2.2
     "@chakra-ui/theme-utils": ^2.0.5
     "@chakra-ui/tooltip": ^2.2.2
