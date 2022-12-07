@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-stat",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-stat.umd.cjs",
+  "module": "./dist/ui-stat.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-stat.js",
+      "require": "./dist/ui-stat.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
