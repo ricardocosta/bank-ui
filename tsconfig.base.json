@@ -32,6 +32,7 @@
       "@ricardocosta/ui-button": ["libs/ui/ui-button/src/index.ts"],
       "@ricardocosta/ui-card": ["libs/ui/ui-card/src/index.ts"],
       "@ricardocosta/ui-checkbox": ["libs/ui/ui-checkbox/src/index.ts"],
+      "@ricardocosta/ui-editable": ["libs/ui/ui-editable/src/index.ts"],
       "@ricardocosta/ui-layout": ["libs/ui/ui-layout/src/index.ts"],
       "@ricardocosta/ui-modal": ["libs/ui/ui-modal/src/index.ts"],
       "@ricardocosta/ui-provider": ["libs/ui/ui-provider/src/index.ts"],

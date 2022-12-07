@@ -805,6 +805,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/editable@npm:^2.0.16":
+  version: 2.0.16
+  resolution: "@chakra-ui/editable@npm:2.0.16"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.5
+    "@chakra-ui/react-types": 2.0.5
+    "@chakra-ui/react-use-callback-ref": 2.0.5
+    "@chakra-ui/react-use-controllable-state": 2.0.6
+    "@chakra-ui/react-use-focus-on-pointer-down": 2.0.4
+    "@chakra-ui/react-use-merge-refs": 2.0.5
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.3
+    "@chakra-ui/react-use-update-effect": 2.0.5
+    "@chakra-ui/shared-utils": 2.0.3
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 54dacb717d3a8f315d7a3a8d4be195e2a3b96a331b2d66fc4260ee4ddb3615a045b271b9e94bf6f73b016a9e42500c243becdc59e3f7765924caaac72aae61bc
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/focus-lock@npm:2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/focus-lock@npm:2.0.13"
@@ -1022,6 +1042,17 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: ee8c89d0afa78e976ef328207de2990eebf739998ef8dfca8ed7962b0562ca70ffb89e1c913dcc649479488c0aef37707589e3b30befb0cdb6b349ea1ddd98c4
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.4":
+  version: 2.0.4
+  resolution: "@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.4"
+  dependencies:
+    "@chakra-ui/react-use-event-listener": 2.0.5
+  peerDependencies:
+    react: ">=18"
+  checksum: 2c3c0dee638e8ee6754d9cb33ed359b045bc671d85f2854861ddc46a030c9aeab91aa2666ffd76251928e1390822275d1f31b09d8f94eb413da3218a40bf1189
   languageName: node
   linkType: hard
 
@@ -4669,6 +4700,7 @@ __metadata:
     "@chakra-ui/button": ^2.0.13
     "@chakra-ui/card": ^2.1.1
     "@chakra-ui/checkbox": ^2.2.5
+    "@chakra-ui/editable": ^2.0.16
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/modal": ^2.2.4
     "@chakra-ui/provider": ^2.0.24
