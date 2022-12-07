@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-checkbox",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-checkbox.umd.cjs",
+  "module": "./dist/ui-checkbox.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-checkbox.js",
+      "require": "./dist/ui-checkbox.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

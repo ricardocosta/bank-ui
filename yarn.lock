@@ -744,6 +744,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/checkbox@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "@chakra-ui/checkbox@npm:2.2.5"
+  dependencies:
+    "@chakra-ui/form-control": 2.0.13
+    "@chakra-ui/react-context": 2.0.5
+    "@chakra-ui/react-types": 2.0.5
+    "@chakra-ui/react-use-callback-ref": 2.0.5
+    "@chakra-ui/react-use-controllable-state": 2.0.6
+    "@chakra-ui/react-use-merge-refs": 2.0.5
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.3
+    "@chakra-ui/react-use-update-effect": 2.0.5
+    "@chakra-ui/visually-hidden": 2.0.13
+    "@zag-js/focus-visible": 0.1.0
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: bbfc86f671746af36d2857cefb3d126563524b78e15f8b50aaf7e0fc459d22668d40ff89e5e53607f37f5c8b6e87451b212d9907fc65c992656f40a45c2475d1
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/close-button@npm:2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/close-button@npm:2.0.13"
@@ -793,6 +814,21 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: dab336f0494949119718c70a7b4d0cd2ce9cb02362cb4944b6caeff6e695477aa94868266b13f2093f7a0ad50bf485e0a2dbbc675672c5b19afceb4ddd0560ba
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/form-control@npm:2.0.13":
+  version: 2.0.13
+  resolution: "@chakra-ui/form-control@npm:2.0.13"
+  dependencies:
+    "@chakra-ui/icon": 3.0.13
+    "@chakra-ui/react-context": 2.0.5
+    "@chakra-ui/react-types": 2.0.5
+    "@chakra-ui/react-use-merge-refs": 2.0.5
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 03b17b473d5f915de63c709af06dbbcb0dcef73a77cf744f123680411027137a78a75c0bf67dbefaf47835ac74226e539ec6e6d49bc4530f4cdcfc22b87d01e9
   languageName: node
   linkType: hard
 
@@ -956,6 +992,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-controllable-state@npm:2.0.6":
+  version: 2.0.6
+  resolution: "@chakra-ui/react-use-controllable-state@npm:2.0.6"
+  dependencies:
+    "@chakra-ui/react-use-callback-ref": 2.0.5
+  peerDependencies:
+    react: ">=18"
+  checksum: 686081a35b6de4091003b1419f6b6f748651d044894537eeae3f9b6161a30ffd48accdf6fec98d0ffaaeb927db2ac348ec907ff881eff189c289a8d5140bcaf6
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-disclosure@npm:2.0.6":
   version: 2.0.6
   resolution: "@chakra-ui/react-use-disclosure@npm:2.0.6"
@@ -1002,6 +1049,15 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 7ebf05f64bf16fd2bae13d5b20f28bca0bb38cb309e91fc2a7642f636dd35e7f3cd2e756423da727ab175566ae476b55dac6139168f6bd1594b3a627ae575f05
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-update-effect@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/react-use-update-effect@npm:2.0.5"
+  peerDependencies:
+    react: ">=18"
+  checksum: 3c162c86f8b38989364610fbe5c45cea55834b56f8280ac31a1841f0d0a8b21cb3a121c67c8c4d110a78dae7318e9ff68e55e5a1076086f469a0ceefb8aad0fa
   languageName: node
   linkType: hard
 
@@ -1185,6 +1241,16 @@ __metadata:
     framesync: 5.3.0
     lodash.mergewith: 4.6.2
   checksum: 856dc98564db6f60878acc482dd9f16754e11dfc46ca4fdaae92878f6c0595395fda7ebd4599ab7960d392bca810d8666b286bd6a07462e595d176a38f76c25b
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/visually-hidden@npm:2.0.13":
+  version: 2.0.13
+  resolution: "@chakra-ui/visually-hidden@npm:2.0.13"
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 393de247808220f0c5e63b0801f769c2342e9da48aaaf23e3994ea3e917f6b6e27bec225b99949d23884d3615624ef520b05d6fc419019f998549ed85e4b1491
   languageName: node
   linkType: hard
 
@@ -3899,6 +3965,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zag-js/focus-visible@npm:0.1.0":
+  version: 0.1.0
+  resolution: "@zag-js/focus-visible@npm:0.1.0"
+  checksum: d3ff93ff696a9287731f3b3f3d5d734b697576ec626eb683252f074baeca46770f931ddb52c8cf08854a6a3c422182a3aaf588c30736b7f26fb3f1e9d6e35ef5
+  languageName: node
+  linkType: hard
+
 "@zkochan/js-yaml@npm:0.0.6":
   version: 0.0.6
   resolution: "@zkochan/js-yaml@npm:0.0.6"
@@ -4595,6 +4668,7 @@ __metadata:
   dependencies:
     "@chakra-ui/button": ^2.0.13
     "@chakra-ui/card": ^2.1.1
+    "@chakra-ui/checkbox": ^2.2.5
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/modal": ^2.2.4
     "@chakra-ui/provider": ^2.0.24
