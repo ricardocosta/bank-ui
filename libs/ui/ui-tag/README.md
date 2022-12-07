@@ -36,4 +36,4 @@ import { Tag, TagCloseButton, TagLabel, TagLeftIcon, TagRightIcon } from "@ricar
 </Tag>;
 ```
 
-[🔗 ChakraUI Stat](https://chakra-ui.com/docs/components/stat)
+[🔗 ChakraUI Tag](https://chakra-ui.com/docs/components/tag)
