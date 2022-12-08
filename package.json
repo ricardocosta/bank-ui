@@ -55,7 +55,7 @@
     "@commitlint/config-nx-scopes": "^17.2.0",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@jscutlery/semver": "^2.29.0",
-    "@nrwl/cli": "^15.2.4",
+    "@nrwl/cli": "^15.3.0",
     "@nrwl/devkit": "15.2.4",
     "@nrwl/eslint-plugin-nx": "^15.2.4",
     "@nrwl/js": "15.2.4",
