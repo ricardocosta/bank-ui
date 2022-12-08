@@ -6,14 +6,10 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "nx-plugin-vite:build",
-      "outputs": ["{options.outDir}"],
+      "executor": "@nrwl/vite:build",
       "options": {
-        "outDir": "dist",
+        "outputPath": "dist/libs/ui/ui-provider",
         "configFile": "libs/ui/ui-provider/vite.config.ts",
-        "watch": false,
-        "write": true,
-        "emitAtRootLevel": false,
         "manifest": true
       }
     },

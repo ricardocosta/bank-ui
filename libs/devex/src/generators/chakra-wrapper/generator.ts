@@ -34,7 +34,7 @@ interface NormalizedSchema extends ChakraWrapperGeneratorSchema {
 const NX_COMMANDS: Record<string, string> = {
   run: "nx:run-commands",
   lint: "@nrwl/linter:eslint",
-  vite_build: "nx-plugin-vite:build",
+  vite_build: "@nrwl/vite:build",
 };
 
 async function normalizeOptions(
@@ -89,13 +89,9 @@ function createProjectTargets(options: NormalizedSchema) {
   const targets: Record<string, TargetConfiguration> = {
     build: {
       executor: NX_COMMANDS.vite_build,
-      outputs: ["{options.outDir}"],
       options: {
-        outDir: "dist",
+        outputPath: `dist/${projectRoot}`,
         configFile: `${projectRoot}/vite.config.ts`,
-        watch: false,
-        write: true,
-        emitAtRootLevel: false,
         manifest: true,
       },
     },

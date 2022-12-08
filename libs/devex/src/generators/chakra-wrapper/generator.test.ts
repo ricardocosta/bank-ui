@@ -43,7 +43,7 @@ describe("Generators / ChakraWrapper", () => {
   afterEach(() => server.resetHandlers());
 
   it("generates the project configuration", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     const config = readProjectConfiguration(tree, "ui-button");
@@ -54,7 +54,7 @@ describe("Generators / ChakraWrapper", () => {
   });
 
   it("adds targets to the project configuration", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     const config = readProjectConfiguration(tree, "ui-button");
@@ -67,7 +67,7 @@ describe("Generators / ChakraWrapper", () => {
   });
 
   it("generates the library files", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     expect(tree.exists(`${UI_BUTTON_ROOT}/tsconfig.json`)).toBeTruthy();
@@ -75,14 +75,14 @@ describe("Generators / ChakraWrapper", () => {
   });
 
   it("adds ESLint configuration", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     expect(tree.exists(`${UI_BUTTON_ROOT}/.eslintrc.json`)).toBeTruthy();
   });
 
   it("adds Vite configuration", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     const viteFile = tree.read(`${UI_BUTTON_ROOT}/vite.config.ts`)?.toString();
@@ -90,7 +90,7 @@ describe("Generators / ChakraWrapper", () => {
   });
 
   it("adds package.json", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     const packageJsonFile = tree.read(`${UI_BUTTON_ROOT}/package.json`)?.toString();
@@ -98,7 +98,7 @@ describe("Generators / ChakraWrapper", () => {
   });
 
   it("adds Chakra package to dependencies", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     const packageJsonFile = readJson(tree, "package.json");
@@ -106,7 +106,7 @@ describe("Generators / ChakraWrapper", () => {
   });
 
   it("adds Chakra peer dependencies to dependencies", async () => {
-    const tree = createTreeWithEmptyWorkspace();
+    const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
     const packageJsonFile = readJson(tree, "package.json");
@@ -119,7 +119,7 @@ describe("Generators / ChakraWrapper", () => {
         ...options,
         tags: "tag1, tag2",
       };
-      const tree = createTreeWithEmptyWorkspace();
+      const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
       await chakraWrapperGenerator(tree, customDirOptions);
 
       const config = readProjectConfiguration(tree, "ui-button");

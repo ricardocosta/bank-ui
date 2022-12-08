@@ -5,14 +5,10 @@
   "sourceRoot": "libs/ui/ui-editable/src",
   "targets": {
     "build": {
-      "executor": "nx-plugin-vite:build",
-      "outputs": ["{options.outDir}"],
+      "executor": "@nrwl/vite:build",
       "options": {
-        "outDir": "dist",
+        "outputPath": "dist/libs/ui/ui-editable",
         "configFile": "libs/ui/ui-editable/vite.config.ts",
-        "watch": false,
-        "write": true,
-        "emitAtRootLevel": false,
         "manifest": true
       }
     },
