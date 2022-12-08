@@ -2295,6 +2295,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/cli@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@nrwl/cli@npm:15.3.0"
+  dependencies:
+    nx: 15.3.0
+  checksum: 36b4d734b926ef595666a3f1545112a65129514480c8aa04a1f31e8150a71f0fd93a74be8042adae056eb3af4aca13f3cd337a8f1371d621de4c35f0625763f0
+  languageName: node
+  linkType: hard
+
 "@nrwl/devkit@npm:15.2.4":
   version: 15.2.4
   resolution: "@nrwl/devkit@npm:15.2.4"
@@ -2307,6 +2316,21 @@ __metadata:
   peerDependencies:
     nx: ">= 14 <= 16"
   checksum: 50726b361b4ec890f62d5730a1a4e56faecef2667f7876fc286fd3bada7daef7291d999808dabf220f2d032d166359cb72a418455c3476fc85e09d0aab460221
+  languageName: node
+  linkType: hard
+
+"@nrwl/devkit@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@nrwl/devkit@npm:15.3.0"
+  dependencies:
+    "@phenomnomnominal/tsquery": 4.1.1
+    ejs: ^3.1.7
+    ignore: ^5.0.4
+    semver: 7.3.4
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 14 <= 16"
+  checksum: b8d9cf8409ab8187c190285fdb535b901e817fdd9cdb4305da2a1e3da3d92c5f3e5d20ff30e7fdb3ca489f8c9eaf5421172adfb0f9ad73352d028dbf56e9e7b4
   languageName: node
   linkType: hard
 
@@ -2371,6 +2395,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/js@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@nrwl/js@npm:15.3.0"
+  dependencies:
+    "@nrwl/devkit": 15.3.0
+    "@nrwl/linter": 15.3.0
+    "@nrwl/workspace": 15.3.0
+    chalk: 4.1.0
+    fast-glob: 3.2.7
+    fs-extra: ^10.1.0
+    ignore: ^5.0.4
+    js-tokens: ^4.0.0
+    minimatch: 3.0.5
+    source-map-support: 0.5.19
+    tree-kill: 1.2.2
+  checksum: d10665512dc9fe532f5aabb96aa56da934ef0eb218c59f228ad2857c1339114956420176a9d66518832fb3a0237ba5e51bc2a5ac296ebcd395a06e93c4c6701d
+  languageName: node
+  linkType: hard
+
 "@nrwl/linter@npm:15.2.4, @nrwl/linter@npm:^15.2.4":
   version: 15.2.4
   resolution: "@nrwl/linter@npm:15.2.4"
@@ -2387,6 +2430,23 @@ __metadata:
     eslint:
       optional: true
   checksum: 59616230976e3c6f808f735dca7b29beab5c5d2ac97cc193125c74e5d452b787b64fd31587aa4015d058d77607a6e8c13ff4bdc9295b408b0ed8efd09f724c7c
+  languageName: node
+  linkType: hard
+
+"@nrwl/linter@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@nrwl/linter@npm:15.3.0"
+  dependencies:
+    "@nrwl/devkit": 15.3.0
+    "@phenomnomnominal/tsquery": 4.1.1
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    eslint: ^8.0.0
+  peerDependenciesMeta:
+    eslint:
+      optional: true
+  checksum: f0c540da17503835342069af436488c8cbea527b120e72afd8bf83843c2c783c624297e58992b271b0dd3933b59585ccd3b0c5bd814537317ba3f4b40282df4c
   languageName: node
   linkType: hard
 
@@ -2429,6 +2489,17 @@ __metadata:
   bin:
     tao: index.js
   checksum: 11adf56cf102f11379223e2260320ea46a1a3fda8995ac81b78b368c3f7577bfdf164091befce90ce02809a62768226c17f330a42ef886e87c5eabe3009d3868
+  languageName: node
+  linkType: hard
+
+"@nrwl/tao@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@nrwl/tao@npm:15.3.0"
+  dependencies:
+    nx: 15.3.0
+  bin:
+    tao: index.js
+  checksum: de5f288bc262332767fdbd9df4f2c74522c1bc0d31f8166f05caa39b3cca1dd6854c1ac2ed49e94bf59c457e20b2d268af075cc145cde34db80ff399c87a3928
   languageName: node
   linkType: hard
 
@@ -2522,6 +2593,43 @@ __metadata:
     prettier:
       optional: true
   checksum: 432edee3913e164fe6d1370b242637e656e515bd3ee0c88311d97303ad925099cd61f0d89a7fc86c428446af90eb8b90f7d6c728525630f0a1a4cc3d125c20ce
+  languageName: node
+  linkType: hard
+
+"@nrwl/workspace@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@nrwl/workspace@npm:15.3.0"
+  dependencies:
+    "@nrwl/devkit": 15.3.0
+    "@nrwl/linter": 15.3.0
+    "@parcel/watcher": 2.0.4
+    chalk: 4.1.0
+    chokidar: ^3.5.1
+    cli-cursor: 3.1.0
+    cli-spinners: 2.6.1
+    dotenv: ~10.0.0
+    enquirer: ~2.3.6
+    figures: 3.2.0
+    flat: ^5.0.2
+    fs-extra: ^10.1.0
+    glob: 7.1.4
+    ignore: ^5.0.4
+    minimatch: 3.0.5
+    npm-run-path: ^4.0.1
+    nx: 15.3.0
+    open: ^8.4.0
+    rxjs: ^6.5.4
+    semver: 7.3.4
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+    yargs: ^17.6.2
+    yargs-parser: 21.1.1
+  peerDependencies:
+    prettier: ^2.6.2
+  peerDependenciesMeta:
+    prettier:
+      optional: true
+  checksum: 4a8574ecf7a2b4da6caf625bf7bfc4502ebf9eab6c0c50f4c58abca75fe5ef8ff35d89f071682cb8e471ebf79b685637ae4eedda1891179a59888eba34762d64
   languageName: node
   linkType: hard
 
@@ -4769,7 +4877,7 @@ __metadata:
     "@nrwl/cli": ^15.2.4
     "@nrwl/devkit": 15.2.4
     "@nrwl/eslint-plugin-nx": ^15.2.4
-    "@nrwl/js": 15.2.4
+    "@nrwl/js": 15.3.0
     "@nrwl/linter": ^15.2.4
     "@nrwl/node": ^15.2.4
     "@nrwl/nx-plugin": ^15.2.4
@@ -11370,6 +11478,59 @@ __metadata:
   bin:
     nx: bin/nx.js
   checksum: a189eaeae80550c2c344f1ea7bc49bff065cbd7779692d0f51891ee7f89f6d882cc33772d7b795a06843e61c01a6b504fe2112dfb48c8963f66b844779d86bb3
+  languageName: node
+  linkType: hard
+
+"nx@npm:15.3.0":
+  version: 15.3.0
+  resolution: "nx@npm:15.3.0"
+  dependencies:
+    "@nrwl/cli": 15.3.0
+    "@nrwl/tao": 15.3.0
+    "@parcel/watcher": 2.0.4
+    "@yarnpkg/lockfile": ^1.1.0
+    "@yarnpkg/parsers": ^3.0.0-rc.18
+    "@zkochan/js-yaml": 0.0.6
+    axios: ^1.0.0
+    chalk: 4.1.0
+    chokidar: ^3.5.1
+    cli-cursor: 3.1.0
+    cli-spinners: 2.6.1
+    cliui: ^7.0.2
+    dotenv: ~10.0.0
+    enquirer: ~2.3.6
+    fast-glob: 3.2.7
+    figures: 3.2.0
+    flat: ^5.0.2
+    fs-extra: ^10.1.0
+    glob: 7.1.4
+    ignore: ^5.0.4
+    js-yaml: 4.1.0
+    jsonc-parser: 3.2.0
+    minimatch: 3.0.5
+    npm-run-path: ^4.0.1
+    open: ^8.4.0
+    semver: 7.3.4
+    string-width: ^4.2.3
+    strong-log-transformer: ^2.1.0
+    tar-stream: ~2.2.0
+    tmp: ~0.2.1
+    tsconfig-paths: ^3.9.0
+    tslib: ^2.3.0
+    v8-compile-cache: 2.3.0
+    yargs: ^17.6.2
+    yargs-parser: 21.1.1
+  peerDependencies:
+    "@swc-node/register": ^1.4.2
+    "@swc/core": ^1.2.173
+  peerDependenciesMeta:
+    "@swc-node/register":
+      optional: true
+    "@swc/core":
+      optional: true
+  bin:
+    nx: bin/nx.js
+  checksum: f6b1bcc0216b7ca44e6abe24959ecce0e18a6402a465bfd8b7ebb11465ac1a9728ef722c8debcb9a7098595a7ca83eb2807be05c87c33f3ad354ff11c32460f8
   languageName: node
   linkType: hard
 
