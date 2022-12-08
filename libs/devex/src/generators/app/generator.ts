@@ -26,9 +26,8 @@ interface NormalizedSchema extends AppGeneratorSchema {
 const NX_COMMANDS: Record<string, string> = {
   run: "nx:run-commands",
   lint: "@nrwl/linter:eslint",
-  vite_build: "nx-plugin-vite:build",
-  vite_preview: "nx-plugin-vite:preview",
-  vite_serve: "nx-plugin-vite:serve",
+  vite_build: "@nrwl/vite:build",
+  vite_serve: "@nrwl/vite:dev-server",
 };
 
 async function findAvailablePort(tree: Tree) {
@@ -72,29 +71,21 @@ async function normalizeOptions(
 }
 
 function createAppTargets(options: NormalizedSchema) {
-  const { projectRoot, restServer } = options;
+  const { projectRoot, restServer, projectName } = options;
 
   const targets: Record<string, TargetConfiguration> = {
     build: {
       executor: NX_COMMANDS.vite_build,
       options: {
-        outDir: "dist",
+        outputPath: `dist/${projectRoot}`,
         configFile: `${projectRoot}/vite.config.ts`,
-        watch: false,
-        write: true,
-        emitAtRootLevel: false,
-        manifest: true,
       },
     },
     dev: {
       executor: NX_COMMANDS.vite_serve,
+      defaultConfiguration: "development",
       options: {
-        configFile: `${projectRoot}/vite.config.ts`,
-      },
-    },
-    preview: {
-      executor: NX_COMMANDS.vite_preview,
-      options: {
+        buildTarget: `${projectName}:build`,
         configFile: `${projectRoot}/vite.config.ts`,
       },
     },

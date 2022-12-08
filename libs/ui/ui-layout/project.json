@@ -5,14 +5,10 @@
   "sourceRoot": "libs/ui/ui-layout/src",
   "targets": {
     "build": {
-      "executor": "nx-plugin-vite:build",
-      "outputs": ["{options.outDir}"],
+      "executor": "@nrwl/vite:build",
       "options": {
-        "outDir": "dist",
+        "outputPath": "dist/libs/ui/ui-layout",
         "configFile": "libs/ui/ui-layout/vite.config.ts",
-        "watch": false,
-        "write": true,
-        "emitAtRootLevel": false,
         "manifest": true
       }
     },

@@ -6,25 +6,17 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "nx-plugin-vite:build",
+      "executor": "@nrwl/vite:build",
       "options": {
-        "outDir": "dist",
-        "configFile": "apps/sandbox/vite.config.ts",
-        "watch": false,
-        "write": true,
-        "emitAtRootLevel": false,
-        "manifest": true
-      }
-    },
-    "dev": {
-      "executor": "nx-plugin-vite:serve",
-      "options": {
+        "outputPath": "dist/apps/sandbox",
         "configFile": "apps/sandbox/vite.config.ts"
       }
     },
-    "preview": {
-      "executor": "nx-plugin-vite:preview",
+    "dev": {
+      "executor": "@nrwl/vite:dev-server",
+      "defaultConfiguration": "development",
       "options": {
+        "buildTarget": "sandbox:build",
         "configFile": "apps/sandbox/vite.config.ts"
       }
     },
@@ -106,26 +98,6 @@
         ],
         "cwd": "apps/sandbox",
         "color": true
-      }
-    },
-    "release": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "postTargets": ["sandbox:releaseGithub"]
-      }
-    },
-    "releaseDry": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "dryRun": true
-      }
-    },
-    "releaseGithub": {
-      "executor": "@jscutlery/semver:github",
-      "options": {
-        "tag": "${tag}",
-        "notes": "${notes}",
-        "title": "$(projectName) ${tag}"
       }
     }
   }
