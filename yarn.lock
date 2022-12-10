@@ -2112,18 +2112,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jscutlery/semver@npm:^2.29.0":
-  version: 2.29.0
-  resolution: "@jscutlery/semver@npm:2.29.0"
+"@jscutlery/semver@npm:^2.29.2":
+  version: 2.29.2
+  resolution: "@jscutlery/semver@npm:2.29.2"
   dependencies:
+    chalk: 4.1.2
     conventional-changelog: ^3.1.25
     conventional-recommended-bump: ^6.1.0
     detect-indent: 6.1.0
     inquirer: 8.2.5
-    rxjs: 7.5.7
+    rxjs: 7.6.0
   peerDependencies:
     "@nrwl/devkit": ^15.0.0
-  checksum: 8aaf9ae46c87d57f82f0fca28588bb65bafbc64c88f76a7cfa7710d42b82a1b335f0005a12c3d98664e5fc3ed47d64d0cfa73cc972e4fb2eebbd4a58df7bc327
+  checksum: b7b34afce214958759468529b6f64e1cf649707613a5b1039cc5206176ee84d90348781f62a4052f4443879e68f05309764f19ee95cd2a84ece2ddea1fcb68aa
   languageName: node
   linkType: hard
 
@@ -4765,7 +4766,7 @@ __metadata:
     "@emotion/react": ^11.10.5
     "@emotion/styled": ^11.10.5
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
-    "@jscutlery/semver": ^2.29.0
+    "@jscutlery/semver": ^2.29.2
     "@nrwl/cli": ^15.2.4
     "@nrwl/devkit": 15.2.4
     "@nrwl/eslint-plugin-nx": ^15.2.4
@@ -5168,6 +5169,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:4.1.2, chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "chalk@npm:4.1.2"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
+  languageName: node
+  linkType: hard
+
 "chalk@npm:^2.0.0, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
@@ -5186,16 +5197,6 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: 8e3ddf3981c4da405ddbd7d9c8d91944ddf6e33d6837756979f7840a29272a69a5189ecae0ff84006750d6d1e92368d413335eab4db5476db6e6703a1d1e0505
-  languageName: node
-  linkType: hard
-
-"chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "chalk@npm:4.1.2"
-  dependencies:
-    ansi-styles: ^4.1.0
-    supports-color: ^7.1.0
-  checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
   languageName: node
   linkType: hard
 
@@ -13095,7 +13096,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.5.7, rxjs@npm:^7.5.5, rxjs@npm:^7.5.6":
+"rxjs@npm:7.6.0":
+  version: 7.6.0
+  resolution: "rxjs@npm:7.6.0"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: b3abbbfe1ddfd06fca9314b83cbd13bcddc3320429218136f75c79a4802ac430dd13873364aac1ded54fd457f8c77df332d205a92d8a1c61656565bb718c50af
+  languageName: node
+  linkType: hard
+
+"rxjs@npm:^7.5.5, rxjs@npm:^7.5.6":
   version: 7.5.7
   resolution: "rxjs@npm:7.5.7"
   dependencies:
