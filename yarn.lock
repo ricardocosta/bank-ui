@@ -902,19 +902,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/portal@npm:2.0.11":
-  version: 2.0.11
-  resolution: "@chakra-ui/portal@npm:2.0.11"
-  dependencies:
-    "@chakra-ui/react-context": 2.0.5
-    "@chakra-ui/react-use-safe-layout-effect": 2.0.3
-  peerDependencies:
-    react: ">=18"
-    react-dom: ">=18"
-  checksum: c56e78686979ce64077bb116610f28625a0b81c03c41a6d53fa59be59d2bf22991be48cdaa6918bdd0820b489cf9ff2281fd3d1b68950f5e2d4794567cc3cc98
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/portal@npm:2.0.12":
   version: 2.0.12
   resolution: "@chakra-ui/portal@npm:2.0.12"
@@ -1213,12 +1200,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tooltip@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@chakra-ui/tooltip@npm:2.2.2"
+"@chakra-ui/tooltip@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@chakra-ui/tooltip@npm:2.2.3"
   dependencies:
     "@chakra-ui/popper": 3.0.10
-    "@chakra-ui/portal": 2.0.11
+    "@chakra-ui/portal": 2.0.12
     "@chakra-ui/react-types": 2.0.5
     "@chakra-ui/react-use-disclosure": 2.0.6
     "@chakra-ui/react-use-event-listener": 2.0.5
@@ -1228,7 +1215,7 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 0023d02fa0e445dd048f433df65d514a7d7ea3b837086076c276f50d5890feba33a15ba19c7e1249fb8e8c11c87dcf1aea2e987425baf45fa0bfb4257b59a636
+  checksum: 4e1995fe8ed6737564acb6f0d958e683640728d0a5336affa8ab2c46c36342fe75540e0b56fed53467e4a9f7edb4582867d2972cb0f40b49244e51fcfd5e0f0b
   languageName: node
   linkType: hard
 
@@ -4704,7 +4691,7 @@ __metadata:
     "@chakra-ui/tag": ^2.0.13
     "@chakra-ui/theme": ^2.2.2
     "@chakra-ui/theme-utils": ^2.0.5
-    "@chakra-ui/tooltip": ^2.2.2
+    "@chakra-ui/tooltip": ^2.2.3
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
     "@commitlint/config-nx-scopes": ^17.2.0
