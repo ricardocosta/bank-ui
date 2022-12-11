@@ -2542,7 +2542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^5.0.0":
+"@rollup/pluginutils@npm:^5.0.2":
   version: 5.0.2
   resolution: "@rollup/pluginutils@npm:5.0.2"
   dependencies:
@@ -2673,7 +2673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@svgr/core@npm:^6.4.0":
+"@svgr/core@npm:^6.5.1":
   version: 6.5.1
   resolution: "@svgr/core@npm:6.5.1"
   dependencies:
@@ -4754,7 +4754,7 @@ __metadata:
     tsm: ^2.3.0
     typescript: ^4.9.3
     vite: ^3.2.5
-    vite-plugin-svgr: ^2.2.2
+    vite-plugin-svgr: ^2.3.0
     vite-tsconfig-paths: ^3.6.0
     vitest: ^0.25.5
   languageName: unknown
@@ -14659,15 +14659,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-svgr@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "vite-plugin-svgr@npm:2.2.2"
+"vite-plugin-svgr@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "vite-plugin-svgr@npm:2.3.0"
   dependencies:
-    "@rollup/pluginutils": ^5.0.0
-    "@svgr/core": ^6.4.0
+    "@rollup/pluginutils": ^5.0.2
+    "@svgr/core": ^6.5.1
   peerDependencies:
-    vite: ^2.6.0 || 3
-  checksum: 2de50eeb8373884d049bb412219d1be7d0bf230629f9d49f859b6c8d95b329316c49f0f3f6fde3902d202cd0d7d26af3c7bf439dab9a210c346db3db0edb160b
+    vite: ^2.6.0 || 3 || 4
+  checksum: 3addeb6a690853da28fdf27de1afd3b444ba3ce9cf13598126a99b50410d91a52e029596aa30ebe0efd0c76266c7a3d238e565b43ac69a7a9090ec66d1a63221
   languageName: node
   linkType: hard
 
