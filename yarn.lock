@@ -862,13 +862,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/modal@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "@chakra-ui/modal@npm:2.2.4"
+"@chakra-ui/modal@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "@chakra-ui/modal@npm:2.2.5"
   dependencies:
     "@chakra-ui/close-button": 2.0.13
     "@chakra-ui/focus-lock": 2.0.13
-    "@chakra-ui/portal": 2.0.11
+    "@chakra-ui/portal": 2.0.12
     "@chakra-ui/react-context": 2.0.5
     "@chakra-ui/react-types": 2.0.5
     "@chakra-ui/react-use-merge-refs": 2.0.5
@@ -880,7 +880,7 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 4dbf973ba5c54e6a42df05a2f9bbe508d0b791668929914ad738c7392f1731da865ca0b39b46b1e1c7848f1bc29d075dfc1524d5eaaa0c02f9dec23800b1cea1
+  checksum: e9763ed8231da26cd29b0706d24ffba61a3409e32aa2abbb45c48ca2e838160230eb8fd0c5cf96c56476c720c8357000e2d61863de66ca32cb3d78f6577b1d13
   languageName: node
   linkType: hard
 
@@ -4695,7 +4695,7 @@ __metadata:
     "@chakra-ui/checkbox": ^2.2.5
     "@chakra-ui/editable": ^2.0.16
     "@chakra-ui/layout": ^2.1.11
-    "@chakra-ui/modal": ^2.2.4
+    "@chakra-ui/modal": ^2.2.5
     "@chakra-ui/provider": ^2.0.25
     "@chakra-ui/skeleton": ^2.0.18
     "@chakra-ui/spinner": ^2.0.11
