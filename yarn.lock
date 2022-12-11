@@ -1076,16 +1076,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/skeleton@npm:^2.0.18":
-  version: 2.0.18
-  resolution: "@chakra-ui/skeleton@npm:2.0.18"
+"@chakra-ui/skeleton@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "@chakra-ui/skeleton@npm:2.0.19"
   dependencies:
     "@chakra-ui/media-query": 3.2.8
     "@chakra-ui/react-use-previous": 2.0.3
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: c2609e4f0b97d3d675195760a439d3992aefd39a710dd73dc721ead7c6b012360d6842170a9eb9bd414fcd18414e19a4748dcd4fce47438f4f6d15088daace45
+  checksum: 2e5d64cbee5106a5367d0afe6a11dc390ca0506be92f3fb53e291e86ca4d6e827bfda736ef0dfbff2dfe51ab715731b01ae380168acb0078309f24d28015ba70
   languageName: node
   linkType: hard
 
@@ -4682,7 +4682,7 @@ __metadata:
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/modal": ^2.2.5
     "@chakra-ui/provider": ^2.0.25
-    "@chakra-ui/skeleton": ^2.0.18
+    "@chakra-ui/skeleton": ^2.0.19
     "@chakra-ui/spinner": ^2.0.11
     "@chakra-ui/stat": ^2.0.13
     "@chakra-ui/styled-system": ^2.4.0
