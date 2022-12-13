@@ -34,6 +34,7 @@
       "@ricardocosta/ui-checkbox": ["libs/ui/ui-checkbox/src/index.ts"],
       "@ricardocosta/ui-editable": ["libs/ui/ui-editable/src/index.ts"],
       "@ricardocosta/ui-form-control": ["libs/ui/ui-form-control/src/index.ts"],
+      "@ricardocosta/ui-input": ["libs/ui/ui-input/src/index.ts"],
       "@ricardocosta/ui-layout": ["libs/ui/ui-layout/src/index.ts"],
       "@ricardocosta/ui-modal": ["libs/ui/ui-modal/src/index.ts"],
       "@ricardocosta/ui-provider": ["libs/ui/ui-provider/src/index.ts"],

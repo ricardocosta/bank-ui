@@ -31,6 +31,7 @@
     "@chakra-ui/checkbox": "^2.2.5",
     "@chakra-ui/editable": "^2.0.16",
     "@chakra-ui/form-control": "^2.0.13",
+    "@chakra-ui/input": "^2.0.14",
     "@chakra-ui/layout": "^2.1.11",
     "@chakra-ui/modal": "^2.2.5",
     "@chakra-ui/provider": "^2.0.25",
