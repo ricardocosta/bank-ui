@@ -773,6 +773,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/input@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@chakra-ui/input@npm:2.0.14"
+  dependencies:
+    "@chakra-ui/form-control": 2.0.13
+    "@chakra-ui/object-utils": 2.0.5
+    "@chakra-ui/react-children-utils": 2.0.4
+    "@chakra-ui/react-context": 2.0.5
+    "@chakra-ui/shared-utils": 2.0.3
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 79ea4fab87d7f046a97533af9d4bf263925388fcae5629046185219b7171ac59db77544d889c9cd5f488e5d8775a6e31e28ffa0435dc49718e1064c751573287
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/layout@npm:^2.1.11":
   version: 2.1.11
   resolution: "@chakra-ui/layout@npm:2.1.11"
@@ -4823,6 +4839,7 @@ __metadata:
     "@chakra-ui/checkbox": ^2.2.5
     "@chakra-ui/editable": ^2.0.16
     "@chakra-ui/form-control": ^2.0.13
+    "@chakra-ui/input": ^2.0.14
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/modal": ^2.2.5
     "@chakra-ui/provider": ^2.0.25
