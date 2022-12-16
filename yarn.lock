@@ -3970,12 +3970,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^0.25.7":
-  version: 0.25.7
-  resolution: "@vitest/ui@npm:0.25.7"
+"@vitest/ui@npm:^0.25.8":
+  version: 0.25.8
+  resolution: "@vitest/ui@npm:0.25.8"
   dependencies:
     sirv: ^2.0.2
-  checksum: c06e4e9771d853baab90c2150d9db33d836cd6e040ce11c6d7ac553a6bbb4c01ce15507b42ee24137958d159cc897ffcf64fa34ab729d5da6b04c3348f983b44
+  checksum: 2ef6e0e6eb95d9f857761b3a74edcf1290ac7b9d00078e752172078ee63c581f17c743e40098dabf9d4baa7f946303e9849ef45a96c50f1deba4a93f0c45890a
   languageName: node
   linkType: hard
 
@@ -4903,7 +4903,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.46.0
     "@vitejs/plugin-react-swc": ^3.0.0
     "@vitest/coverage-c8": ^0.25.8
-    "@vitest/ui": ^0.25.7
+    "@vitest/ui": ^0.25.8
     axios: ^1.2.1
     c8: ^7.12.0
     chalk: ^4.1.2
