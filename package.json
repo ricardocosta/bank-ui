@@ -37,6 +37,7 @@
     "@chakra-ui/provider": "^2.0.25",
     "@chakra-ui/radio": "^2.0.14",
     "@chakra-ui/skeleton": "^2.0.19",
+    "@chakra-ui/slider": "^2.0.15",
     "@chakra-ui/spinner": "^2.0.11",
     "@chakra-ui/stat": "^2.0.13",
     "@chakra-ui/styled-system": "^2.4.0",

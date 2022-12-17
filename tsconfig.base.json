@@ -40,6 +40,7 @@
       "@ricardocosta/ui-provider": ["libs/ui/ui-provider/src/index.ts"],
       "@ricardocosta/ui-radio": ["libs/ui/ui-radio/src/index.ts"],
       "@ricardocosta/ui-skeleton": ["libs/ui/ui-skeleton/src/index.ts"],
+      "@ricardocosta/ui-slider": ["libs/ui/ui-slider/src/index.ts"],
       "@ricardocosta/ui-spinner": ["libs/ui/ui-spinner/src/index.ts"],
       "@ricardocosta/ui-stat": ["libs/ui/ui-stat/src/index.ts"],
       "@ricardocosta/ui-table": ["libs/ui/ui-table/src/index.ts"],
