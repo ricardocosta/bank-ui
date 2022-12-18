@@ -1211,15 +1211,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/table@npm:^2.0.12":
-  version: 2.0.12
-  resolution: "@chakra-ui/table@npm:2.0.12"
+"@chakra-ui/table@npm:^2.0.13":
+  version: 2.0.13
+  resolution: "@chakra-ui/table@npm:2.0.13"
   dependencies:
     "@chakra-ui/react-context": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: a47d235ad2483c3994a95992dd2f22c16e1cf35fddc0901dd156bae9faa9071ef28be864b37e373f49b4bdb434e0befaeaec9de50a41f17be5e106ac30321356
+  checksum: 9bfa759a9408e8aed468e3b77d4473b867065a1296f0f5a7b0e02a04d740a5194852d0fe75e6a3aec2c45aa0f6b2f4f7b98842e391c3951ecfe0d3e09c4f62fa
   languageName: node
   linkType: hard
 
@@ -4869,7 +4869,7 @@ __metadata:
     "@chakra-ui/stat": ^2.0.13
     "@chakra-ui/styled-system": ^2.4.0
     "@chakra-ui/system": ^2.3.4
-    "@chakra-ui/table": ^2.0.12
+    "@chakra-ui/table": ^2.0.13
     "@chakra-ui/tag": ^2.0.13
     "@chakra-ui/theme": ^2.2.2
     "@chakra-ui/theme-utils": ^2.0.6
