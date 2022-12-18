@@ -1111,9 +1111,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/slider@npm:^2.0.15":
-  version: 2.0.15
-  resolution: "@chakra-ui/slider@npm:2.0.15"
+"@chakra-ui/slider@npm:^2.0.16":
+  version: 2.0.16
+  resolution: "@chakra-ui/slider@npm:2.0.16"
   dependencies:
     "@chakra-ui/number-utils": 2.0.5
     "@chakra-ui/react-context": 2.0.5
@@ -1128,7 +1128,7 @@ __metadata:
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: d9e2c55a80284a3af641987a9358eff92d52063b17a03f82e7e1d368cf324c4196741436e3fa7e5684ef3cdf2bd3b84d91983c7bacdca37ac5fbb854de6048df
+  checksum: 1560743166aa040e0a6eeaa19e61126660c41a3b225a0c833144a2815155c9332276db45db6c59b24465e14039f6d6666395f0a16b758c360d31ad1aa7f4b925
   languageName: node
   linkType: hard
 
@@ -4825,7 +4825,7 @@ __metadata:
     "@chakra-ui/provider": ^2.0.25
     "@chakra-ui/radio": ^2.0.14
     "@chakra-ui/skeleton": ^2.0.20
-    "@chakra-ui/slider": ^2.0.15
+    "@chakra-ui/slider": ^2.0.16
     "@chakra-ui/spinner": ^2.0.11
     "@chakra-ui/stat": ^2.0.13
     "@chakra-ui/styled-system": ^2.4.0
