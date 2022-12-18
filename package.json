@@ -60,7 +60,7 @@
     "@commitlint/config-nx-scopes": "^17.2.0",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@nrwl/cli": "^15.3.0",
-    "@nrwl/devkit": "15.3.0",
+    "@nrwl/devkit": "15.3.3",
     "@nrwl/eslint-plugin-nx": "^15.3.0",
     "@nrwl/js": "15.3.0",
     "@nrwl/linter": "^15.3.0",
