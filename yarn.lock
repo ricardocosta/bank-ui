@@ -1248,7 +1248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme-utils@npm:2.0.5, @chakra-ui/theme-utils@npm:^2.0.5":
+"@chakra-ui/theme-utils@npm:2.0.5":
   version: 2.0.5
   resolution: "@chakra-ui/theme-utils@npm:2.0.5"
   dependencies:
@@ -1259,7 +1259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme-utils@npm:2.0.6":
+"@chakra-ui/theme-utils@npm:2.0.6, @chakra-ui/theme-utils@npm:^2.0.6":
   version: 2.0.6
   resolution: "@chakra-ui/theme-utils@npm:2.0.6"
   dependencies:
@@ -4872,7 +4872,7 @@ __metadata:
     "@chakra-ui/table": ^2.0.12
     "@chakra-ui/tag": ^2.0.13
     "@chakra-ui/theme": ^2.2.2
-    "@chakra-ui/theme-utils": ^2.0.5
+    "@chakra-ui/theme-utils": ^2.0.6
     "@chakra-ui/tooltip": ^2.2.3
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
