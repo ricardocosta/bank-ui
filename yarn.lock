@@ -643,13 +643,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/card@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "@chakra-ui/card@npm:2.1.2"
+"@chakra-ui/card@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "@chakra-ui/card@npm:2.1.3"
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 7e4225167c91edb97d264b0ea5090c8bb140c17559a4cd03c1856951181f700b2b83fc3ebbdb3a7691ab3d7ff8b1b1307a198787d7732f617a5f6949337a73eb
+  checksum: 13c105037ae91f618f8967965bf0c4d2cabf143ac58ece7c3ada3908aa7eadc49684c7438998776895e8b3972ea42e8891317100dc68bb8209cffbabb8be5bf1
   languageName: node
   linkType: hard
 
@@ -4854,7 +4854,7 @@ __metadata:
   resolution: "bank-ui@workspace:."
   dependencies:
     "@chakra-ui/button": ^2.0.13
-    "@chakra-ui/card": ^2.1.2
+    "@chakra-ui/card": ^2.1.3
     "@chakra-ui/checkbox": ^2.2.5
     "@chakra-ui/editable": ^2.0.16
     "@chakra-ui/form-control": ^2.0.13
