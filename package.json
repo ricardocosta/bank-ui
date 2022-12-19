@@ -26,6 +26,7 @@
     "release:tag": "standard-version --skip.bump --skip.changelog --skip.commit"
   },
   "dependencies": {
+    "@chakra-ui/accordion": "^2.1.4",
     "@chakra-ui/button": "^2.0.13",
     "@chakra-ui/card": "^2.1.3",
     "@chakra-ui/checkbox": "^2.2.5",
