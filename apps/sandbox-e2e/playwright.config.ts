@@ -29,7 +29,10 @@ const config: PlaywrightTestConfig = {
     bypassCSP: true,
 
     trace: "on-first-retry",
-    screenshot: "on",
+    screenshot: {
+      mode: "on",
+      fullPage: true,
+    },
   },
 
   webServer: {
