@@ -47,6 +47,7 @@
       "@ricardocosta/ui-table": ["libs/ui/ui-table/src/index.ts"],
       "@ricardocosta/ui-tag": ["libs/ui/ui-tag/src/index.ts"],
       "@ricardocosta/ui-theme": ["libs/ui/ui-theme/src/index.ts"],
+      "@ricardocosta/ui-toggle": ["libs/ui/ui-toggle/src/index.ts"],
       "@ricardocosta/ui-tooltip": ["libs/ui/ui-tooltip/src/index.ts"]
     }
   },

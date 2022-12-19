@@ -653,7 +653,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/checkbox@npm:^2.2.5":
+"@chakra-ui/checkbox@npm:2.2.5, @chakra-ui/checkbox@npm:^2.2.5":
   version: 2.2.5
   resolution: "@chakra-ui/checkbox@npm:2.2.5"
   dependencies:
@@ -1174,6 +1174,19 @@ __metadata:
     csstype: ^3.0.11
     lodash.mergewith: 4.6.2
   checksum: 805e36893c4eb00cfd18cb2242fc680edfca7d01202d6172708c4a4cf70309a8b3d988d12b30f766cc554117c1e2de53a01aef85e563057d91c4876efe4c345a
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/switch@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@chakra-ui/switch@npm:2.0.17"
+  dependencies:
+    "@chakra-ui/checkbox": 2.2.5
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    framer-motion: ">=4.0.0"
+    react: ">=18"
+  checksum: fe834999114ea73bca1d2a4ccd97ee09a50fdb01a1aa1230f72650963ea684826f96bf76b02ee1e475b2d46d783abf7a75375ad73ef2c190dc33aca96aea4106
   languageName: node
   linkType: hard
 
@@ -4842,6 +4855,7 @@ __metadata:
     "@chakra-ui/spinner": ^2.0.11
     "@chakra-ui/stat": ^2.0.13
     "@chakra-ui/styled-system": ^2.5.0
+    "@chakra-ui/switch": ^2.0.17
     "@chakra-ui/system": ^2.3.5
     "@chakra-ui/table": ^2.0.13
     "@chakra-ui/tag": ^2.0.13
