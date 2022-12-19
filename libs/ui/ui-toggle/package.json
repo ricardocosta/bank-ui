@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-toggle",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-toggle.umd.cjs",
+  "module": "./dist/ui-toggle.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-toggle.js",
+      "require": "./dist/ui-toggle.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.10.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
