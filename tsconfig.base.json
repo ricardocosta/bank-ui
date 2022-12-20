@@ -48,6 +48,7 @@
       "@ricardocosta/ui-spinner": ["libs/ui/ui-spinner/src/index.ts"],
       "@ricardocosta/ui-stat": ["libs/ui/ui-stat/src/index.ts"],
       "@ricardocosta/ui-table": ["libs/ui/ui-table/src/index.ts"],
+      "@ricardocosta/ui-tabs": ["libs/ui/ui-tabs/src/index.ts"],
       "@ricardocosta/ui-tag": ["libs/ui/ui-tag/src/index.ts"],
       "@ricardocosta/ui-theme": ["libs/ui/ui-theme/src/index.ts"],
       "@ricardocosta/ui-toggle": ["libs/ui/ui-toggle/src/index.ts"],
