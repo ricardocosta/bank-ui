@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-breadcrumb",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-breadcrumb.umd.cjs",
+  "module": "./dist/ui-breadcrumb.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-breadcrumb.js",
+      "require": "./dist/ui-breadcrumb.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.10.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
