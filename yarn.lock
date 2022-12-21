@@ -834,6 +834,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/icons@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@chakra-ui/icons@npm:2.0.14"
+  dependencies:
+    "@chakra-ui/icon": 3.0.13
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 31d2d8029e665be26bc486c3c02c3094075f952c1c7f0c538d263e6155f936ba4e144a596af8b5499b7b39788114858084450cdb2d4b1eca38dcbc3d2b47848a
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/input@npm:^2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/input@npm:2.0.14"
@@ -5011,6 +5023,7 @@ __metadata:
     "@chakra-ui/checkbox": ^2.2.5
     "@chakra-ui/editable": ^2.0.16
     "@chakra-ui/form-control": ^2.0.13
+    "@chakra-ui/icons": ^2.0.14
     "@chakra-ui/input": ^2.0.14
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/menu": ^2.1.5
