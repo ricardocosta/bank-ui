@@ -37,6 +37,7 @@
       "@ricardocosta/ui-editable": ["libs/ui/ui-editable/src/index.ts"],
       "@ricardocosta/ui-form-control": ["libs/ui/ui-form-control/src/index.ts"],
       "@ricardocosta/ui-hidden": ["libs/ui/ui-hidden/src/index.ts"],
+      "@ricardocosta/ui-icons": ["libs/ui/ui-icons/src/index.ts"],
       "@ricardocosta/ui-input": ["libs/ui/ui-input/src/index.ts"],
       "@ricardocosta/ui-layout": ["libs/ui/ui-layout/src/index.ts"],
       "@ricardocosta/ui-menu": ["libs/ui/ui-menu/src/index.ts"],

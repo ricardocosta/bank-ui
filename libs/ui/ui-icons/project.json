@@ -1,0 +1,48 @@
+{
+  "name": "ui-icons",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/ui-icons/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "options": {
+        "outputPath": "dist/libs/ui/ui-icons",
+        "configFile": "libs/ui/ui-icons/vite.config.ts",
+        "manifest": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "libs/ui/ui-icons/.eslintrc.json",
+        "lintFilePatterns": ["libs/ui/ui-icons/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-icons",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-icons",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
+        "cwd": "libs/ui/ui-icons",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}
