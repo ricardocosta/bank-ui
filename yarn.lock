@@ -1461,7 +1461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/visually-hidden@npm:2.0.13":
+"@chakra-ui/visually-hidden@npm:2.0.13, @chakra-ui/visually-hidden@npm:^2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/visually-hidden@npm:2.0.13"
   peerDependencies:
@@ -5018,6 +5018,7 @@ __metadata:
     "@chakra-ui/theme": ^2.2.2
     "@chakra-ui/theme-utils": ^2.0.6
     "@chakra-ui/tooltip": ^2.2.3
+    "@chakra-ui/visually-hidden": ^2.0.13
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
     "@commitlint/config-nx-scopes": ^17.2.0
