@@ -30,6 +30,7 @@
     "paths": {
       "@ricardocosta/devex": ["libs/devex/src/index.ts"],
       "@ricardocosta/ui-accordion": ["libs/ui/ui-accordion/src/index.ts"],
+      "@ricardocosta/ui-avatar": ["libs/ui/ui-avatar/src/index.ts"],
       "@ricardocosta/ui-breadcrumb": ["libs/ui/ui-breadcrumb/src/index.ts"],
       "@ricardocosta/ui-button": ["libs/ui/ui-button/src/index.ts"],
       "@ricardocosta/ui-card": ["libs/ui/ui-card/src/index.ts"],
