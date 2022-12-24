@@ -41,6 +41,7 @@
     "@chakra-ui/menu": "^2.1.5",
     "@chakra-ui/modal": "^2.2.5",
     "@chakra-ui/popover": "^2.1.4",
+    "@chakra-ui/portal": "^2.0.12",
     "@chakra-ui/provider": "^2.0.26",
     "@chakra-ui/radio": "^2.0.14",
     "@chakra-ui/select": "^2.0.14",

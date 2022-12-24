@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-portal",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-portal.umd.cjs",
+  "module": "./dist/ui-portal.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-portal.js",
+      "require": "./dist/ui-portal.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.10.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
