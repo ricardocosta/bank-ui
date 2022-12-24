@@ -48,6 +48,7 @@
       "@ricardocosta/ui-radio": ["libs/ui/ui-radio/src/index.ts"],
       "@ricardocosta/ui-select": ["libs/ui/ui-select/src/index.ts"],
       "@ricardocosta/ui-skeleton": ["libs/ui/ui-skeleton/src/index.ts"],
+      "@ricardocosta/ui-skip-nav": ["libs/ui/ui-skip-nav/src/index.ts"],
       "@ricardocosta/ui-slider": ["libs/ui/ui-slider/src/index.ts"],
       "@ricardocosta/ui-spinner": ["libs/ui/ui-spinner/src/index.ts"],
       "@ricardocosta/ui-stat": ["libs/ui/ui-stat/src/index.ts"],
