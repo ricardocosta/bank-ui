@@ -4165,12 +4165,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^0.25.8":
-  version: 0.25.8
-  resolution: "@vitest/ui@npm:0.25.8"
+"@vitest/ui@npm:^0.26.2":
+  version: 0.26.2
+  resolution: "@vitest/ui@npm:0.26.2"
   dependencies:
+    fast-glob: ^3.2.12
+    flatted: ^3.2.7
     sirv: ^2.0.2
-  checksum: 2ef6e0e6eb95d9f857761b3a74edcf1290ac7b9d00078e752172078ee63c581f17c743e40098dabf9d4baa7f946303e9849ef45a96c50f1deba4a93f0c45890a
+  checksum: 8c204f57e467e7a713cf9a99c0f636e376bfacd6168103d513825bb9cff319bec443ae373f4c363886bbf0386a819e796ff91c47d0a64dc7dd23267d441e6024
   languageName: node
   linkType: hard
 
@@ -5119,7 +5121,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.46.1
     "@vitejs/plugin-react-swc": ^3.0.1
     "@vitest/coverage-c8": ^0.25.8
-    "@vitest/ui": ^0.25.8
+    "@vitest/ui": ^0.26.2
     axios: ^1.2.1
     c8: ^7.12.0
     chalk: ^4.1.2
@@ -8098,7 +8100,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatted@npm:^3.1.0":
+"flatted@npm:^3.1.0, flatted@npm:^3.2.7":
   version: 3.2.7
   resolution: "flatted@npm:3.2.7"
   checksum: 427633049d55bdb80201c68f7eb1cbd533e03eac541f97d3aecab8c5526f12a20ccecaeede08b57503e772c769e7f8680b37e8d482d1e5f8d7e2194687f9ea35
