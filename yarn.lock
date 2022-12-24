@@ -860,7 +860,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/image@npm:2.0.12":
+"@chakra-ui/image@npm:2.0.12, @chakra-ui/image@npm:^2.0.12":
   version: 2.0.12
   resolution: "@chakra-ui/image@npm:2.0.12"
   dependencies:
@@ -5061,6 +5061,7 @@ __metadata:
     "@chakra-ui/editable": ^2.0.16
     "@chakra-ui/form-control": ^2.0.13
     "@chakra-ui/icons": ^2.0.14
+    "@chakra-ui/image": ^2.0.12
     "@chakra-ui/input": ^2.0.14
     "@chakra-ui/layout": ^2.1.11
     "@chakra-ui/menu": ^2.1.5
