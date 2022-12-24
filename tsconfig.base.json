@@ -45,6 +45,7 @@
       "@ricardocosta/ui-menu": ["libs/ui/ui-menu/src/index.ts"],
       "@ricardocosta/ui-modal": ["libs/ui/ui-modal/src/index.ts"],
       "@ricardocosta/ui-popover": ["libs/ui/ui-popover/src/index.ts"],
+      "@ricardocosta/ui-portal": ["libs/ui/ui-portal/src/index.ts"],
       "@ricardocosta/ui-provider": ["libs/ui/ui-provider/src/index.ts"],
       "@ricardocosta/ui-radio": ["libs/ui/ui-radio/src/index.ts"],
       "@ricardocosta/ui-select": ["libs/ui/ui-select/src/index.ts"],
