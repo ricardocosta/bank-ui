@@ -1307,6 +1307,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/skip-nav@npm:^2.0.12":
+  version: 2.0.12
+  resolution: "@chakra-ui/skip-nav@npm:2.0.12"
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 1f7f1c33e23365fcdde65adaa8635230ecf14f942ff7757dfa95f0ec06241538581af0d00655f634ce89b1c57df258ad2b3b310d272318d7aa3bda922c5e1c56
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/slider@npm:^2.0.16":
   version: 2.0.16
   resolution: "@chakra-ui/slider@npm:2.0.16"
@@ -5060,6 +5070,7 @@ __metadata:
     "@chakra-ui/radio": ^2.0.14
     "@chakra-ui/select": ^2.0.14
     "@chakra-ui/skeleton": ^2.0.20
+    "@chakra-ui/skip-nav": ^2.0.12
     "@chakra-ui/slider": ^2.0.16
     "@chakra-ui/spinner": ^2.0.11
     "@chakra-ui/stat": ^2.0.13
