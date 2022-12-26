@@ -2675,6 +2675,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:15.4.1":
+  version: 15.4.1
+  resolution: "@nrwl/devkit@npm:15.4.1"
+  dependencies:
+    "@phenomnomnominal/tsquery": 4.1.1
+    ejs: ^3.1.7
+    ignore: ^5.0.4
+    semver: 7.3.4
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 14 <= 16"
+  checksum: 935663c66f984f4c9abcf11fc9beb5d2fc43fa8bedd5d471e56ccda41e097940bf450125f4c6566f7142e8a40f62995e9f15c18194151e0ca4dc9e7994652d9e
+  languageName: node
+  linkType: hard
+
 "@nrwl/eslint-plugin-nx@npm:^15.3.3":
   version: 15.3.3
   resolution: "@nrwl/eslint-plugin-nx@npm:15.3.3"
@@ -2733,7 +2748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/linter@npm:15.3.3, @nrwl/linter@npm:^15.3.3":
+"@nrwl/linter@npm:15.3.3":
   version: 15.3.3
   resolution: "@nrwl/linter@npm:15.3.3"
   dependencies:
@@ -2747,6 +2762,23 @@ __metadata:
     eslint:
       optional: true
   checksum: 563c5b2e0d5593801b104b21a95d41ee0e3d02402f01300ded2eabe23598fd86955fcf1c83d93f70fb63950587463d63ec2095da10aa1427db01792485a53e58
+  languageName: node
+  linkType: hard
+
+"@nrwl/linter@npm:^15.4.1":
+  version: 15.4.1
+  resolution: "@nrwl/linter@npm:15.4.1"
+  dependencies:
+    "@nrwl/devkit": 15.4.1
+    "@phenomnomnominal/tsquery": 4.1.1
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    eslint: ^8.0.0
+  peerDependenciesMeta:
+    eslint:
+      optional: true
+  checksum: 266d7fba44359c3032ce5dddec5969b9de1c2d9f10ba43ba3231e7a8ef3617669ed97cc0be0c6de835736495e8624bad74e5587faa3d6ce8aae7cb831322b10d
   languageName: node
   linkType: hard
 
@@ -5263,7 +5295,7 @@ __metadata:
     "@nrwl/devkit": 15.3.3
     "@nrwl/eslint-plugin-nx": ^15.3.3
     "@nrwl/js": 15.3.3
-    "@nrwl/linter": ^15.3.3
+    "@nrwl/linter": ^15.4.1
     "@nrwl/node": ^15.3.3
     "@nrwl/nx-plugin": ^15.3.3
     "@nrwl/tao": ^15.3.3
