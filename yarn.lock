@@ -2675,11 +2675,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/eslint-plugin-nx@npm:^15.3.3":
-  version: 15.3.3
-  resolution: "@nrwl/eslint-plugin-nx@npm:15.3.3"
+"@nrwl/devkit@npm:15.4.1":
+  version: 15.4.1
+  resolution: "@nrwl/devkit@npm:15.4.1"
   dependencies:
-    "@nrwl/devkit": 15.3.3
+    "@phenomnomnominal/tsquery": 4.1.1
+    ejs: ^3.1.7
+    ignore: ^5.0.4
+    semver: 7.3.4
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 14 <= 16"
+  checksum: 935663c66f984f4c9abcf11fc9beb5d2fc43fa8bedd5d471e56ccda41e097940bf450125f4c6566f7142e8a40f62995e9f15c18194151e0ca4dc9e7994652d9e
+  languageName: node
+  linkType: hard
+
+"@nrwl/eslint-plugin-nx@npm:^15.4.1":
+  version: 15.4.1
+  resolution: "@nrwl/eslint-plugin-nx@npm:15.4.1"
+  dependencies:
+    "@nrwl/devkit": 15.4.1
     "@typescript-eslint/utils": ^5.36.1
     chalk: 4.1.0
     confusing-browser-globals: ^1.0.9
@@ -2690,7 +2705,7 @@ __metadata:
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: adea3ccd71867fe24721eec754fffffc39323aaeae495bb561f62a099a46cb560fc585e8ed71c7f7e102df8bcab52503c337d6245dd19d49e306750626b33aae
+  checksum: 9b386cf8ce4d39d7c1ed0ea74d30d4e71d780b657f01be2904758baf050c03caf25362c9d45fee33b39b1ff3c8f8ef8000e029ad0c6943bfa5ff0ae1fc6c7087
   languageName: node
   linkType: hard
 
@@ -5261,7 +5276,7 @@ __metadata:
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
     "@nrwl/cli": ^15.3.3
     "@nrwl/devkit": 15.3.3
-    "@nrwl/eslint-plugin-nx": ^15.3.3
+    "@nrwl/eslint-plugin-nx": ^15.4.1
     "@nrwl/js": 15.3.3
     "@nrwl/linter": ^15.3.3
     "@nrwl/node": ^15.3.3
