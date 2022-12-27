@@ -1,0 +1,48 @@
+{
+  "name": "ui-transition",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/ui-transition/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "options": {
+        "outputPath": "dist/libs/ui/ui-transition",
+        "configFile": "libs/ui/ui-transition/vite.config.ts",
+        "manifest": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "libs/ui/ui-transition/.eslintrc.json",
+        "lintFilePatterns": ["libs/ui/ui-transition/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-transition",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-transition",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
+        "cwd": "libs/ui/ui-transition",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}

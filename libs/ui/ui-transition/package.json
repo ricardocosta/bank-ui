@@ -1,0 +1,23 @@
+{
+  "name": "@ricardocosta/ui-transition",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-transition.umd.cjs",
+  "module": "./dist/ui-transition.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-transition.js",
+      "require": "./dist/ui-transition.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.10.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
