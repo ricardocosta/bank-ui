@@ -41,3 +41,15 @@ import { IconButton } from "@ricardocosta/ui-button";
 ```
 
 [🔗 ChakraUI Icon Button](https://chakra-ui.com/docs/components/icon-button)
+
+### Close Button
+
+`CloseButton` is essentially a button with a close icon. It is used to trigger close functionality in components.
+
+```tsx
+import { CloseButton } from "@ricardocosta/ui-button";
+
+<CloseButton />;
+```
+
+[🔗 ChakraUI Close Button](https://chakra-ui.com/docs/components/close-button)
