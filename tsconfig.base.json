@@ -42,6 +42,7 @@
       "@ricardocosta/ui-image": ["libs/ui/ui-image/src/index.ts"],
       "@ricardocosta/ui-input": ["libs/ui/ui-input/src/index.ts"],
       "@ricardocosta/ui-layout": ["libs/ui/ui-layout/src/index.ts"],
+      "@ricardocosta/ui-media-query": ["libs/ui/ui-media-query/src/index.ts"],
       "@ricardocosta/ui-menu": ["libs/ui/ui-menu/src/index.ts"],
       "@ricardocosta/ui-modal": ["libs/ui/ui-modal/src/index.ts"],
       "@ricardocosta/ui-popover": ["libs/ui/ui-popover/src/index.ts"],
