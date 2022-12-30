@@ -634,6 +634,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/alert@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@chakra-ui/alert@npm:2.0.14"
+  dependencies:
+    "@chakra-ui/icon": 3.0.14
+    "@chakra-ui/react-context": 2.0.6
+    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/spinner": 2.0.12
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 56cad8ad280fab0103a61a350ed661ee48144530c8f41290203b72e95e67784445f2ee1454e1042bf2c27e885ec096d02f3d7beb4ce7eebbc490af71db438ff8
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/anatomy@npm:2.1.1":
   version: 2.1.1
   resolution: "@chakra-ui/anatomy@npm:2.1.1"
@@ -5233,6 +5248,7 @@ __metadata:
   resolution: "bank-ui@workspace:."
   dependencies:
     "@chakra-ui/accordion": ^2.1.5
+    "@chakra-ui/alert": ^2.0.14
     "@chakra-ui/avatar": ^2.2.2
     "@chakra-ui/breadcrumb": ^2.1.2
     "@chakra-ui/button": ^2.0.14
