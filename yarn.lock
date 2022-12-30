@@ -1066,6 +1066,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/progress@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "@chakra-ui/progress@npm:2.1.3"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.6
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 793effcf6f02c096d241d0826f4bb97a3384299502b8ccad8aabd59083b20b3486e01b0dacb81ac5fe9bd396b58c8651f705d341ec7fe04bea5e7eddc7d17ca7
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/provider@npm:^2.0.28":
   version: 2.0.28
   resolution: "@chakra-ui/provider@npm:2.0.28"
@@ -5311,6 +5323,7 @@ __metadata:
     "@chakra-ui/modal": ^2.2.6
     "@chakra-ui/popover": ^2.1.5
     "@chakra-ui/portal": ^2.0.13
+    "@chakra-ui/progress": ^2.1.3
     "@chakra-ui/provider": ^2.0.28
     "@chakra-ui/radio": ^2.0.16
     "@chakra-ui/select": ^2.0.15
