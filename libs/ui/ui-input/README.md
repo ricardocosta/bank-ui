@@ -4,6 +4,8 @@ Wrapper for [`@chakra-ui/input`](https://github.com/chakra-ui/chakra-ui/tree/mai
 
 ## Usage
 
+### Input
+
 `Input` component is a component that is used to get user input in a text field.
 
 The `Input` component comes in 4 variants: `outline`, `unstyled`, `flushed`, and `filled`. Pass the `variant` prop and set it to one of these values.
@@ -39,3 +41,38 @@ import { Input, InputGroup, InputLeftAddon, InputRightAddon } from "@ricardocost
 ```
 
 [🔗 ChakraUI Input](https://chakra-ui.com/docs/components/input)
+
+### Textarea
+
+The Textarea component allows you to easily create multi-line text inputs.
+
+```tsx
+import { Textarea } from "@chakra-ui/ui-input";
+
+// Basic usage
+<Textarea placeholder="Here is a sample placeholder" />;
+
+// Controlled
+function Example() {
+  const [value, setValue] = React.useState("");
+
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+    setValue(inputValue);
+  };
+
+  return (
+    <>
+      <Text mb="8px">Value: {value}</Text>
+      <Textarea
+        value={value}
+        onChange={handleInputChange}
+        placeholder="Here is a sample placeholder"
+        size="sm"
+      />
+    </>
+  );
+}
+```
+
+[🔗 ChakraUI Textarea](https://chakra-ui.com/docs/components/textarea)
