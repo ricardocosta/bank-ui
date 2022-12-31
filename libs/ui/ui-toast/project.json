@@ -1,0 +1,48 @@
+{
+  "name": "ui-toast",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/ui-toast/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "options": {
+        "outputPath": "dist/libs/ui/ui-toast",
+        "configFile": "libs/ui/ui-toast/vite.config.ts",
+        "manifest": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "eslintConfig": "libs/ui/ui-toast/.eslintrc.json",
+        "lintFilePatterns": ["libs/ui/ui-toast/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-toast",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../../.prettierignore",
+        "cwd": "libs/ui/ui-toast",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
+        "cwd": "libs/ui/ui-toast",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}
