@@ -47,7 +47,7 @@ import { Input, InputGroup, InputLeftAddon, InputRightAddon } from "@ricardocost
 The Textarea component allows you to easily create multi-line text inputs.
 
 ```tsx
-import { Textarea } from "@chakra-ui/ui-input";
+import { Textarea } from "@ricardocosta/ui-input";
 
 // Basic usage
 <Textarea placeholder="Here is a sample placeholder" />;
@@ -102,7 +102,7 @@ import {
   NumberInput,
   NumberInputField,
   NumberInputStepper,
-} from "@chakra-ui/ui-input";
+} from "@ricardocosta/ui-input";
 
 // Basic usage
 <NumberInput>
@@ -115,3 +115,37 @@ import {
 ```
 
 [🔗 ChakraUI Number Input](https://chakra-ui.com/docs/components/number-input)
+
+### Pin Input
+
+The `PinInput` component is similar to the Input component, but is optimized for entering sequences of digits quickly.
+
+The most common use case of the pin input is for entering OTP or security codes.
+Each input collects one character at a time. When a value is entered, focus is moved automatically to the next input, until all fields are filled.
+
+By default, the pin input accepts only number values. To add support for alphanumeric values, pass the `type` prop and set its value to either `alphanumeric` or `number`.
+
+Use the `otp` prop on `PinInput` to set `autocomplete="one-time-code"` for all children `PinInputField` components.
+
+When collecting private or sensitive information using the pin input, you might need to mask the value entered, similar to `<input type="password"/>`. Pass the `mask` prop to `PinInput` to achieve this.
+
+2 components are exported:
+
+- `PinInput`: The component that provides context to all the pin-input fields.
+- `PinInputField`: The text field that user types in - must be a direct child of `PinInput`.
+
+```tsx
+import { PinInput, PinInputField } from "@ricardocosta/ui-input";
+
+// Basic usage
+<HStack>
+  <PinInput>
+    <PinInputField />
+    <PinInputField />
+    <PinInputField />
+    <PinInputField />
+  </PinInput>
+</HStack>;
+```
+
+[🔗 ChakraUI Pin Input](https://chakra-ui.com/docs/components/pin-input)
