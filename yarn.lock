@@ -778,6 +778,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/counter@npm:2.0.12":
+  version: 2.0.12
+  resolution: "@chakra-ui/counter@npm:2.0.12"
+  dependencies:
+    "@chakra-ui/number-utils": 2.0.6
+    "@chakra-ui/react-use-callback-ref": 2.0.6
+    "@chakra-ui/shared-utils": 2.0.4
+  peerDependencies:
+    react: ">=18"
+  checksum: e72d5f2ec048a648563023d9982352e12a76081a20083297822ae5be535865ded227bff60b288b0d5da104a09f61813f5054e53a6524041a84e6e785fcbb68da
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/css-reset@npm:2.0.11, @chakra-ui/css-reset@npm:^2.0.11":
   version: 2.0.11
   resolution: "@chakra-ui/css-reset@npm:2.0.11"
@@ -1003,6 +1016,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/number-input@npm:^2.0.15":
+  version: 2.0.15
+  resolution: "@chakra-ui/number-input@npm:2.0.15"
+  dependencies:
+    "@chakra-ui/counter": 2.0.12
+    "@chakra-ui/form-control": 2.0.14
+    "@chakra-ui/icon": 3.0.14
+    "@chakra-ui/react-context": 2.0.6
+    "@chakra-ui/react-types": 2.0.6
+    "@chakra-ui/react-use-callback-ref": 2.0.6
+    "@chakra-ui/react-use-event-listener": 2.0.6
+    "@chakra-ui/react-use-interval": 2.0.4
+    "@chakra-ui/react-use-merge-refs": 2.0.6
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.4
+    "@chakra-ui/react-use-update-effect": 2.0.6
+    "@chakra-ui/shared-utils": 2.0.4
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 99d07a57d56980b99f13ee7a1c36b79b100d68baea2bcde849b174bec6ee0447aab6fe8520798414f2943c7ecf0d8555edf2d4c0125b09fbec3a81cc906aed5c
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/number-utils@npm:2.0.6":
   version: 2.0.6
   resolution: "@chakra-ui/number-utils@npm:2.0.6"
@@ -1225,6 +1261,17 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 926abac161c2a7b7650f646ac0af616470b6c6a7b690f5b53e5709edd9d81e2404bf3ae33965efd57da5c4679d3f298ddf8657ecb2782aa07885e81dff7fa0da
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-interval@npm:2.0.4":
+  version: 2.0.4
+  resolution: "@chakra-ui/react-use-interval@npm:2.0.4"
+  dependencies:
+    "@chakra-ui/react-use-callback-ref": 2.0.6
+  peerDependencies:
+    react: ">=18"
+  checksum: f3379b52f70a372ef6a92c9eea12ce40e0d755db6e2f6115d32f4cdf3cec75a40844015909a6d686f498b53415d01aba274d614473e1258ec3add0fb0eecea38
   languageName: node
   linkType: hard
 
@@ -5366,6 +5413,7 @@ __metadata:
     "@chakra-ui/media-query": ^3.2.9
     "@chakra-ui/menu": ^2.1.6
     "@chakra-ui/modal": ^2.2.6
+    "@chakra-ui/number-input": ^2.0.15
     "@chakra-ui/popover": ^2.1.5
     "@chakra-ui/portal": ^2.0.13
     "@chakra-ui/progress": ^2.1.3

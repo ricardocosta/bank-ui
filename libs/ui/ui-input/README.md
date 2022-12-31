@@ -76,3 +76,42 @@ function Example() {
 ```
 
 [🔗 ChakraUI Textarea](https://chakra-ui.com/docs/components/textarea)
+
+### Number Input
+
+The NumberInput component is similar to the Input component, but it has controls for incrementing or decrementing numeric values.
+
+5 components are exported for the NumberInput.
+
+- `NumberInput`: The wrapper that provides context and logic to the components.
+- `NumberInputField`: The `input` field itself.
+- `NumberInputStepper`: The wrapper for the input's stepper buttons.
+- `NumberIncrementStepper`: The button to increment the value of the input.
+- `NumberDecrementStepper`: The button to decrement the value of the input.
+
+Pass the `min` prop or `max` prop to set an upper and lower limit for the input. By default, the input will restrict the value to stay within the specified range.
+
+Pass the `step` prop to change the step size when you increment or decrement the value. By default, the value is rounded to match the number of decimals in the `step`.
+
+In some cases, you might need the value to be rounded to specific decimal points. Simply pass the `precision` prop and set it to the number of decimal points.
+
+```tsx
+import {
+  NumberDecrementStepper,
+  NumberIncrementStepper,
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+} from "@chakra-ui/ui-input";
+
+// Basic usage
+<NumberInput>
+  <NumberInputField />
+  <NumberInputStepper>
+    <NumberIncrementStepper />
+    <NumberDecrementStepper />
+  </NumberInputStepper>
+</NumberInput>;
+```
+
+[🔗 ChakraUI Number Input](https://chakra-ui.com/docs/components/number-input)
