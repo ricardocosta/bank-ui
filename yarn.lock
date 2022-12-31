@@ -634,7 +634,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/alert@npm:^2.0.14":
+"@chakra-ui/alert@npm:2.0.14, @chakra-ui/alert@npm:^2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/alert@npm:2.0.14"
   dependencies:
@@ -1299,6 +1299,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-timeout@npm:2.0.4":
+  version: 2.0.4
+  resolution: "@chakra-ui/react-use-timeout@npm:2.0.4"
+  dependencies:
+    "@chakra-ui/react-use-callback-ref": 2.0.6
+  peerDependencies:
+    react: ">=18"
+  checksum: 60cd97301963aecd6d9a2ff9dd8f4eb1d97ca5c0246037d73b51287bd2aacd11064d42a252a74ddd098d197864a6215221bd216f95df7a34f3a24358bbadee2e
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-update-effect@npm:2.0.6":
   version: 2.0.6
   resolution: "@chakra-ui/react-use-update-effect@npm:2.0.6"
@@ -1534,6 +1545,27 @@ __metadata:
   peerDependencies:
     "@chakra-ui/styled-system": ">=2.0.0"
   checksum: fbe5d1250a2ffd1997c13f0d6e06b6e2b2a7f36df35a49810e5b970c15509e78769961bc6a00b2c9e79a2fa82f7fb0158cd424a7f06ddd44fdbac6116e34502f
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/toast@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "@chakra-ui/toast@npm:4.0.8"
+  dependencies:
+    "@chakra-ui/alert": 2.0.14
+    "@chakra-ui/close-button": 2.0.14
+    "@chakra-ui/portal": 2.0.13
+    "@chakra-ui/react-use-timeout": 2.0.4
+    "@chakra-ui/react-use-update-effect": 2.0.6
+    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/styled-system": 2.5.1
+    "@chakra-ui/theme": 2.2.4
+  peerDependencies:
+    "@chakra-ui/system": 2.3.7
+    framer-motion: ">=4.0.0"
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 372b5861dcce18d310b02089f728e180e5abac84811ebf58e3375b6b7fc64958080971d34b07887ea34e6b66ce884a939a1b51c0b2bdc5c7a6a490d5b8d409b2
   languageName: node
   linkType: hard
 
@@ -5340,6 +5372,7 @@ __metadata:
     "@chakra-ui/tag": ^2.0.14
     "@chakra-ui/theme": ^2.2.4
     "@chakra-ui/theme-utils": ^2.0.8
+    "@chakra-ui/toast": ^4.0.8
     "@chakra-ui/tooltip": ^2.2.4
     "@chakra-ui/transition": ^2.0.13
     "@chakra-ui/visually-hidden": ^2.0.14
