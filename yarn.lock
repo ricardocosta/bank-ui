@@ -875,6 +875,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/hooks@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@chakra-ui/hooks@npm:2.1.4"
+  dependencies:
+    "@chakra-ui/react-utils": 2.0.11
+    "@chakra-ui/utils": 2.0.14
+    compute-scroll-into-view: 1.0.14
+    copy-to-clipboard: 3.3.1
+  peerDependencies:
+    react: ">=18"
+  checksum: 6e354b19e33798070845e636ae32bff36b429c7192c8f17f3650001070b1d2c216ba407d31e3c6d1d924499f21a316522bbdc3aeb1894d21a4efae673e905aa3
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/icon@npm:3.0.14":
   version: 3.0.14
   resolution: "@chakra-ui/icon@npm:3.0.14"
@@ -5423,6 +5437,7 @@ __metadata:
     "@chakra-ui/css-reset": ^2.0.11
     "@chakra-ui/editable": ^2.0.17
     "@chakra-ui/form-control": ^2.0.14
+    "@chakra-ui/hooks": ^2.1.4
     "@chakra-ui/icons": ^2.0.15
     "@chakra-ui/image": ^2.0.13
     "@chakra-ui/input": ^2.0.16
@@ -6329,6 +6344,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"compute-scroll-into-view@npm:1.0.14":
+  version: 1.0.14
+  resolution: "compute-scroll-into-view@npm:1.0.14"
+  checksum: 863925bf8dcd82cfbcf5938cde6cb6d58fc07988d29841bb1db6140993dbd95cbc907ff03488fe06014634604a44f5ac0c21da7a3012e0c41fbeea237716dfdb
+  languageName: node
+  linkType: hard
+
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -6650,6 +6672,15 @@ __metadata:
   version: 0.4.2
   resolution: "cookie@npm:0.4.2"
   checksum: a00833c998bedf8e787b4c342defe5fa419abd96b32f4464f718b91022586b8f1bafbddd499288e75c037642493c83083da426c6a9080d309e3bd90fd11baa9b
+  languageName: node
+  linkType: hard
+
+"copy-to-clipboard@npm:3.3.1":
+  version: 3.3.1
+  resolution: "copy-to-clipboard@npm:3.3.1"
+  dependencies:
+    toggle-selection: ^1.0.6
+  checksum: 3c7b1c333dc6a4b2e9905f52e4df6bbd34ff9f9c97ecd3ca55378a6bc1c191bb12a3252e6289c7b436e9188cff0360d393c0161626851d2301607860bbbdcfd5
   languageName: node
   linkType: hard
 
@@ -15614,6 +15645,13 @@ __metadata:
   dependencies:
     is-number: ^7.0.0
   checksum: f76fa01b3d5be85db6a2a143e24df9f60dd047d151062d0ba3df62953f2f697b16fe5dad9b0ac6191c7efc7b1d9dcaa4b768174b7b29da89d4428e64bc0a20ed
+  languageName: node
+  linkType: hard
+
+"toggle-selection@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "toggle-selection@npm:1.0.6"
+  checksum: a90dc80ed1e7b18db8f4e16e86a5574f87632dc729cfc07d9ea3ced50021ad42bb4e08f22c0913e0b98e3837b0b717e0a51613c65f30418e21eb99da6556a74c
   languageName: node
   linkType: hard
 
