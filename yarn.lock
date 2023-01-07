@@ -778,7 +778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/counter@npm:2.0.12":
+"@chakra-ui/counter@npm:2.0.12, @chakra-ui/counter@npm:^2.0.12":
   version: 2.0.12
   resolution: "@chakra-ui/counter@npm:2.0.12"
   dependencies:
@@ -5426,6 +5426,7 @@ __metadata:
     "@chakra-ui/card": ^2.1.4
     "@chakra-ui/checkbox": ^2.2.7
     "@chakra-ui/close-button": ^2.0.14
+    "@chakra-ui/counter": ^2.0.12
     "@chakra-ui/css-reset": ^2.0.11
     "@chakra-ui/editable": ^2.0.17
     "@chakra-ui/form-control": ^2.0.14
