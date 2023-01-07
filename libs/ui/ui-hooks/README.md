@@ -8,6 +8,7 @@ Wrapper for [`@chakra-ui/hooks`](https://github.com/chakra-ui/chakra-ui/tree/mai
     - [useClipboard](#useclipboard)
     - [useConst](#useconst)
     - [useControllable](#usecontrollable)
+    - [useCounter](#usecounter)
     - [useDimensions](#usedimensions)
     - [useDisclosure](#usedisclosure)
     - [useMediaQuery](#usemediaquery)
@@ -272,6 +273,63 @@ function ExampleControlled() {
 ```
 
 [🔗 ChakraUI useControllable](https://chakra-ui.com/docs/hooks/use-controllable)
+
+### useCounter
+
+A React hook that provides simple and advance counter functionalities. Mostly used to create numeric inputs and countdown timers.
+
+**Parameters**
+
+| Parameter         | Type                                                     | Description                                                                                                                                                                          |
+| :---------------- | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `onChange`        | `(valueAsString: string, valueAsNumber: number) => void` | The callback fired when the value changes                                                                                                                                            |
+| `precision`       | `number`                                                 | The number of decimal points used to round the value                                                                                                                                 |
+| `defaultValue`    | `string \| number`                                       | The initial value of the counter. Should be less than `max` and greater than `min`                                                                                                   |
+| `value`           | `string \| number`                                       | The value of the counter. Should be less than `max` and greater than `min`                                                                                                           |
+| `step`            | `number`                                                 | The step used to increment or decrement the value                                                                                                                                    |
+| `min`             | `number`                                                 | The minimum value of the counter                                                                                                                                                     |
+| `max`             | `number`                                                 | The maximum value of the counter                                                                                                                                                     |
+| `keepWithinRange` | `boolean`                                                | If `true` and you use the stepper or up/down arrow keys, the value will not exceed the `max` or go lower than `min` value; If `false`, the value will be allowed to go out of range. |
+
+**Return Value**
+
+The `useCounter` hook returns an object with the following fields:
+
+| Value           | Type                                | Description                                                                                  |
+| :-------------- | :---------------------------------- | :------------------------------------------------------------------------------------------- |
+| `isOutOfRange`  | `boolean`                           | `true` if the value exceeds `max` or is lower than `min`                                     |
+| `isAtMax`       | `boolean`                           | `true` if the value equals `max`                                                             |
+| `isAtMin`       | `boolean`                           | `true` if the value equals `min`                                                             |
+| `precision`     | `number`                            | The precision of the counter                                                                 |
+| `value`         | `string \| number`                  | The counter value                                                                            |
+| `valueAsNumber` | `number`                            | The value parsed as a float                                                                  |
+| `update`        | `(next: string \| number) => void`  | If the component is controlled, calls the `onChange` callback; otherwise, sets the new value |
+| `reset`         | `() => void`                        | Reset to the default value of `min`                                                          |
+| `increment`     | `(step?: number) => void`           | Increases the value by `step`                                                                |
+| `decrement`     | `(step?: number) => void`           | Decreases the value by `step`                                                                |
+| `clamp`         | `(value: number) => string`         | Function to clamp the value and round it to the precision                                    |
+| `cast`          | `(value: string \| number) => void` |                                                                                              |
+| `setValue`      | `function`                          | State action to change the counter value                                                     |
+
+```tsx
+import { useCounter } from "@ricardocosta/hooks";
+
+function Example() {
+  const counter = useCounter({
+    max: 10,
+    min: 0,
+    step: 0.1,
+  });
+
+  return (
+    <div>
+      <button onClick={() => counter.increment()}>Increment</button>
+      <p>{counter.value}</p>
+      <button onClick={() => counter.decrement()}>Decrement</button>
+    </div>
+  );
+}
+```
 
 ### useDimensions
 
