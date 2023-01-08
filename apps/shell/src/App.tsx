@@ -1,46 +1,23 @@
-import { useState } from "react";
-
-import "./App.css";
+import { Flex } from "@ricardocosta/ui-layout";
+import { motion } from "framer-motion";
 
 import { ReactComponent as Logo } from "./logo.svg";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo className="App-logo" title="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <Flex width="100vw" height="100vh" direction="row">
+      <Flex bg="gray.700" direction="column" width="240px" paddingY="32px">
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+        >
+          <Logo title="logo" />
+        </motion.div>
+      </Flex>
+      <Flex bg="gray.100" direction="column" grow={1} paddingX="32px" paddingY="32px">
+        <p>Content</p>
+      </Flex>
+    </Flex>
   );
 }
 
