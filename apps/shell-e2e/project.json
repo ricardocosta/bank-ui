@@ -1,0 +1,24 @@
+{
+  "name": "shell-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/shell-e2e/src",
+  "implicitDependencies": ["shell"],
+  "targets": {
+    "e2e": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "playwright test",
+        "cwd": "apps/shell-e2e",
+        "color": true
+      }
+    },
+    "codegen": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx run shell:dev", "playwright codegen http://localhost:3002"],
+        "color": true
+      }
+    }
+  }
+}
