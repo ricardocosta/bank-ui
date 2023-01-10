@@ -3,24 +3,27 @@ import { extendTheme } from "@ricardocosta/ui-theme";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from "./App";
+import mainRoutes from "./routes/main";
 
 const container = document.getElementById("root");
 if (container) {
   const root = createRoot(container);
   const theme = extendTheme();
+  const router = createBrowserRouter(mainRoutes);
+
   root.render(
     <StrictMode>
-      <HelmetProvider>
-        <UIProvider theme={theme}>
+      <UIProvider theme={theme}>
+        <RouterProvider router={router} />
+        <HelmetProvider>
           <Helmet>
             <title>Bank</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta content="width=device-width, initial-scale=1.0" name="viewport" />
           </Helmet>
-          <App />
-        </UIProvider>
-      </HelmetProvider>
+        </HelmetProvider>
+      </UIProvider>
     </StrictMode>
   );
 } else {
