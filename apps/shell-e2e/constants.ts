@@ -1,3 +1,4 @@
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import configs from "../../apps/shell/configs.json";
 
 export const APP_PORT = configs.appPort;
