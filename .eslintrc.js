@@ -6,7 +6,12 @@ module.exports = {
     node: true,
   },
   plugins: ["@nrwl/nx", "sonarjs"],
-  extends: ["eslint:recommended", "plugin:compat/recommended", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:compat/recommended",
+    "plugin:json/recommended",
+    "prettier",
+  ],
   overrides: [
     {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
