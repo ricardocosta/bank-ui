@@ -755,7 +755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/close-button@npm:2.0.14, @chakra-ui/close-button@npm:^2.0.14":
+"@chakra-ui/close-button@npm:2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/close-button@npm:2.0.14"
   dependencies:
@@ -764,6 +764,18 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 2c12767e80d45d35a5f82a4eb7964f97d39ccc2f96b89f5aeaa892a1de229e1386625b993be6e25092bd95c662983b98d4e496ea392e647c447744cfd881c8ae
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/close-button@npm:^2.0.15":
+  version: 2.0.16
+  resolution: "@chakra-ui/close-button@npm:2.0.16"
+  dependencies:
+    "@chakra-ui/icon": 3.0.16
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 64a6d29b63427139f4e29cfd53bb3e3d3123ca2e9c04c826db11b94114314199c842c0eac660c9717709f99e25faef62963513ede1f5a9c45affeeab0b1eec66
   languageName: node
   linkType: hard
 
@@ -898,6 +910,18 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 2d2e4a21934875c3dda90c58a6e83d77a2983fcdc614a41eacd87fda10bb108263a18c0290b8bef52b3c52dcabedc7eb65294330e5b05e4f2fe63e3a349fd83e
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/icon@npm:3.0.16":
+  version: 3.0.16
+  resolution: "@chakra-ui/icon@npm:3.0.16"
+  dependencies:
+    "@chakra-ui/shared-utils": 2.0.5
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: c0ac66946fe8950e7daaa2462f00f2f7d4ce41878b9f26451c0c94c75887f4ae49f86883c4d7c2728243e5c182b9530e752ec9817c7672e0f852bde8353b2039
   languageName: node
   linkType: hard
 
@@ -1425,6 +1449,13 @@ __metadata:
   version: 2.0.4
   resolution: "@chakra-ui/shared-utils@npm:2.0.4"
   checksum: 8de5e224e01c8cd109321796524ddbbfe92d48fe9de4781dcecac90d4b7e9838dfd5ef9164e7e1ed87b2031988392d3b2d5f55bda3dd2347f92e91d292700d2b
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/shared-utils@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/shared-utils@npm:2.0.5"
+  checksum: 7274b168bf188d1dc098d1f73a60676c6702454bd4dd9919f9b8447205bc1053b4faab6e38702f33cc25694f18bb598c39777f70b44dba221c078c839f42f2bd
   languageName: node
   linkType: hard
 
@@ -5422,7 +5453,7 @@ __metadata:
     "@chakra-ui/button": ^2.0.14
     "@chakra-ui/card": ^2.1.4
     "@chakra-ui/checkbox": ^2.2.7
-    "@chakra-ui/close-button": ^2.0.14
+    "@chakra-ui/close-button": ^2.0.15
     "@chakra-ui/counter": ^2.0.12
     "@chakra-ui/css-reset": ^2.0.11
     "@chakra-ui/editable": ^2.0.17

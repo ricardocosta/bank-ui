@@ -33,7 +33,7 @@
     "@chakra-ui/button": "^2.0.14",
     "@chakra-ui/card": "^2.1.4",
     "@chakra-ui/checkbox": "^2.2.7",
-    "@chakra-ui/close-button": "^2.0.14",
+    "@chakra-ui/close-button": "^2.0.15",
     "@chakra-ui/counter": "^2.0.12",
     "@chakra-ui/css-reset": "^2.0.11",
     "@chakra-ui/editable": "^2.0.17",
