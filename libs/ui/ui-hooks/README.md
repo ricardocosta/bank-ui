@@ -37,7 +37,7 @@ The `useBoolean` hook returns a stateful boolean value and an object with the fo
 | `toggle` | `() => void` | A function to negate the boolean state         |
 
 ```tsx
-import { useBoolean } from "@ricardocosta/hooks";
+import { useBoolean } from "@ricardocosta/ui-hooks";
 
 function ToogleExample() {
   const [flag, setFlag] = useBoolean();
@@ -80,7 +80,7 @@ An object with the value for each breakpoint.
 The `useBreakpointValue` hook returns the value for the current breakpoint.
 
 ```tsx
-import { useBreakpointValue } from "@ricardocosta/hooks";
+import { useBreakpointValue } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const variant = useBreakpointValue(
@@ -132,7 +132,7 @@ The `useClipboard` hook returns an object with the following fields:
 | `hasCopied` | `boolean` | `false` | If `true`, the content has been copied within the last `timeout` milliseconds. That is, it is set to `true` right after `onCopy` is called, and `false` after `timeout` has passed |
 
 ```tsx
-import { useClipboard } from "@ricardocosta/hooks";
+import { useClipboard } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const placeholder = "text to be copied...";
@@ -175,7 +175,7 @@ The hook `useConst` accepts the initial value, or a function to get the initial 
 The `useConst` hook returns the value that was passed.
 
 ```tsx
-import { useConst } from "@ricardocosta/hooks";
+import { useConst } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const mountTime = useConst(() => new Date().toTimeString());
@@ -223,7 +223,7 @@ Given a prop value and state value, the `useControllableProp` hook is used to de
 - It returns the state value if the component is uncontrolled
 
 ```tsx
-import { useControllableProp } from "@ricardocosta/hooks";
+import { useControllableProp } from "@ricardocosta/ui-hooks";
 
 const [isControlled, value] = useControllableProp(propValue, stateValue);
 ```
@@ -235,7 +235,7 @@ The `useControllableState` hook returns the state and function that updates the 
 With `useControllableState`, you can pass an initial state (using `defaultValue`) implying the component is uncontrolled, or you can pass a controlled `value` (using value) implying the component is controlled.
 
 ```tsx
-import { useControllableState } from "@ricardocosta/hooks";
+import { useControllableState } from "@ricardocosta/ui-hooks";
 
 function ExampleUncontrolled() {
   const [value, setValue] = useControllableState({ defaultValue: 40 });
@@ -312,7 +312,7 @@ The `useCounter` hook returns an object with the following fields:
 | `setValue`      | `function`                          | State action to change the counter value                                                     |
 
 ```tsx
-import { useCounter } from "@ricardocosta/hooks";
+import { useCounter } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const counter = useCounter({
@@ -359,7 +359,7 @@ Each of these properties contains a nested object which provides values respecti
 | `margin`     | `top`, `right`, `bottom`, `left`                                                   |
 
 ```tsx
-import { useDimensions } from "@ricardocosta/hooks";
+import { useDimensions } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const elementRef = useRef();
@@ -411,7 +411,7 @@ The `useDisclosure` hook returns an object with the following fields:
 | `getButtonProps`     | `function` |         | Callback function to retrieve a set of props for the button that triggers the disclosure |
 
 ```tsx
-import { useDisclosure } from "@ricardocosta/hooks";
+import { useDisclosure } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -453,7 +453,7 @@ The button that uses `getButtonProps` for toggling receives the following props:
 `getButtonProps` can also directly accept any additional props for the button.
 
 ```tsx
-import { useDisclosure } from "@ricardocosta/hooks";
+import { useDisclosure } from "@ricardocosta/ui-hooks";
 
 function Basic() {
   const { getDisclosureProps, getButtonProps } = useDisclosure();
@@ -492,7 +492,7 @@ Why an array? `useMediaQuery` accepts both a string and an array of strings, but
 ⚠️ Keep in mind this API relies on the users browser support of `window.matchMedia` and will always return `false` if it is not supported or does not exist (e.g. during serverside rendering).
 
 ```tsx
-import { useMediaQuery } from "@ricardocosta/hooks";
+import { useMediaQuery } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const [isLargerThan1280, isDisplayingInBrowser] = useMediaQuery([
@@ -515,7 +515,7 @@ function Example() {
 The `useMergeRefs` hook returns a function that receives the element and assign the value to the given React refs.
 
 ```tsx
-import { useMergeRefs } from "@ricardocosta/hooks";
+import { useMergeRefs } from "@ricardocosta/ui-hooks";
 
 function ExampleMultipleRefs({ ref, ...props }) {
   const internalRef = React.useRef();
@@ -572,7 +572,7 @@ The `useOutsideClick` hook accepts an object with the following properties:
 | `handler` | `(e: Event) => void`                | Function invoked when a click is triggered outside the referenced element |
 
 ```tsx
-import { useOutsideClick } from "@ricardocosta/hooks";
+import { useOutsideClick } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const ref = React.useRef();
@@ -606,7 +606,7 @@ function Example() {
 The `usePrefersReducedMotion` hook returns a boolean, indicating whether the user prefers reduced motion.
 
 ```tsx
-import { usePrefersReducedMotion } from "@ricardocosta/hooks";
+import { usePrefersReducedMotion } from "@ricardocosta/ui-hooks";
 
 const spin = keyframes`
   from { transform: rotate(0deg); }
@@ -633,7 +633,7 @@ function Example() {
 The `useTheme` hook returns the theme object.
 
 ```tsx
-import { useTheme } from "@ricardocosta/hooks";
+import { useTheme } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const theme = useTheme();
@@ -653,7 +653,7 @@ function Example() {
 The `useToken` hook retrieves whatever is in the theme at the given path(s).
 
 ```tsx
-import { useToken } from "@ricardocosta/hooks";
+import { useToken } from "@ricardocosta/ui-hooks";
 
 function Example() {
   const [red100, blue200] = useToken(
