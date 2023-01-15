@@ -1,11 +1,20 @@
-import { render, screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 
-import { App } from "..";
+import { renderWithRouter } from "../../test-utils/routing";
 
 describe("Page: <App />", () => {
-  it("renders", () => {
-    render(<App />);
+  it("renders the welcome message", () => {
+    renderWithRouter();
 
-    expect(screen.getByText("Welcome,")).toBeInTheDocument();
+    const sidebar = screen.getByTestId("sidebar");
+    expect(within(sidebar).getByText("Welcome,")).toBeInTheDocument();
+  });
+
+  it("renders the navigation", () => {
+    renderWithRouter();
+
+    const sidebar = screen.getByTestId("sidebar");
+    expect(within(sidebar).getByText("dashboard")).toBeInTheDocument();
+    expect(within(sidebar).getByText("transactions")).toBeInTheDocument();
   });
 });

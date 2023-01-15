@@ -9,7 +9,7 @@ export default mergeConfig(
     test: {
       globals: true,
       environment: "jsdom",
-      setupFiles: "./setupTests.ts",
+      setupFiles: ["./src/test-utils/setupTests.ts", "./src/test-utils/routing.tsx"],
       coverage: {
         reporter: ["lcov", "text"],
       },
