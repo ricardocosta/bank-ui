@@ -798,7 +798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/close-button@npm:2.0.14, @chakra-ui/close-button@npm:^2.0.14":
+"@chakra-ui/close-button@npm:2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/close-button@npm:2.0.14"
   dependencies:
@@ -807,6 +807,18 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 2c12767e80d45d35a5f82a4eb7964f97d39ccc2f96b89f5aeaa892a1de229e1386625b993be6e25092bd95c662983b98d4e496ea392e647c447744cfd881c8ae
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/close-button@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@chakra-ui/close-button@npm:2.0.17"
+  dependencies:
+    "@chakra-ui/icon": 3.0.16
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 203f3b0064d07e1f8a1631e7828722314f81fe1291eda267f552fa75551a96493fe810f6f2edf362892ecb10d9e101b647cb366f5196d4b0c79b1f3bf07f872d
   languageName: node
   linkType: hard
 
@@ -5715,7 +5727,7 @@ __metadata:
     "@chakra-ui/button": ^2.0.14
     "@chakra-ui/card": ^2.1.4
     "@chakra-ui/checkbox": ^2.2.7
-    "@chakra-ui/close-button": ^2.0.14
+    "@chakra-ui/close-button": ^2.0.17
     "@chakra-ui/counter": ^2.0.12
     "@chakra-ui/css-reset": ^2.0.11
     "@chakra-ui/editable": ^2.0.17
