@@ -993,19 +993,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/input@npm:^2.0.16":
-  version: 2.0.16
-  resolution: "@chakra-ui/input@npm:2.0.16"
+"@chakra-ui/input@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "@chakra-ui/input@npm:2.0.19"
   dependencies:
-    "@chakra-ui/form-control": 2.0.14
-    "@chakra-ui/object-utils": 2.0.6
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/form-control": 2.0.17
+    "@chakra-ui/object-utils": 2.0.8
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: f85883d01f7e2ea5e0cb84d2a97ea9ca4c7c4af780e3312265d02195555ce5ae7daf93285bd46d73c770b5548a884278137b171a05c10dfbe3cf445e6ec9d0bb
+  checksum: 2567225a3857aec6af35e6746f7092875b3ce8225e821cd35a7fffad3016fb715ccc46c34bc9ce600dfd241eca43022456929f5dd536b2d52c11f0a07411d24c
   languageName: node
   linkType: hard
 
@@ -1260,6 +1260,15 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: f8a8fa04e6e13c2b03123346eb66404b6d5d3cdac5c3cbfae77e17f0838cae1a4d45c79439eaee90634625ba860a96d076de94054dba3a354759fd2a69bf9995
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-children-utils@npm:2.0.6":
+  version: 2.0.6
+  resolution: "@chakra-ui/react-children-utils@npm:2.0.6"
+  peerDependencies:
+    react: ">=18"
+  checksum: b8917fd4019e304ca55fcdd129647bd0765fa9ff940516859c7db509c22581297463da6142e78c7e68fca49046d79f40d3bcfadbe67f16f4a6447acee00e0c12
   languageName: node
   linkType: hard
 
@@ -5687,7 +5696,7 @@ __metadata:
     "@chakra-ui/hooks": ^2.1.4
     "@chakra-ui/icons": ^2.0.15
     "@chakra-ui/image": ^2.0.13
-    "@chakra-ui/input": ^2.0.16
+    "@chakra-ui/input": ^2.0.19
     "@chakra-ui/layout": ^2.1.12
     "@chakra-ui/media-query": ^3.2.9
     "@chakra-ui/menu": ^2.1.6
