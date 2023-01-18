@@ -1784,16 +1784,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/textarea@npm:^2.0.15":
-  version: 2.0.15
-  resolution: "@chakra-ui/textarea@npm:2.0.15"
+"@chakra-ui/textarea@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@chakra-ui/textarea@npm:2.0.18"
   dependencies:
-    "@chakra-ui/form-control": 2.0.14
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/form-control": 2.0.17
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 627606e41a9aa088bfb12e6144a258b9a012b671f21ef864598a32e3d887fd2d7ef8e49acda67d332b3f2f385bc09440280380add5d7962d9d37832ebf33e960
+  checksum: e663b307c439f8d9ab1b4066ebbe756730de7bfb27ab8fff3677cd4d7bccdae3799e40aa086f11544d71c9c2e39f6e7de0adca4643439d57a11f82bd5d36563f
   languageName: node
   linkType: hard
 
@@ -5720,7 +5720,7 @@ __metadata:
     "@chakra-ui/table": ^2.0.14
     "@chakra-ui/tabs": ^2.1.6
     "@chakra-ui/tag": ^2.0.14
-    "@chakra-ui/textarea": ^2.0.15
+    "@chakra-ui/textarea": ^2.0.18
     "@chakra-ui/theme": ^2.2.4
     "@chakra-ui/theme-utils": ^2.0.8
     "@chakra-ui/toast": ^4.0.8
