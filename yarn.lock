@@ -1690,17 +1690,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/stat@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "@chakra-ui/stat@npm:2.0.14"
+"@chakra-ui/stat@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@chakra-ui/stat@npm:2.0.17"
   dependencies:
-    "@chakra-ui/icon": 3.0.14
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/icon": 3.0.16
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: d1f4a8dea25a385f099793e52966a0a18648605e5ca4b1bbed65afcd83d8af1b3121cf26ad9556a48af5a92b57df2d6cf06e12ff2b8febfb56c46efd1168ce5e
+  checksum: 1fa7defc7bf86674cfdca5c95143067fecc6ea248e1378f5b4661f7904d0582d5616abe03fc95742624d80034d8c82aeb018134af0239d03c054ecd50ee3eeb7
   languageName: node
   linkType: hard
 
@@ -5752,7 +5752,7 @@ __metadata:
     "@chakra-ui/skip-nav": ^2.0.13
     "@chakra-ui/slider": ^2.0.18
     "@chakra-ui/spinner": ^2.0.12
-    "@chakra-ui/stat": ^2.0.14
+    "@chakra-ui/stat": ^2.0.17
     "@chakra-ui/styled-system": ^2.5.1
     "@chakra-ui/switch": ^2.0.22
     "@chakra-ui/system": ^2.3.8
