@@ -742,7 +742,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/checkbox@npm:2.2.10":
+"@chakra-ui/checkbox@npm:2.2.10, @chakra-ui/checkbox@npm:^2.2.10":
   version: 2.2.10
   resolution: "@chakra-ui/checkbox@npm:2.2.10"
   dependencies:
@@ -761,28 +761,6 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 56fc60cd9a8d2dfb4e33cc6ee37a0e28431d6951b0b729dd379d6d971c031913a8ee16de1780ea4b809717cc937909beefc4259c90411e5bad0195dfd0ca9379
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/checkbox@npm:^2.2.7":
-  version: 2.2.7
-  resolution: "@chakra-ui/checkbox@npm:2.2.7"
-  dependencies:
-    "@chakra-ui/form-control": 2.0.14
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-types": 2.0.6
-    "@chakra-ui/react-use-callback-ref": 2.0.6
-    "@chakra-ui/react-use-controllable-state": 2.0.7
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/react-use-safe-layout-effect": 2.0.4
-    "@chakra-ui/react-use-update-effect": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
-    "@chakra-ui/visually-hidden": 2.0.14
-    "@zag-js/focus-visible": 0.2.1
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: 25cf89fe6d57e26741ee7775825e2d541ace1c0f370e37a280680b5d02f0e04d702638878f83cc19ebfc5c1eab5a6694b00de1c92c339fa24eb0b28f193f0927
   languageName: node
   linkType: hard
 
@@ -2021,16 +1999,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/visually-hidden@npm:2.0.14, @chakra-ui/visually-hidden@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "@chakra-ui/visually-hidden@npm:2.0.14"
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: 3c12071cb7009ad511434cd06985454244720d96e603a158660b5e427a172adaf7b3b6d91c3421348ad9cc860b2137bfa8c4f4952e753da067ad580b10663384
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/visually-hidden@npm:2.0.15":
   version: 2.0.15
   resolution: "@chakra-ui/visually-hidden@npm:2.0.15"
@@ -2038,6 +2006,16 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 6f484ee04aa2ca9d9234c8fd6bceec89f0307ab517f639aedf20c06cf1316892f3d9ab909338e51f0b4dd3b447bd6c402724dffba4218a93793fc4b9c5e3a254
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/visually-hidden@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@chakra-ui/visually-hidden@npm:2.0.14"
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: 3c12071cb7009ad511434cd06985454244720d96e603a158660b5e427a172adaf7b3b6d91c3421348ad9cc860b2137bfa8c4f4952e753da067ad580b10663384
   languageName: node
   linkType: hard
 
@@ -5758,7 +5736,7 @@ __metadata:
     "@chakra-ui/breadcrumb": ^2.1.2
     "@chakra-ui/button": ^2.0.14
     "@chakra-ui/card": ^2.1.4
-    "@chakra-ui/checkbox": ^2.2.7
+    "@chakra-ui/checkbox": ^2.2.10
     "@chakra-ui/close-button": ^2.0.17
     "@chakra-ui/counter": ^2.0.12
     "@chakra-ui/css-reset": ^2.0.11
