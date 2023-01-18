@@ -810,7 +810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/close-button@npm:^2.0.17":
+"@chakra-ui/close-button@npm:2.0.17, @chakra-ui/close-button@npm:^2.0.17":
   version: 2.0.17
   resolution: "@chakra-ui/close-button@npm:2.0.17"
   dependencies:
@@ -886,6 +886,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/dom-utils@npm:2.0.6":
+  version: 2.0.6
+  resolution: "@chakra-ui/dom-utils@npm:2.0.6"
+  checksum: 0bfdb514059bbbcaa2090516f016a067f163abc3eb83a94a7c36606d69eb61b717d07dd298634227828f63561c177b5f9106d6575875fd57acc5f6bce8884f32
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/editable@npm:^2.0.17":
   version: 2.0.17
   resolution: "@chakra-ui/editable@npm:2.0.17"
@@ -913,15 +920,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/focus-lock@npm:2.0.14":
-  version: 2.0.14
-  resolution: "@chakra-ui/focus-lock@npm:2.0.14"
+"@chakra-ui/focus-lock@npm:2.0.16":
+  version: 2.0.16
+  resolution: "@chakra-ui/focus-lock@npm:2.0.16"
   dependencies:
-    "@chakra-ui/dom-utils": 2.0.5
-    react-focus-lock: ^2.9.1
+    "@chakra-ui/dom-utils": 2.0.6
+    react-focus-lock: ^2.9.2
   peerDependencies:
     react: ">=18"
-  checksum: d1a7988d1a59cf255603c62f0e8b7776ca1a1e6ebf51795a0bd499ff7a27730cf335214bb21120e89bfae3965cc7fc95769d71503b05b56bd9107f951a62d8ce
+  checksum: 960096aa31fae1391c910a223828c2ef19aaf0870121298e5391b5a779fab0a429d06d5907676c52c1be0602becbab1030a359bbd2b7a1a5e3360ab91836421d
   languageName: node
   linkType: hard
 
@@ -1101,26 +1108,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/modal@npm:^2.2.6":
-  version: 2.2.6
-  resolution: "@chakra-ui/modal@npm:2.2.6"
+"@chakra-ui/modal@npm:^2.2.9":
+  version: 2.2.9
+  resolution: "@chakra-ui/modal@npm:2.2.9"
   dependencies:
-    "@chakra-ui/close-button": 2.0.14
-    "@chakra-ui/focus-lock": 2.0.14
-    "@chakra-ui/portal": 2.0.13
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-types": 2.0.6
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
-    "@chakra-ui/transition": 2.0.13
-    aria-hidden: ^1.1.1
-    react-remove-scroll: ^2.5.4
+    "@chakra-ui/close-button": 2.0.17
+    "@chakra-ui/focus-lock": 2.0.16
+    "@chakra-ui/portal": 2.0.15
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-types": 2.0.7
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
+    "@chakra-ui/transition": 2.0.15
+    aria-hidden: ^1.2.2
+    react-remove-scroll: ^2.5.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 29055a394fb6a117630fdb4e5f635be8df73ee0be824d13ba2b5807e162acc664c07e91fd503fa6a8a226b0062c848e63e658c414dc8f001625eddac04899e1c
+  checksum: 1d10c5d36be45b286c585a5c6d2c9de6704acbb4f9375ad6251b5220690fe0aa9ddbccf72dec82890937664b03bb7b45ad4ed425d81ddb129fe464456f3cfbbd
   languageName: node
   linkType: hard
 
@@ -1231,6 +1238,19 @@ __metadata:
     react: ">=18"
     react-dom: ">=18"
   checksum: d3a771b67e0a9adc51f57e18d1a74da26d75416622c3027535afff89c2340c940e593869c22b887c2d480dd77428674433206f615ff621c9fe8e886eaa0ca3ea
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/portal@npm:2.0.15":
+  version: 2.0.15
+  resolution: "@chakra-ui/portal@npm:2.0.15"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+  peerDependencies:
+    react: ">=18"
+    react-dom: ">=18"
+  checksum: 2c8a7dcc21a31ee4c70a51592f0be6c55605f586422e9dd9cb7d3c66960dc709dcd8797abc5e3a3c6c086518f808a3cbcf26781ec4dd82c3eb2c7c1432976318
   languageName: node
   linkType: hard
 
@@ -1962,6 +1982,18 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
   checksum: 8b4469919675e4ea7d4e830aeff446702c0b3fb19d30cf681b061a6177b08eaa447cc33c88bfb99bc543a50a57be886413297519b48abf37addb7cc9d7f699e0
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/transition@npm:2.0.15":
+  version: 2.0.15
+  resolution: "@chakra-ui/transition@npm:2.0.15"
+  dependencies:
+    "@chakra-ui/shared-utils": 2.0.5
+  peerDependencies:
+    framer-motion: ">=4.0.0"
+    react: ">=18"
+  checksum: 6b025082eca9d939fe45d417eff5b2c6c1605144bed122b2f62f0235db1f83f9f3f9b26cacbce3fb0e6f86911e59565c7ad0cfb5c8171a07abe7b187c62651e0
   languageName: node
   linkType: hard
 
@@ -5367,7 +5399,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aria-hidden@npm:^1.1.1":
+"aria-hidden@npm:^1.2.2":
   version: 1.2.2
   resolution: "aria-hidden@npm:1.2.2"
   dependencies:
@@ -5739,7 +5771,7 @@ __metadata:
     "@chakra-ui/layout": ^2.1.12
     "@chakra-ui/media-query": ^3.2.9
     "@chakra-ui/menu": ^2.1.6
-    "@chakra-ui/modal": ^2.2.6
+    "@chakra-ui/modal": ^2.2.9
     "@chakra-ui/number-input": ^2.0.15
     "@chakra-ui/pin-input": ^2.0.17
     "@chakra-ui/popover": ^2.1.5
@@ -14286,7 +14318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-focus-lock@npm:^2.9.1":
+"react-focus-lock@npm:^2.9.2":
   version: 2.9.2
   resolution: "react-focus-lock@npm:2.9.2"
   dependencies:
@@ -14359,7 +14391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-remove-scroll@npm:^2.5.4":
+"react-remove-scroll@npm:^2.5.5":
   version: 2.5.5
   resolution: "react-remove-scroll@npm:2.5.5"
   dependencies:
