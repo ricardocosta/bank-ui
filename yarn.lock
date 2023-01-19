@@ -692,17 +692,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/breadcrumb@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "@chakra-ui/breadcrumb@npm:2.1.2"
+"@chakra-ui/breadcrumb@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@chakra-ui/breadcrumb@npm:2.1.4"
   dependencies:
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 0f5dc5b7c47024a3f1fd065e1efd48affa6ed3ea85e73c28aae6460d69e58eb2ccd1b415d554548b39a552b1f823857f030aff92add0ee32ead595b85be05176
+  checksum: c9c0642e240e27c2a7c8410a0192f295407f6001ed1f70f6a4785c5962adaaa66d35048324c36ad8fc1fd00c43e3ad667b10f70bcad69efc00cb61077ffc78f2
   languageName: node
   linkType: hard
 
@@ -5746,7 +5746,7 @@ __metadata:
     "@chakra-ui/accordion": ^2.1.5
     "@chakra-ui/alert": ^2.0.17
     "@chakra-ui/avatar": ^2.2.2
-    "@chakra-ui/breadcrumb": ^2.1.2
+    "@chakra-ui/breadcrumb": ^2.1.4
     "@chakra-ui/button": ^2.0.14
     "@chakra-ui/card": ^2.1.4
     "@chakra-ui/checkbox": ^2.2.10
