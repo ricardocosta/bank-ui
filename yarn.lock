@@ -992,7 +992,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/image@npm:2.0.13, @chakra-ui/image@npm:^2.0.13":
+"@chakra-ui/image@npm:2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/image@npm:2.0.13"
   dependencies:
@@ -1002,6 +1002,19 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: fd1cccf41560cdac8dd4b3f56eeb6c0523f9c8f9165e4ea7b452414401b66db4251be04a87643914cb24b1bc6e39003d2d1acdbcdd3e9bf3f85ce27cb4850c1e
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/image@npm:^2.0.15":
+  version: 2.0.15
+  resolution: "@chakra-ui/image@npm:2.0.15"
+  dependencies:
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/shared-utils": 2.0.5
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: ee2f1ba4a99ea4f39eba2ea77f8a0036132477329bcb77897a0e8560290a3dca2ec32ccc463fcba2db5271627c1e1104fd81aa8ac6afc68e47b45f3a5f7925f1
   languageName: node
   linkType: hard
 
@@ -5744,7 +5757,7 @@ __metadata:
     "@chakra-ui/form-control": ^2.0.14
     "@chakra-ui/hooks": ^2.1.4
     "@chakra-ui/icons": ^2.0.15
-    "@chakra-ui/image": ^2.0.13
+    "@chakra-ui/image": ^2.0.15
     "@chakra-ui/input": ^2.0.19
     "@chakra-ui/layout": ^2.1.12
     "@chakra-ui/media-query": ^3.2.9
