@@ -871,23 +871,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/editable@npm:^2.0.17":
-  version: 2.0.17
-  resolution: "@chakra-ui/editable@npm:2.0.17"
+"@chakra-ui/editable@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "@chakra-ui/editable@npm:2.0.19"
   dependencies:
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-types": 2.0.6
-    "@chakra-ui/react-use-callback-ref": 2.0.6
-    "@chakra-ui/react-use-controllable-state": 2.0.7
-    "@chakra-ui/react-use-focus-on-pointer-down": 2.0.5
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/react-use-safe-layout-effect": 2.0.4
-    "@chakra-ui/react-use-update-effect": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-types": 2.0.7
+    "@chakra-ui/react-use-callback-ref": 2.0.7
+    "@chakra-ui/react-use-controllable-state": 2.0.8
+    "@chakra-ui/react-use-focus-on-pointer-down": 2.0.6
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/react-use-update-effect": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 1b0ead51f0f76f73c3337b433fc4b8644ef16d55f2f2d6b1a42f52ee5b4fe88d0b8a6b6187b6c6e9f0ee9aa7f95c09d557e50b4a9a381491f894f99d6f1b2abe
+  checksum: 472f50595da1e0a1c7793d8fa09975167361fd455ace002d3d6aedd6a2748e4f25e2358642395a3dba6eaa8506e21469f3ea614589556cae340303874c0be6a1
   languageName: node
   linkType: hard
 
@@ -1486,6 +1486,17 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 926abac161c2a7b7650f646ac0af616470b6c6a7b690f5b53e5709edd9d81e2404bf3ae33965efd57da5c4679d3f298ddf8657ecb2782aa07885e81dff7fa0da
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.6":
+  version: 2.0.6
+  resolution: "@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.6"
+  dependencies:
+    "@chakra-ui/react-use-event-listener": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: a10c2f7abb33fa15f1315e42d97192edc6eeadcef3631f576ccf1303d009671d06737392422c7241a93da561c7cda1ada5a9187e6fd54b2c53472314684c5b5e
   languageName: node
   linkType: hard
 
@@ -5788,7 +5799,7 @@ __metadata:
     "@chakra-ui/close-button": ^2.0.17
     "@chakra-ui/counter": ^2.0.12
     "@chakra-ui/css-reset": ^2.0.11
-    "@chakra-ui/editable": ^2.0.17
+    "@chakra-ui/editable": ^2.0.19
     "@chakra-ui/form-control": ^2.0.14
     "@chakra-ui/hooks": ^2.1.4
     "@chakra-ui/icons": ^2.0.15
