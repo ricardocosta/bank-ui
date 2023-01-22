@@ -1692,13 +1692,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/skip-nav@npm:^2.0.13":
-  version: 2.0.13
-  resolution: "@chakra-ui/skip-nav@npm:2.0.13"
+"@chakra-ui/skip-nav@npm:^2.0.15":
+  version: 2.0.15
+  resolution: "@chakra-ui/skip-nav@npm:2.0.15"
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 5fa6fb89825793a161c063e2e7a40841e59aa24010e84ba7ef90b8f09a512a648b15f2ef5aa97330b46f14e024557e3ae38ca2c352180341d99a071d7df6f8d1
+  checksum: a66a22022aa474d2e870f2edde7ccc22d9bb11e05a6530cb0d48aafd8bec022cd9441b661022176aad626bb1581ae9d58eb346eefa77cb7c310086e8193ce6bc
   languageName: node
   linkType: hard
 
@@ -5818,7 +5818,7 @@ __metadata:
     "@chakra-ui/radio": ^2.0.16
     "@chakra-ui/select": ^2.0.15
     "@chakra-ui/skeleton": ^2.0.21
-    "@chakra-ui/skip-nav": ^2.0.13
+    "@chakra-ui/skip-nav": ^2.0.15
     "@chakra-ui/slider": ^2.0.18
     "@chakra-ui/spinner": ^2.0.12
     "@chakra-ui/stat": ^2.0.17
