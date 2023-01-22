@@ -807,7 +807,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/counter@npm:2.0.12, @chakra-ui/counter@npm:^2.0.12":
+"@chakra-ui/counter@npm:2.0.12":
   version: 2.0.12
   resolution: "@chakra-ui/counter@npm:2.0.12"
   dependencies:
@@ -817,6 +817,19 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: e72d5f2ec048a648563023d9982352e12a76081a20083297822ae5be535865ded227bff60b288b0d5da104a09f61813f5054e53a6524041a84e6e785fcbb68da
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/counter@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@chakra-ui/counter@npm:2.0.14"
+  dependencies:
+    "@chakra-ui/number-utils": 2.0.7
+    "@chakra-ui/react-use-callback-ref": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
+  peerDependencies:
+    react: ">=18"
+  checksum: 37149108c7c3a6d8adca5ce42a1fb16829e37e8fc7fa44b8941fa9810480d2f386f8a95bdf44955066f599b472a410259e22331ebf8501fb0280675d5ff6a345
   languageName: node
   linkType: hard
 
@@ -1134,6 +1147,13 @@ __metadata:
   version: 2.0.6
   resolution: "@chakra-ui/number-utils@npm:2.0.6"
   checksum: 6ad8e1912376fc85a2fcfa21cbebbed228bd4ea74a1d0b3a0d5f2bb2dfcc4e46f77d5f7b0b56fbba790bd49f664a0e2f0ec3a5cf7e04c659ed1cbd58ab2e8298
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/number-utils@npm:2.0.7":
+  version: 2.0.7
+  resolution: "@chakra-ui/number-utils@npm:2.0.7"
+  checksum: e9773385f9f1758687d9f42b88487199725ccdd8e565b73832d89f38e95d80a748c55a44752dc9966c380dc7768e88394bdd369e2415f3b05adfc0e06588c55e
   languageName: node
   linkType: hard
 
@@ -5783,7 +5803,7 @@ __metadata:
     "@chakra-ui/card": ^2.1.4
     "@chakra-ui/checkbox": ^2.2.10
     "@chakra-ui/close-button": ^2.0.17
-    "@chakra-ui/counter": ^2.0.12
+    "@chakra-ui/counter": ^2.0.14
     "@chakra-ui/css-reset": ^2.0.11
     "@chakra-ui/editable": ^2.0.19
     "@chakra-ui/form-control": ^2.0.14
