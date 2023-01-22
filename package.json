@@ -55,7 +55,7 @@
     "@chakra-ui/radio": "^2.0.16",
     "@chakra-ui/select": "^2.0.15",
     "@chakra-ui/skeleton": "^2.0.21",
-    "@chakra-ui/skip-nav": "^2.0.13",
+    "@chakra-ui/skip-nav": "^2.0.15",
     "@chakra-ui/slider": "^2.0.18",
     "@chakra-ui/spinner": "^2.0.12",
     "@chakra-ui/stat": "^2.0.17",
