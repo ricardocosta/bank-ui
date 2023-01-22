@@ -68,7 +68,7 @@
     "@chakra-ui/textarea": "^2.0.18",
     "@chakra-ui/theme": "^2.2.4",
     "@chakra-ui/theme-utils": "^2.0.8",
-    "@chakra-ui/toast": "^4.0.8",
+    "@chakra-ui/toast": "^5.0.1",
     "@chakra-ui/tooltip": "^2.2.6",
     "@chakra-ui/transition": "^2.0.13",
     "@chakra-ui/visually-hidden": "^2.0.14",
