@@ -633,22 +633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/alert@npm:2.0.14":
-  version: 2.0.14
-  resolution: "@chakra-ui/alert@npm:2.0.14"
-  dependencies:
-    "@chakra-ui/icon": 3.0.14
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
-    "@chakra-ui/spinner": 2.0.12
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: 56cad8ad280fab0103a61a350ed661ee48144530c8f41290203b72e95e67784445f2ee1454e1042bf2c27e885ec096d02f3d7beb4ce7eebbc490af71db438ff8
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/alert@npm:^2.0.17":
+"@chakra-ui/alert@npm:2.0.17, @chakra-ui/alert@npm:^2.0.17":
   version: 2.0.17
   resolution: "@chakra-ui/alert@npm:2.0.17"
   dependencies:
@@ -1600,14 +1585,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/react-use-timeout@npm:2.0.4":
-  version: 2.0.4
-  resolution: "@chakra-ui/react-use-timeout@npm:2.0.4"
+"@chakra-ui/react-use-timeout@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/react-use-timeout@npm:2.0.5"
   dependencies:
-    "@chakra-ui/react-use-callback-ref": 2.0.6
+    "@chakra-ui/react-use-callback-ref": 2.0.7
   peerDependencies:
     react: ">=18"
-  checksum: 60cd97301963aecd6d9a2ff9dd8f4eb1d97ca5c0246037d73b51287bd2aacd11064d42a252a74ddd098d197864a6215221bd216f95df7a34f3a24358bbadee2e
+  checksum: 51b3135f85bcc4687baa46c01908f01b1930fc07ad78b37cdba79da84dcd47447588df076fd77faed46bccdc115fa08c2d7f6fad2511d79c1461f952279fb3c0
   languageName: node
   linkType: hard
 
@@ -1969,24 +1954,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/toast@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "@chakra-ui/toast@npm:4.0.8"
+"@chakra-ui/toast@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "@chakra-ui/toast@npm:5.0.1"
   dependencies:
-    "@chakra-ui/alert": 2.0.14
-    "@chakra-ui/close-button": 2.0.14
-    "@chakra-ui/portal": 2.0.13
-    "@chakra-ui/react-use-timeout": 2.0.4
-    "@chakra-ui/react-use-update-effect": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
-    "@chakra-ui/styled-system": 2.5.1
-    "@chakra-ui/theme": 2.2.4
+    "@chakra-ui/alert": 2.0.17
+    "@chakra-ui/close-button": 2.0.17
+    "@chakra-ui/portal": 2.0.15
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-use-timeout": 2.0.5
+    "@chakra-ui/react-use-update-effect": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
+    "@chakra-ui/styled-system": 2.5.2
+    "@chakra-ui/theme": 2.2.5
   peerDependencies:
-    "@chakra-ui/system": 2.3.7
+    "@chakra-ui/system": 2.4.0
     framer-motion: ">=4.0.0"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 372b5861dcce18d310b02089f728e180e5abac84811ebf58e3375b6b7fc64958080971d34b07887ea34e6b66ce884a939a1b51c0b2bdc5c7a6a490d5b8d409b2
+  checksum: d9852b3ba9ab6c092aaca940c188c8bcdda2f829dab97d0193026a08ac9ab0b6b439c2688ea46b84317868c11d1bcd5f63910cb60b404679301dadc0d7e5e9d4
   languageName: node
   linkType: hard
 
@@ -5831,7 +5817,7 @@ __metadata:
     "@chakra-ui/textarea": ^2.0.18
     "@chakra-ui/theme": ^2.2.4
     "@chakra-ui/theme-utils": ^2.0.8
-    "@chakra-ui/toast": ^4.0.8
+    "@chakra-ui/toast": ^5.0.1
     "@chakra-ui/tooltip": ^2.2.6
     "@chakra-ui/transition": ^2.0.13
     "@chakra-ui/visually-hidden": ^2.0.14
