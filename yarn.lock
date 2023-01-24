@@ -758,18 +758,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/clickable@npm:2.0.12":
-  version: 2.0.12
-  resolution: "@chakra-ui/clickable@npm:2.0.12"
-  dependencies:
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
-  peerDependencies:
-    react: ">=18"
-  checksum: 987ff98e365669f60e695db866ac4ff8fdc154b0e4a9c4f5f22f46e6d9a83a74a89388d8b7b16cfb6bf33f4dbac052107b091da7fb37cce376fa32ba5f1e1d54
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/clickable@npm:2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/clickable@npm:2.0.14"
@@ -1124,30 +1112,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/menu@npm:^2.1.6":
-  version: 2.1.6
-  resolution: "@chakra-ui/menu@npm:2.1.6"
+"@chakra-ui/menu@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "@chakra-ui/menu@npm:2.1.8"
   dependencies:
-    "@chakra-ui/clickable": 2.0.12
-    "@chakra-ui/descendant": 3.0.12
-    "@chakra-ui/lazy-utils": 2.0.4
-    "@chakra-ui/popper": 3.0.11
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-use-animation-state": 2.0.7
-    "@chakra-ui/react-use-controllable-state": 2.0.7
-    "@chakra-ui/react-use-disclosure": 2.0.7
-    "@chakra-ui/react-use-focus-effect": 2.0.8
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/react-use-outside-click": 2.0.6
-    "@chakra-ui/react-use-update-effect": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
-    "@chakra-ui/transition": 2.0.13
+    "@chakra-ui/clickable": 2.0.14
+    "@chakra-ui/descendant": 3.0.13
+    "@chakra-ui/lazy-utils": 2.0.5
+    "@chakra-ui/popper": 3.0.13
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-use-animation-state": 2.0.8
+    "@chakra-ui/react-use-controllable-state": 2.0.8
+    "@chakra-ui/react-use-disclosure": 2.0.8
+    "@chakra-ui/react-use-focus-effect": 2.0.9
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/react-use-outside-click": 2.0.7
+    "@chakra-ui/react-use-update-effect": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
+    "@chakra-ui/transition": 2.0.15
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: 768b412fbe8bf81bb67ced15be084cb58c3fab02c9fff4542dea5db03445ca6dd1ad77517fb6e2765bbe50a958e8e357b6731315a591ec18f212c2be5e3668ff
+  checksum: 378482fada8afe49da8d359622cae73be9d189c3217dfe2003ce6cbf329f26148cf57e6e14b46fe6fffbf3b9fd884d13d1ae18acdc2cd1c48534aa5853b72e2e
   languageName: node
   linkType: hard
 
@@ -1443,6 +1431,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-animation-state@npm:2.0.8":
+  version: 2.0.8
+  resolution: "@chakra-ui/react-use-animation-state@npm:2.0.8"
+  dependencies:
+    "@chakra-ui/dom-utils": 2.0.6
+    "@chakra-ui/react-use-event-listener": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: fee6f4690c75c0a262d83eb9b50109e6ffc16ab43f17ea34e6dca493db09ef1b36e7e443f34db9b101cece4c6db354581009816a70b18ab98c0de4f35ad39dc9
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-callback-ref@npm:2.0.6":
   version: 2.0.6
   resolution: "@chakra-ui/react-use-callback-ref@npm:2.0.6"
@@ -1541,6 +1541,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-focus-effect@npm:2.0.9":
+  version: 2.0.9
+  resolution: "@chakra-ui/react-use-focus-effect@npm:2.0.9"
+  dependencies:
+    "@chakra-ui/dom-utils": 2.0.6
+    "@chakra-ui/react-use-event-listener": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/react-use-update-effect": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: 9490875f791bb63f3de5690f4556058ab3ffef59ba9c0bb4c8caf4f5f0d3f3e38b62769362239adaf93d41689c5924c0e353a51e4dbde092c032e9ec04a28768
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.5":
   version: 2.0.5
   resolution: "@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.5"
@@ -1601,14 +1615,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/react-use-outside-click@npm:2.0.6":
-  version: 2.0.6
-  resolution: "@chakra-ui/react-use-outside-click@npm:2.0.6"
+"@chakra-ui/react-use-outside-click@npm:2.0.7":
+  version: 2.0.7
+  resolution: "@chakra-ui/react-use-outside-click@npm:2.0.7"
   dependencies:
-    "@chakra-ui/react-use-callback-ref": 2.0.6
+    "@chakra-ui/react-use-callback-ref": 2.0.7
   peerDependencies:
     react: ">=18"
-  checksum: b9f8f40252f3097845606687c6cf0fd1eff6be03ac8844e951cd8625c5ec12c7a75495682d4c14f8d04bf8913224076e6a895ea1001333c0064b65a09ae2ada1
+  checksum: 4b2ed2b51874f22d8849f762b22bc1841313fc82f3e4bd7bfbef15a656c620697125765cee6f1b75840f8aa8502574ffbe62989ede1c0dc8723b9c8d7041ecdb
   languageName: node
   linkType: hard
 
@@ -5871,7 +5885,7 @@ __metadata:
     "@chakra-ui/input": ^2.0.19
     "@chakra-ui/layout": ^2.1.15
     "@chakra-ui/media-query": ^3.2.11
-    "@chakra-ui/menu": ^2.1.6
+    "@chakra-ui/menu": ^2.1.8
     "@chakra-ui/modal": ^2.2.9
     "@chakra-ui/number-input": ^2.0.15
     "@chakra-ui/pin-input": ^2.0.17
