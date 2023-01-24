@@ -42,7 +42,7 @@
     "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/image": "^2.0.15",
     "@chakra-ui/input": "^2.0.19",
-    "@chakra-ui/layout": "^2.1.12",
+    "@chakra-ui/layout": "^2.1.15",
     "@chakra-ui/media-query": "^3.2.9",
     "@chakra-ui/menu": "^2.1.6",
     "@chakra-ui/modal": "^2.2.9",

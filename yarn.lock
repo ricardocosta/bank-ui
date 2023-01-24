@@ -700,6 +700,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/breakpoint-utils@npm:2.0.7":
+  version: 2.0.7
+  resolution: "@chakra-ui/breakpoint-utils@npm:2.0.7"
+  dependencies:
+    "@chakra-ui/shared-utils": 2.0.5
+  checksum: 42f39a84d14963ab5b3d9155edc2e69d0705221646c9ac74c8b5b7a32feac0124022be8b5fb6c730fc294c4adf36f77495b890f6df14085cc5f236f7fd883989
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/button@npm:^2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/button@npm:2.0.14"
@@ -1056,20 +1065,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/layout@npm:^2.1.12":
-  version: 2.1.12
-  resolution: "@chakra-ui/layout@npm:2.1.12"
+"@chakra-ui/layout@npm:^2.1.15":
+  version: 2.1.15
+  resolution: "@chakra-ui/layout@npm:2.1.15"
   dependencies:
-    "@chakra-ui/breakpoint-utils": 2.0.6
-    "@chakra-ui/icon": 3.0.14
-    "@chakra-ui/object-utils": 2.0.6
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/breakpoint-utils": 2.0.7
+    "@chakra-ui/icon": 3.0.16
+    "@chakra-ui/object-utils": 2.0.8
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 4a53872bc8d2398ba7cc8bd18e0f9d52c4783657ffd5aaaf2ae3707e878c3e3f4970ce297b72d414d0a78f66a1ca4eefc647429144be96a2819c96b17c475fca
+  checksum: 47d3e44a2dbe782354d71f96b8ba29658abf2b3279a5c3d5b172c6890aa0d0e71cdb469dd00bc2a54eb1f2092c485c50f621286b74d2eaacf2a556553d1c7b06
   languageName: node
   linkType: hard
 
@@ -1185,13 +1194,6 @@ __metadata:
   version: 2.0.7
   resolution: "@chakra-ui/number-utils@npm:2.0.7"
   checksum: e9773385f9f1758687d9f42b88487199725ccdd8e565b73832d89f38e95d80a748c55a44752dc9966c380dc7768e88394bdd369e2415f3b05adfc0e06588c55e
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/object-utils@npm:2.0.6":
-  version: 2.0.6
-  resolution: "@chakra-ui/object-utils@npm:2.0.6"
-  checksum: 03f498714584fdf9cb440c7116701d05ee3d74d375249bac43bc3a66be4928d88a335739abd70d0a709de65fca627f0c31047b5e1db3bcd21a3c03bc49fe77ef
   languageName: node
   linkType: hard
 
@@ -5842,7 +5844,7 @@ __metadata:
     "@chakra-ui/icons": ^2.0.15
     "@chakra-ui/image": ^2.0.15
     "@chakra-ui/input": ^2.0.19
-    "@chakra-ui/layout": ^2.1.12
+    "@chakra-ui/layout": ^2.1.15
     "@chakra-ui/media-query": ^3.2.9
     "@chakra-ui/menu": ^2.1.6
     "@chakra-ui/modal": ^2.2.9
