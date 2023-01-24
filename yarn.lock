@@ -761,6 +761,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/clickable@npm:2.0.14":
+  version: 2.0.14
+  resolution: "@chakra-ui/clickable@npm:2.0.14"
+  dependencies:
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
+  peerDependencies:
+    react: ">=18"
+  checksum: bbb3314de60720102a664a64fdb3c898f4c2185beaf5547e3aef59dceca721e1f409605a208327331a4d06306f8985ece8e387df2de704947b6b9f9c269300df
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/close-button@npm:2.0.14":
   version: 2.0.14
   resolution: "@chakra-ui/close-button@npm:2.0.14"
@@ -852,6 +864,18 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: b4e5c0fe4ab0e5508aa4cba4c1ba83557ba3e16a3f6314cdaae31fbe3e527acdf3c9b6b2cee4bdbbc15bc3c2dd297ce4d8f07315751343e1dc04d4e3a2f46ed6
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/descendant@npm:3.0.13":
+  version: 3.0.13
+  resolution: "@chakra-ui/descendant@npm:3.0.13"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: 904241f2908bac420fce1b61ee7d26b12886bc102f1b12a0bac3d54ba3684c7afa4d24a8a83ecea5510f283977bcfe6641ef100e06bd8bd4db9598c1fbacc418
   languageName: node
   linkType: hard
 
@@ -1053,6 +1077,13 @@ __metadata:
   version: 2.0.4
   resolution: "@chakra-ui/lazy-utils@npm:2.0.4"
   checksum: decf5ea8dcf1b938a467c0807ad0859b0a2b7ed6a74132d63571058d23fdabc642c7b0ecc787eaa41d721746ba18319e2d7ccb42067266b06968b8b9d17a895f
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/lazy-utils@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@chakra-ui/lazy-utils@npm:2.0.5"
+  checksum: f8f52a85d50ae06068611eb90bd6f10afcc87ca838e78313f6d08c08fa4935007f46488df4a537315484df26b69baed8afdbecd67b9e6375a6b23cc082fb24bd
   languageName: node
   linkType: hard
 
@@ -1852,23 +1883,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tabs@npm:^2.1.6":
-  version: 2.1.6
-  resolution: "@chakra-ui/tabs@npm:2.1.6"
+"@chakra-ui/tabs@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "@chakra-ui/tabs@npm:2.1.8"
   dependencies:
-    "@chakra-ui/clickable": 2.0.12
-    "@chakra-ui/descendant": 3.0.12
-    "@chakra-ui/lazy-utils": 2.0.4
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-use-controllable-state": 2.0.7
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/react-use-safe-layout-effect": 2.0.4
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/clickable": 2.0.14
+    "@chakra-ui/descendant": 3.0.13
+    "@chakra-ui/lazy-utils": 2.0.5
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-use-controllable-state": 2.0.8
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: caff10877de155d2fd99fe5d88b2eb719de1bad6e79a60f24f346be306128196418c1a042e77837aec904247333c16982705e2dce82db930fe4b38144a559bde
+  checksum: 18a41a7d15e5b49d4a2051efbcac55156a8a053e32122c7e07ff01e8724880ca6a147b0af11dd7228ebeba834e6a0f3eb8ac5906be5ac86c83c3bbb6a4ab07e1
   languageName: node
   linkType: hard
 
@@ -5832,7 +5863,7 @@ __metadata:
     "@chakra-ui/switch": ^2.0.22
     "@chakra-ui/system": ^2.3.8
     "@chakra-ui/table": ^2.0.16
-    "@chakra-ui/tabs": ^2.1.6
+    "@chakra-ui/tabs": ^2.1.8
     "@chakra-ui/tag": ^2.0.14
     "@chakra-ui/textarea": ^2.0.18
     "@chakra-ui/theme": ^2.2.4
