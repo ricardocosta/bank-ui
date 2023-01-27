@@ -3,7 +3,8 @@ import { createTreeWithEmptyWorkspace } from "@nrwl/devkit/testing";
 import { describe } from "vitest";
 
 import appGenerator from "./generator";
-import { AppGeneratorSchema } from "./schema";
+
+import type { AppGeneratorSchema } from "./schema";
 
 const DEMO_APP_ROOT = "apps/demo";
 const DEMO_APP_E2E_ROOT = "apps/demo-e2e";
