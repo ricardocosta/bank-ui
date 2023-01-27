@@ -17,6 +17,12 @@
   "engines": {
     "node": ">=18.10"
   },
+  "browserslist": [
+    "last 2 versions",
+    ">0.3%",
+    "not dead",
+    "not op_mini all"
+  ],
   "packageManager": "yarn@3.2.3",
   "scripts": {
     "prepare": "husky install",
