@@ -5,7 +5,8 @@ import { setupServer } from "msw/node";
 import { afterAll, afterEach, beforeAll, describe } from "vitest";
 
 import chakraWrapperGenerator from "./generator";
-import { ChakraWrapperGeneratorSchema } from "./schema";
+
+import type { ChakraWrapperGeneratorSchema } from "./schema";
 
 const UI_BUTTON_ROOT = "libs/ui/ui-button";
 const BUTTON_PACKAGE_NAME = "@chakra-ui/button";
