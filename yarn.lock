@@ -1170,20 +1170,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/pin-input@npm:^2.0.17":
-  version: 2.0.17
-  resolution: "@chakra-ui/pin-input@npm:2.0.17"
+"@chakra-ui/pin-input@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "@chakra-ui/pin-input@npm:2.0.19"
   dependencies:
-    "@chakra-ui/descendant": 3.0.12
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-use-controllable-state": 2.0.7
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/descendant": 3.0.13
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-use-controllable-state": 2.0.8
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 129f708c7c5c2de0485615c342260f5b379d992f70f5e002c7370beb7105f33022709ea0d9abcaac46ec92bce1060d7e863615dfd567d4dfd3795a5b28121ece
+  checksum: af69754d979650b1d43a72d0017bb5b2e622753580c976ed3e8e318902a93d75784e9d2f447c12e25617a3492c872d130d6401813d0a9bd7f18b1da789b720d1
   languageName: node
   linkType: hard
 
@@ -1306,15 +1306,6 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: c286e45b03e6b2f1d4f92826b842efe4725e432b17ff6b9a2c580613f637e0ede95a658ad2572559ee9bbc49305f1760d9d934010954ffd34493a7cb3f183bf6
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/react-children-utils@npm:2.0.5":
-  version: 2.0.5
-  resolution: "@chakra-ui/react-children-utils@npm:2.0.5"
-  peerDependencies:
-    react: ">=18"
-  checksum: f8a8fa04e6e13c2b03123346eb66404b6d5d3cdac5c3cbfae77e17f0838cae1a4d45c79439eaee90634625ba860a96d076de94054dba3a354759fd2a69bf9995
   languageName: node
   linkType: hard
 
@@ -5852,7 +5843,7 @@ __metadata:
     "@chakra-ui/menu": ^2.1.8
     "@chakra-ui/modal": ^2.2.9
     "@chakra-ui/number-input": ^2.0.15
-    "@chakra-ui/pin-input": ^2.0.17
+    "@chakra-ui/pin-input": ^2.0.19
     "@chakra-ui/popover": ^2.1.5
     "@chakra-ui/portal": ^2.0.15
     "@chakra-ui/progress": ^2.1.5
