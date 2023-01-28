@@ -761,18 +761,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/close-button@npm:2.0.14":
-  version: 2.0.14
-  resolution: "@chakra-ui/close-button@npm:2.0.14"
-  dependencies:
-    "@chakra-ui/icon": 3.0.14
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: 2c12767e80d45d35a5f82a4eb7964f97d39ccc2f96b89f5aeaa892a1de229e1386625b993be6e25092bd95c662983b98d4e496ea392e647c447744cfd881c8ae
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/close-button@npm:2.0.17, @chakra-ui/close-button@npm:^2.0.17":
   version: 2.0.17
   resolution: "@chakra-ui/close-button@npm:2.0.17"
@@ -864,13 +852,6 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 904241f2908bac420fce1b61ee7d26b12886bc102f1b12a0bac3d54ba3684c7afa4d24a8a83ecea5510f283977bcfe6641ef100e06bd8bd4db9598c1fbacc418
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/dom-utils@npm:2.0.5":
-  version: 2.0.5
-  resolution: "@chakra-ui/dom-utils@npm:2.0.5"
-  checksum: 6b3f0384dc0e0deffdad876fe9cadfeaefaf6dde96da814dcf059171023ed4823c91688fc21df08e47c97bfc2ef36f68f05810459122ece4e4fec1a27616ec7f
   languageName: node
   linkType: hard
 
@@ -1048,13 +1029,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/lazy-utils@npm:2.0.4":
-  version: 2.0.4
-  resolution: "@chakra-ui/lazy-utils@npm:2.0.4"
-  checksum: decf5ea8dcf1b938a467c0807ad0859b0a2b7ed6a74132d63571058d23fdabc642c7b0ecc787eaa41d721746ba18319e2d7ccb42067266b06968b8b9d17a895f
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/lazy-utils@npm:2.0.5":
   version: 2.0.5
   resolution: "@chakra-ui/lazy-utils@npm:2.0.5"
@@ -1187,39 +1161,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/popover@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@chakra-ui/popover@npm:2.1.5"
+"@chakra-ui/popover@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "@chakra-ui/popover@npm:2.1.8"
   dependencies:
-    "@chakra-ui/close-button": 2.0.14
-    "@chakra-ui/lazy-utils": 2.0.4
-    "@chakra-ui/popper": 3.0.11
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/react-types": 2.0.6
-    "@chakra-ui/react-use-animation-state": 2.0.7
-    "@chakra-ui/react-use-disclosure": 2.0.7
-    "@chakra-ui/react-use-focus-effect": 2.0.8
-    "@chakra-ui/react-use-focus-on-pointer-down": 2.0.5
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/close-button": 2.0.17
+    "@chakra-ui/lazy-utils": 2.0.5
+    "@chakra-ui/popper": 3.0.13
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-types": 2.0.7
+    "@chakra-ui/react-use-animation-state": 2.0.8
+    "@chakra-ui/react-use-disclosure": 2.0.8
+    "@chakra-ui/react-use-focus-effect": 2.0.9
+    "@chakra-ui/react-use-focus-on-pointer-down": 2.0.6
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: 4f9ee71384c24793925b67424b7704b4cceaa0b797ef286bf652ea09c2f84291afd06b55343e2756a1f21a6fa5aac4f84c1eda5de921bf70bb5cfb248a647abb
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/popper@npm:3.0.11":
-  version: 3.0.11
-  resolution: "@chakra-ui/popper@npm:3.0.11"
-  dependencies:
-    "@chakra-ui/react-types": 2.0.6
-    "@chakra-ui/react-use-merge-refs": 2.0.6
-    "@popperjs/core": ^2.9.3
-  peerDependencies:
-    react: ">=18"
-  checksum: e0016e992650879559c6d6c4537fe904659f8374f80424cbcb7f9c288228adef10fa4dc198510cddbecbabf2e1b2b62d9d1de4d5b60a01b01100a99330d0ddb3
+  checksum: 9410e2ae8835034439f37484253aa7128ae7c7426be37d548823e0659c47f192256101b379636850cecea1cbfeedd5caebf06bb43fcfc5f2f7705155c3ed2da3
   languageName: node
   linkType: hard
 
@@ -1374,18 +1335,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/react-use-animation-state@npm:2.0.7":
-  version: 2.0.7
-  resolution: "@chakra-ui/react-use-animation-state@npm:2.0.7"
-  dependencies:
-    "@chakra-ui/dom-utils": 2.0.5
-    "@chakra-ui/react-use-event-listener": 2.0.6
-  peerDependencies:
-    react: ">=18"
-  checksum: f3dc671eb2397f6fe95e6acecdf9718276507a55909c57f560fe2c1fc83fa9042031a2362c8c904a64497d14d3af9ed32b4536836bfcf408910bdfcb0be9d8da
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/react-use-animation-state@npm:2.0.8":
   version: 2.0.8
   resolution: "@chakra-ui/react-use-animation-state@npm:2.0.8"
@@ -1438,17 +1387,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/react-use-disclosure@npm:2.0.7":
-  version: 2.0.7
-  resolution: "@chakra-ui/react-use-disclosure@npm:2.0.7"
-  dependencies:
-    "@chakra-ui/react-use-callback-ref": 2.0.6
-  peerDependencies:
-    react: ">=18"
-  checksum: 0cc7882c75adcd71c54a38d3de5b663619da323ab48ee706bcffb543525cc605360c828b68695a838c6268d080bf3ef83296ae984518f9f197213f2d73d23f07
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/react-use-disclosure@npm:2.0.8":
   version: 2.0.8
   resolution: "@chakra-ui/react-use-disclosure@npm:2.0.8"
@@ -1482,20 +1420,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/react-use-focus-effect@npm:2.0.8":
-  version: 2.0.8
-  resolution: "@chakra-ui/react-use-focus-effect@npm:2.0.8"
-  dependencies:
-    "@chakra-ui/dom-utils": 2.0.5
-    "@chakra-ui/react-use-event-listener": 2.0.6
-    "@chakra-ui/react-use-safe-layout-effect": 2.0.4
-    "@chakra-ui/react-use-update-effect": 2.0.6
-  peerDependencies:
-    react: ">=18"
-  checksum: d4f7ad6f871373086a42eb145ed6a671dcb01da3d85f126134476b490193af1a43e301467b4f080742b95cfc7dbee1547a6b660ce06a01846b46e9c76088fec7
-  languageName: node
-  linkType: hard
-
 "@chakra-ui/react-use-focus-effect@npm:2.0.9":
   version: 2.0.9
   resolution: "@chakra-ui/react-use-focus-effect@npm:2.0.9"
@@ -1507,17 +1431,6 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 9490875f791bb63f3de5690f4556058ab3ffef59ba9c0bb4c8caf4f5f0d3f3e38b62769362239adaf93d41689c5924c0e353a51e4dbde092c032e9ec04a28768
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.5":
-  version: 2.0.5
-  resolution: "@chakra-ui/react-use-focus-on-pointer-down@npm:2.0.5"
-  dependencies:
-    "@chakra-ui/react-use-event-listener": 2.0.6
-  peerDependencies:
-    react: ">=18"
-  checksum: 926abac161c2a7b7650f646ac0af616470b6c6a7b690f5b53e5709edd9d81e2404bf3ae33965efd57da5c4679d3f298ddf8657ecb2782aa07885e81dff7fa0da
   languageName: node
   linkType: hard
 
@@ -5844,7 +5757,7 @@ __metadata:
     "@chakra-ui/modal": ^2.2.9
     "@chakra-ui/number-input": ^2.0.15
     "@chakra-ui/pin-input": ^2.0.19
-    "@chakra-ui/popover": ^2.1.5
+    "@chakra-ui/popover": ^2.1.8
     "@chakra-ui/portal": ^2.0.15
     "@chakra-ui/progress": ^2.1.5
     "@chakra-ui/provider": ^2.0.28
