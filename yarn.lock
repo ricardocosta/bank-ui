@@ -662,18 +662,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/avatar@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@chakra-ui/avatar@npm:2.2.2"
+"@chakra-ui/avatar@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "@chakra-ui/avatar@npm:2.2.4"
   dependencies:
-    "@chakra-ui/image": 2.0.13
-    "@chakra-ui/react-children-utils": 2.0.5
-    "@chakra-ui/react-context": 2.0.6
-    "@chakra-ui/shared-utils": 2.0.4
+    "@chakra-ui/image": 2.0.15
+    "@chakra-ui/react-children-utils": 2.0.6
+    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 9ffe9e58b20676e42ed371ee7613aac3eb64059d92ffd8b7710ab5ec9e42fef4dc0c8441c2e666b2ddab252d907d28cc5ad22398901a0047d983efe99b1c0385
+  checksum: d1aba1c6cbf367320b54463a2d37ce4c2a5993a8c22da6d29c55325239e828186f07795a9963ae08e7163db62305eb0cb1799733565e807691ac828b551ac9be
   languageName: node
   linkType: hard
 
@@ -1011,20 +1011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/image@npm:2.0.13":
-  version: 2.0.13
-  resolution: "@chakra-ui/image@npm:2.0.13"
-  dependencies:
-    "@chakra-ui/react-use-safe-layout-effect": 2.0.4
-    "@chakra-ui/shared-utils": 2.0.4
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: fd1cccf41560cdac8dd4b3f56eeb6c0523f9c8f9165e4ea7b452414401b66db4251be04a87643914cb24b1bc6e39003d2d1acdbcdd3e9bf3f85ce27cb4850c1e
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/image@npm:^2.0.15":
+"@chakra-ui/image@npm:2.0.15, @chakra-ui/image@npm:^2.0.15":
   version: 2.0.15
   resolution: "@chakra-ui/image@npm:2.0.15"
   dependencies:
@@ -5869,7 +5856,7 @@ __metadata:
   dependencies:
     "@chakra-ui/accordion": ^2.1.5
     "@chakra-ui/alert": ^2.0.17
-    "@chakra-ui/avatar": ^2.2.2
+    "@chakra-ui/avatar": ^2.2.4
     "@chakra-ui/breadcrumb": ^2.1.4
     "@chakra-ui/button": ^2.0.14
     "@chakra-ui/card": ^2.1.4
