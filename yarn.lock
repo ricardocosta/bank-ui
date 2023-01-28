@@ -1899,16 +1899,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tag@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "@chakra-ui/tag@npm:2.0.14"
+"@chakra-ui/tag@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@chakra-ui/tag@npm:2.0.17"
   dependencies:
-    "@chakra-ui/icon": 3.0.14
-    "@chakra-ui/react-context": 2.0.6
+    "@chakra-ui/icon": 3.0.16
+    "@chakra-ui/react-context": 2.0.7
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: c2a47ca30f9a239a86eeb70ae465762f5d11526fbf6eefdba5940acf01e837f4b4acc8cd9b61d9b9b6eee767c070c49b84bbec08e03d3117e2f2764773ef26e9
+  checksum: d6ba00bcd9eebacf6ced973c2a1c8aa1edc86c6d033f982e3812bfb91df77fa827504a91abc5a88d810d484f3ad55b267772f63202225aa9389434d3b53305aa
   languageName: node
   linkType: hard
 
@@ -5860,7 +5860,7 @@ __metadata:
     "@chakra-ui/system": ^2.3.8
     "@chakra-ui/table": ^2.0.16
     "@chakra-ui/tabs": ^2.1.8
-    "@chakra-ui/tag": ^2.0.14
+    "@chakra-ui/tag": ^2.0.17
     "@chakra-ui/textarea": ^2.0.18
     "@chakra-ui/theme": ^2.2.4
     "@chakra-ui/theme-utils": ^2.0.8
