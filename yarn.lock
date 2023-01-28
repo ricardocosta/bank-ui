@@ -1272,7 +1272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/portal@npm:2.0.13, @chakra-ui/portal@npm:^2.0.13":
+"@chakra-ui/portal@npm:2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/portal@npm:2.0.13"
   dependencies:
@@ -1285,7 +1285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/portal@npm:2.0.15":
+"@chakra-ui/portal@npm:2.0.15, @chakra-ui/portal@npm:^2.0.15":
   version: 2.0.15
   resolution: "@chakra-ui/portal@npm:2.0.15"
   dependencies:
@@ -5890,7 +5890,7 @@ __metadata:
     "@chakra-ui/number-input": ^2.0.15
     "@chakra-ui/pin-input": ^2.0.17
     "@chakra-ui/popover": ^2.1.5
-    "@chakra-ui/portal": ^2.0.13
+    "@chakra-ui/portal": ^2.0.15
     "@chakra-ui/progress": ^2.1.5
     "@chakra-ui/provider": ^2.0.28
     "@chakra-ui/radio": ^2.0.16
