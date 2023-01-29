@@ -106,6 +106,14 @@
         "cwd": "apps/shell",
         "color": true
       }
+    },
+    "jsonServer": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["json-server ./server/db.json --routes ./server/routes.json --port 4002"],
+        "cwd": "apps/shell",
+        "color": true
+      }
     }
   },
   "tags": []

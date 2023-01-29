@@ -1,0 +1,6 @@
+{
+  "appMenu": [
+    { "id": "1", "path": "dashboard", "name": "Dashboard", "default": true },
+    { "id": "2", "path": "transactions", "name": "Transactions" }
+  ]
+}
