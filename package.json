@@ -94,7 +94,7 @@
     "@nrwl/nx-plugin": "^15.5.1",
     "@nrwl/tao": "^15.5.1",
     "@nrwl/vite": "^15.5.1",
-    "@nrwl/workspace": "^15.5.1",
+    "@nrwl/workspace": "^15.6.3",
     "@playwright/test": "^1.29.2",
     "@swc-node/register": "^1.5.5",
     "@swc/cli": "~0.1.59",
