@@ -5828,7 +5828,7 @@ __metadata:
     eslint-plugin-sonarjs: ^0.18.0
     eslint-plugin-testing-library: ^5.9.1
     fast-glob: ^3.2.12
-    framer-motion: ^7.10.2
+    framer-motion: ^8.5.4
     husky: ^8.0.3
     jsdom: ^21.0.0
     json-server: ^0.17.1
@@ -9360,21 +9360,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^7.10.2":
-  version: 7.10.2
-  resolution: "framer-motion@npm:7.10.2"
+"framer-motion@npm:^8.5.4":
+  version: 8.5.4
+  resolution: "framer-motion@npm:8.5.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     "@motionone/dom": ^10.15.3
     hey-listen: ^1.0.8
-    tslib: 2.4.0
+    tslib: ^2.4.0
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 75c7843cf83a1213237b4881e06811a01ae5bc9686ff3efdd5494ad23f28cfdf35ad0f6b907110b83f04ddef92412db8d296e28a7297dc83a9b68125311d9f35
+  checksum: 9852c448951986b2c2984bcf457b8a50ea10bb5d63c5ee58af7a60582dc04739873aa458a5e26e4ee4b582a01afd3ac2421241f1941a4bd5c97122960429299a
   languageName: node
   linkType: hard
 
