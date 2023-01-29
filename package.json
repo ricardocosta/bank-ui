@@ -86,7 +86,7 @@
     "@commitlint/config-nx-scopes": "^17.4.2",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@nrwl/cli": "^15.5.1",
-    "@nrwl/devkit": "15.5.1",
+    "@nrwl/devkit": "15.6.3",
     "@nrwl/eslint-plugin-nx": "^15.5.1",
     "@nrwl/js": "15.5.1",
     "@nrwl/linter": "^15.5.1",
