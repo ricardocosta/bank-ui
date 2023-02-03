@@ -20,6 +20,14 @@
         "configFile": "apps/sandbox/vite.config.ts"
       }
     },
+    "preview": {
+      "executor": "@nrwl/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "sandbox:build",
+        "configFile": "apps/sandbox/vite.config.ts"
+      }
+    },
     "test": {
       "executor": "nx:run-commands",
       "options": {

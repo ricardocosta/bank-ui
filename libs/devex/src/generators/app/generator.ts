@@ -28,6 +28,7 @@ const NX_COMMANDS: Record<string, string> = {
   lint: "@nrwl/linter:eslint",
   vite_build: "@nrwl/vite:build",
   vite_serve: "@nrwl/vite:dev-server",
+  vite_preview: "@nrwl/vite:preview-server",
 };
 
 async function findAvailablePort(tree: Tree) {
@@ -83,6 +84,14 @@ function createAppTargets(options: NormalizedSchema) {
     },
     dev: {
       executor: NX_COMMANDS.vite_serve,
+      defaultConfiguration: "development",
+      options: {
+        buildTarget: `${projectName}:build`,
+        configFile: `${projectRoot}/vite.config.ts`,
+      },
+    },
+    preview: {
+      executor: NX_COMMANDS.vite_preview,
       defaultConfiguration: "development",
       options: {
         buildTarget: `${projectName}:build`,

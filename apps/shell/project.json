@@ -19,6 +19,14 @@
         "configFile": "apps/shell/vite.config.ts"
       }
     },
+    "preview": {
+      "executor": "@nrwl/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "shell:build",
+        "configFile": "apps/shell/vite.config.ts"
+      }
+    },
     "test": {
       "executor": "nx:run-commands",
       "options": {
