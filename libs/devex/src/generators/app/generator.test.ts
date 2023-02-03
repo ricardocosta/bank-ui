@@ -31,9 +31,10 @@ describe("Generators / App", () => {
 
     const config = readProjectConfiguration(appTree, "demo");
 
-    config.targets && expect(Object.keys(config.targets)).toHaveLength(10);
+    config.targets && expect(Object.keys(config.targets)).toHaveLength(11);
     expect(config.targets).toHaveProperty("build");
     expect(config.targets).toHaveProperty("dev");
+    expect(config.targets).toHaveProperty("preview");
     expect(config.targets).toHaveProperty("test");
     expect(config.targets).toHaveProperty("testCoverage");
     expect(config.targets).toHaveProperty("testUi");
