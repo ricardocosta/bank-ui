@@ -2870,15 +2870,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-nx-scopes@npm:^17.4.2":
-  version: 17.4.2
-  resolution: "@commitlint/config-nx-scopes@npm:17.4.2"
+"@commitlint/config-nx-scopes@npm:^17.4.3":
+  version: 17.4.3
+  resolution: "@commitlint/config-nx-scopes@npm:17.4.3"
   peerDependencies:
     nx: ^14.0.0 || ^15.0.0
   peerDependenciesMeta:
     nx:
       optional: true
-  checksum: 631eed924767435fe9502614e68fddf88d4ffa2e14e0618693d5277d82e00f44513d00f489bbf61764d9a2894935a4711c034728692f7b3bb6f5e19252e267b3
+  checksum: f7e109e23fa02dadad75ec9fd3c996e607fef28ab857b48c781109ad29a0dcf126ea06784084867ab448db81eba319b9ab8c8b50a9f4bd67aca5aece10ff20da
   languageName: node
   linkType: hard
 
@@ -6801,7 +6801,7 @@ __metadata:
     "@chakra-ui/visually-hidden": ^2.0.15
     "@commitlint/cli": ^17.4.2
     "@commitlint/config-conventional": ^17.4.2
-    "@commitlint/config-nx-scopes": ^17.4.2
+    "@commitlint/config-nx-scopes": ^17.4.3
     "@emotion/react": ^11.10.5
     "@emotion/styled": ^11.10.5
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
