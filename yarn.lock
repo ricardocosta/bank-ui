@@ -1779,9 +1779,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/avatar@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "@chakra-ui/avatar@npm:2.2.4"
+"@chakra-ui/avatar@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "@chakra-ui/avatar@npm:2.2.5"
   dependencies:
     "@chakra-ui/image": 2.0.15
     "@chakra-ui/react-children-utils": 2.0.6
@@ -1790,7 +1790,7 @@ __metadata:
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: d1aba1c6cbf367320b54463a2d37ce4c2a5993a8c22da6d29c55325239e828186f07795a9963ae08e7163db62305eb0cb1799733565e807691ac828b551ac9be
+  checksum: 12872aec0805347170e2392425a21ee640668998775f0b8432fb4bc1ac15684807e3ceb035992caec56c115401bff1f76036d04d42ad65788dcd52439830c837
   languageName: node
   linkType: hard
 
@@ -6755,7 +6755,7 @@ __metadata:
   dependencies:
     "@chakra-ui/accordion": ^2.1.8
     "@chakra-ui/alert": ^2.0.17
-    "@chakra-ui/avatar": ^2.2.4
+    "@chakra-ui/avatar": ^2.2.5
     "@chakra-ui/breadcrumb": ^2.1.4
     "@chakra-ui/button": ^2.0.16
     "@chakra-ui/card": ^2.1.6

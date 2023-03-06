@@ -28,7 +28,7 @@
   "dependencies": {
     "@chakra-ui/accordion": "^2.1.8",
     "@chakra-ui/alert": "^2.0.17",
-    "@chakra-ui/avatar": "^2.2.4",
+    "@chakra-ui/avatar": "^2.2.5",
     "@chakra-ui/breadcrumb": "^2.1.4",
     "@chakra-ui/button": "^2.0.16",
     "@chakra-ui/card": "^2.1.6",
