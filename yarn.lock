@@ -1998,17 +1998,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/hooks@npm:^2.1.5":
-  version: 2.1.5
-  resolution: "@chakra-ui/hooks@npm:2.1.5"
+"@chakra-ui/hooks@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@chakra-ui/hooks@npm:2.1.6"
   dependencies:
     "@chakra-ui/react-utils": 2.0.12
     "@chakra-ui/utils": 2.0.15
-    compute-scroll-into-view: 1.0.14
-    copy-to-clipboard: 3.3.1
+    compute-scroll-into-view: 1.0.20
+    copy-to-clipboard: 3.3.3
   peerDependencies:
     react: ">=18"
-  checksum: c1d723c12a4fad3a16ec28b9b426661c89761a79cca9755aa990d3c3f6d4d0ec25dc10e6d71ec902272582d646800196f71bbb4d1e84535b74066497f023f7b4
+  checksum: 544f8d8d27be9c496610202bbbdd2e9e193815121bb13d9c4cc09ad1ad79248adfe95c7f29112a47e1c0f679c051e158cb1fb7dc3913158e5fca723423f5b9fd
   languageName: node
   linkType: hard
 
@@ -6765,7 +6765,7 @@ __metadata:
     "@chakra-ui/css-reset": ^2.0.12
     "@chakra-ui/editable": ^2.0.19
     "@chakra-ui/form-control": ^2.0.17
-    "@chakra-ui/hooks": ^2.1.5
+    "@chakra-ui/hooks": ^2.1.6
     "@chakra-ui/icons": ^2.0.17
     "@chakra-ui/image": ^2.0.15
     "@chakra-ui/input": ^2.0.19
@@ -7633,10 +7633,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compute-scroll-into-view@npm:1.0.14":
-  version: 1.0.14
-  resolution: "compute-scroll-into-view@npm:1.0.14"
-  checksum: 863925bf8dcd82cfbcf5938cde6cb6d58fc07988d29841bb1db6140993dbd95cbc907ff03488fe06014634604a44f5ac0c21da7a3012e0c41fbeea237716dfdb
+"compute-scroll-into-view@npm:1.0.20":
+  version: 1.0.20
+  resolution: "compute-scroll-into-view@npm:1.0.20"
+  checksum: f15fab29221953620735393ac1866541aab0d27d28078bedbba071a291ee9c8cc1a72bee302cf0bc06ed83c5e55afb74ebcbd634a63671ba33cf1fb1c51d3308
   languageName: node
   linkType: hard
 
@@ -7954,12 +7954,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"copy-to-clipboard@npm:3.3.1":
-  version: 3.3.1
-  resolution: "copy-to-clipboard@npm:3.3.1"
+"copy-to-clipboard@npm:3.3.3":
+  version: 3.3.3
+  resolution: "copy-to-clipboard@npm:3.3.3"
   dependencies:
     toggle-selection: ^1.0.6
-  checksum: 3c7b1c333dc6a4b2e9905f52e4df6bbd34ff9f9c97ecd3ca55378a6bc1c191bb12a3252e6289c7b436e9188cff0360d393c0161626851d2301607860bbbdcfd5
+  checksum: e0a325e39b7615108e6c1c8ac110ae7b829cdc4ee3278b1df6a0e4228c490442cc86444cd643e2da344fbc424b3aab8909e2fec82f8bc75e7e5b190b7c24eecf
   languageName: node
   linkType: hard
 

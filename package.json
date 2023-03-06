@@ -38,7 +38,7 @@
     "@chakra-ui/css-reset": "^2.0.12",
     "@chakra-ui/editable": "^2.0.19",
     "@chakra-ui/form-control": "^2.0.17",
-    "@chakra-ui/hooks": "^2.1.5",
+    "@chakra-ui/hooks": "^2.1.6",
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/image": "^2.0.15",
     "@chakra-ui/input": "^2.0.19",
