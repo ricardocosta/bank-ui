@@ -2103,9 +2103,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/menu@npm:^2.1.8":
-  version: 2.1.8
-  resolution: "@chakra-ui/menu@npm:2.1.8"
+"@chakra-ui/menu@npm:^2.1.9":
+  version: 2.1.9
+  resolution: "@chakra-ui/menu@npm:2.1.9"
   dependencies:
     "@chakra-ui/clickable": 2.0.14
     "@chakra-ui/descendant": 3.0.13
@@ -2126,7 +2126,7 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: 378482fada8afe49da8d359622cae73be9d189c3217dfe2003ce6cbf329f26148cf57e6e14b46fe6fffbf3b9fd884d13d1ae18acdc2cd1c48534aa5853b72e2e
+  checksum: 2872adbd3d2f4ca681089f647643c3cf73468b39a4239c7a316ca8e587703f5dee191075810dd68cdecaad8b296b11f98388d18a9f9d9c222572d7e7448d2e11
   languageName: node
   linkType: hard
 
@@ -6771,7 +6771,7 @@ __metadata:
     "@chakra-ui/input": ^2.0.19
     "@chakra-ui/layout": ^2.1.15
     "@chakra-ui/media-query": ^3.2.11
-    "@chakra-ui/menu": ^2.1.8
+    "@chakra-ui/menu": ^2.1.9
     "@chakra-ui/modal": ^2.2.9
     "@chakra-ui/number-input": ^2.0.18
     "@chakra-ui/pin-input": ^2.0.19
