@@ -2660,7 +2660,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/system@npm:2.5.1":
+"@chakra-ui/system@npm:2.5.1, @chakra-ui/system@npm:^2.5.1":
   version: 2.5.1
   resolution: "@chakra-ui/system@npm:2.5.1"
   dependencies:
@@ -2676,25 +2676,6 @@ __metadata:
     "@emotion/styled": ^11.0.0
     react: ">=18"
   checksum: 01ba6bd6fbd5c18538714661b852c19c0f811bfc64a05b7146d12c9f74fe22533d1bd6dcf7a35c6958c342d1dec436e668a5cda47c5971cd9a5e6034645687c0
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/system@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "@chakra-ui/system@npm:2.4.0"
-  dependencies:
-    "@chakra-ui/color-mode": 2.1.12
-    "@chakra-ui/object-utils": 2.0.8
-    "@chakra-ui/react-utils": 2.0.12
-    "@chakra-ui/styled-system": 2.5.2
-    "@chakra-ui/theme-utils": 2.0.9
-    "@chakra-ui/utils": 2.0.15
-    react-fast-compare: 3.2.0
-  peerDependencies:
-    "@emotion/react": ^11.0.0
-    "@emotion/styled": ^11.0.0
-    react: ">=18"
-  checksum: f1133063541b0368ebae4a0ffbf87886ea01c8571150df3f487d65035e3bf189769740123e0d41c9f2a030187010566399555d8f3bbcee6dcb6cb9a041b6c63c
   languageName: node
   linkType: hard
 
@@ -2782,7 +2763,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme-utils@npm:2.0.9, @chakra-ui/theme-utils@npm:^2.0.9":
+"@chakra-ui/theme-utils@npm:^2.0.9":
   version: 2.0.9
   resolution: "@chakra-ui/theme-utils@npm:2.0.9"
   dependencies:
@@ -6849,7 +6830,7 @@ __metadata:
     "@chakra-ui/stat": ^2.0.17
     "@chakra-ui/styled-system": ^2.5.2
     "@chakra-ui/switch": ^2.0.22
-    "@chakra-ui/system": ^2.4.0
+    "@chakra-ui/system": ^2.5.1
     "@chakra-ui/table": ^2.0.16
     "@chakra-ui/tabs": ^2.1.8
     "@chakra-ui/tag": ^2.0.17
