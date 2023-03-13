@@ -129,7 +129,7 @@
     "husky": "^8.0.3",
     "jsdom": "^21.1.0",
     "json-server": "^0.17.2",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.0",
     "msw": "^1.0.0",
     "nx": "^15.6.3",
     "playwright": "^1.30.0",
