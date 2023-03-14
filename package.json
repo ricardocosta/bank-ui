@@ -74,7 +74,7 @@
     "@chakra-ui/visually-hidden": "^2.0.15",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "framer-motion": "^7.10.2",
+    "framer-motion": "^10.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^1.3.0",
