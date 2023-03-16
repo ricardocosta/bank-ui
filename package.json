@@ -15,7 +15,7 @@
     "url": "https://github.com/ricardocosta/bank-ui/issues"
   },
   "engines": {
-    "node": ">=18.10"
+    "node": ">=19.8.1"
   },
   "browserslist": [
     "last 2 versions",
@@ -23,7 +23,7 @@
     "not dead",
     "not op_mini all"
   ],
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@3.4.1",
   "scripts": {
     "prepare": "husky install",
     "pre-commit": "lint-staged",
