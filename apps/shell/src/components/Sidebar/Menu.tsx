@@ -1,10 +1,11 @@
 import { useConst } from "@ricardocosta/ui-hooks";
 import { Flex, HStack, Link, Text } from "@ricardocosta/ui-layout";
-import { NavLink, RouteObject } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import routes from "../../routes/main";
 
 import type { FC } from "react";
+import type { RouteObject } from "react-router-dom";
 
 const hasPathFn = (route: RouteObject) => !!route.path;
 const isRenderable = (route: RouteObject) => route.path !== "*" && route.path !== "/";
