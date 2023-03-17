@@ -1,6 +1,8 @@
 import { Flex, Text } from "@ricardocosta/ui-layout";
 
-export const Welcome = () => {
+import type { FC } from "react";
+
+export const Welcome: FC = () => {
   return (
     <Flex alignSelf="center" marginTop="24px">
       <Text color="teal.200" marginRight="8px" textTransform="uppercase">
