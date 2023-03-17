@@ -1,16 +1,11 @@
+import { Spinner } from "@ricardocosta/ui-spinner";
+import { lazy, Suspense } from "react";
 import { Navigate } from "react-router-dom";
 
 import { getNavigation } from "../api/navigation";
-import { App, Dashboard, NotFound, Transactions } from "../pages/";
-
-import type { ReactNode } from "react";
+import { App, NotFound } from "../pages/";
 
 import type { NavigationItem } from "../types/navigation";
-
-const PAGE_COMPONENTS_MAP: Record<string, ReactNode> = {
-  dashboard: <Dashboard />,
-  transactions: <Transactions />,
-};
 
 const getDefaultPath = (navigation: NavigationItem[]) => {
   const defaultRoute = navigation.find((navItem) => !!navItem.default);
@@ -21,10 +16,18 @@ const getDefaultPath = (navigation: NavigationItem[]) => {
 export const getRoutes = async () => {
   const navigation = await getNavigation();
 
-  const navigationChildren = navigation.map((navItem) => ({
-    path: navItem.path,
-    element: PAGE_COMPONENTS_MAP[navItem.path],
-  }));
+  const navigationChildren = navigation.map((navItem) => {
+    const Component = lazy(() => import(/* @vite-ignore */ navItem.content));
+
+    return {
+      path: navItem.path,
+      element: (
+        <Suspense fallback={<Spinner />}>
+          <Component />
+        </Suspense>
+      ),
+    };
+  });
 
   return [
     {

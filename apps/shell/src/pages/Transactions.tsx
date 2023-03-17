@@ -9,3 +9,5 @@ export const Transactions: FC = () => {
     </Flex>
   );
 };
+
+export default Transactions;

@@ -9,3 +9,5 @@ export const Dashboard: FC = () => {
     </Flex>
   );
 };
+
+export default Dashboard;
