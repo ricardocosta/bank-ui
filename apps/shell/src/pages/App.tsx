@@ -3,7 +3,9 @@ import { Outlet } from "react-router-dom";
 
 import { Sidebar } from "../components/Sidebar";
 
-export const App = () => {
+import type { FC } from "react";
+
+export const App: FC = () => {
   return (
     <Flex direction="row" height="100vh" width="100vw">
       <Sidebar />

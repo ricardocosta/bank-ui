@@ -1,6 +1,8 @@
 import { Flex, Heading, Text } from "@ricardocosta/ui-layout";
 
-export const NoRoutesErrorPage = () => (
+import type { FC } from "react";
+
+export const NoRoutesErrorPage: FC = () => (
   <Flex
     alignItems="center"
     bg="gray.100"
