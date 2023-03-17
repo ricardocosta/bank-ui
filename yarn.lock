@@ -4213,6 +4213,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:15.8.6":
+  version: 15.8.6
+  resolution: "@nrwl/devkit@npm:15.8.6"
+  dependencies:
+    "@phenomnomnominal/tsquery": 4.1.1
+    ejs: ^3.1.7
+    ignore: ^5.0.4
+    semver: 7.3.4
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 14.1 <= 16"
+  checksum: b14592dec3792058bad6845853f14c50ab78e88ca25ead394f9eb89351fe561ae4589c57e8b6bbc2e529ed044852a9bcf3b5a36089a05735731d6d928d5af0d9
+  languageName: node
+  linkType: hard
+
 "@nrwl/eslint-plugin-nx@npm:^15.6.3":
   version: 15.6.3
   resolution: "@nrwl/eslint-plugin-nx@npm:15.6.3"
@@ -6843,7 +6859,7 @@ __metadata:
     "@emotion/styled": ^11.10.5
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
     "@nrwl/cli": ^15.6.3
-    "@nrwl/devkit": 15.6.3
+    "@nrwl/devkit": 15.8.6
     "@nrwl/eslint-plugin-nx": ^15.6.3
     "@nrwl/js": 15.6.3
     "@nrwl/linter": ^15.6.3
