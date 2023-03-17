@@ -30,8 +30,8 @@ describe("Page: <App />", () => {
   describe("when there is no default route", async () => {
     const noDefaultNavigationResponseMock = {
       appMenu: [
-        { id: "1", path: "dashboard", name: "Dashboard" },
-        { id: "2", path: "transactions", name: "Transactions" },
+        { id: "1", path: "dashboard", name: "Dashboard", content: "../pages/Dashboard" },
+        { id: "2", path: "transactions", name: "Transactions", content: "../pages/Transactions" },
       ],
     };
 
@@ -60,7 +60,11 @@ describe("Page: <App />", () => {
       });
 
       const sidebar = screen.getByTestId("sidebar");
-      expect(within(sidebar).getByText("Dashboard")).toBeInTheDocument();
+
+      await waitFor(() => {
+        expect(within(sidebar).getByText("Dashboard")).toBeInTheDocument();
+      });
+
       expect(within(sidebar).getByText("Transactions")).toBeInTheDocument();
     });
   });

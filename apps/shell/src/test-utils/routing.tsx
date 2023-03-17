@@ -1,5 +1,7 @@
+import { Spinner } from "@ricardocosta/ui-spinner";
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { Suspense } from "react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
 import { getRoutes } from "../routes/main";
@@ -16,7 +18,11 @@ export const renderWithRouter = async (
   return {
     user: userEvent.setup(),
     ...render(component, {
-      wrapper: () => <RouterProvider router={router} />,
+      wrapper: () => (
+        <Suspense fallback={<Spinner />}>
+          <RouterProvider router={router} />
+        </Suspense>
+      ),
     }),
   };
 };

@@ -5,8 +5,14 @@ describe("API: getNavigation", () => {
     const result = await getNavigation();
 
     expect(result).toEqual([
-      { id: "1", path: "dashboard", name: "Dashboard", default: true },
-      { id: "2", path: "transactions", name: "Transactions" },
+      {
+        id: "1",
+        path: "dashboard",
+        name: "Dashboard",
+        content: "../pages/Dashboard",
+        default: true,
+      },
+      { id: "2", path: "transactions", name: "Transactions", content: "../pages/Transactions" },
     ]);
   });
 });
