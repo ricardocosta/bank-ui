@@ -1,6 +1,6 @@
 import { readJson, readProjectConfiguration } from "@nrwl/devkit";
 import { createTreeWithEmptyWorkspace } from "@nrwl/devkit/testing";
-import { rest } from "msw";
+import { HttpResponse, rest } from "msw";
 import { setupServer } from "msw/node";
 import { afterAll, afterEach, beforeAll, describe } from "vitest";
 
@@ -27,11 +27,11 @@ const SYSTEM_PACKAGE_INFO = {
 };
 
 export const restHandlers = [
-  rest.get(`https://registry.npmjs.org/${BUTTON_PACKAGE_NAME}/latest`, (_req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(BUTTON_PACKAGE_INFO));
+  rest.get(`https://registry.npmjs.org/${BUTTON_PACKAGE_NAME}/latest`, () => {
+    return HttpResponse.json(BUTTON_PACKAGE_INFO);
   }),
-  rest.get(`https://registry.npmjs.org/${SYSTEM_PACKAGE_NAME}/latest`, (_req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(SYSTEM_PACKAGE_INFO));
+  rest.get(`https://registry.npmjs.org/${SYSTEM_PACKAGE_NAME}/latest`, () => {
+    return HttpResponse.json(SYSTEM_PACKAGE_INFO);
   }),
 ];
 

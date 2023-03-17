@@ -12,7 +12,6 @@ import {
   readRootPackageJson,
   updateJson,
 } from "@nrwl/devkit";
-import axios from "axios";
 import chalk from "chalk";
 
 import type { TargetConfiguration, Tree } from "@nrwl/devkit";
@@ -58,28 +57,26 @@ async function normalizeOptions(
   };
 }
 
-function getPackageInfo(packageName: string): Promise<Record<string, any>> {
-  return axios
-    .get(`https://registry.npmjs.org/${packageName}/latest`, {
-      headers: {
-        "Accept-Encoding": "application/json",
-      },
-    })
-    .then((response) => {
-      return response.data;
-    });
+function getPackageInfo(packageName: string): Promise<Record<string, unknown>> {
+  return fetch(`https://registry.npmjs.org/${packageName}/latest`, {
+    headers: {
+      "Accept-Encoding": "application/json",
+    },
+  }).then((response) => {
+    return response.json();
+  });
 }
 
 function getLatestVersion(packageName: string): Promise<string> {
   console.log(chalk.yellow("Fetching latest version of", packageName));
 
-  return getPackageInfo(packageName).then((json) => json.version);
+  return getPackageInfo(packageName).then((json) => json.version as string);
 }
 
 function getPeerDependencies(packageName: string): Promise<PeerDependency> {
   console.log(chalk.yellow("Fetching peer dependencies of", packageName));
 
-  return getPackageInfo(packageName).then((json) => json.peerDependencies);
+  return getPackageInfo(packageName).then((json) => json.peerDependencies as PeerDependency);
 }
 
 function createProjectTargets(options: NormalizedSchema) {
