@@ -1,0 +1,35 @@
+"@config":
+  - ".commitlintrc.js"
+  - ".eslintignore"
+  - ".lintstagedrc.js"
+  - ".prettierignore"
+  - ".prettierrc.js"
+  - ".versionrc.js"
+  - "codecov.yml"
+  - "nx.json"
+  - "**/.eslintrc.{js,json}"
+  - "**/tsconfig?(.+([a-z])).json"
+
+"@github":
+  - .github/*
+  - .github**/*
+
+"@apps/shell":
+  - apps/shell/*
+  - apps/shell/**/*
+  - apps/shell-e2e/*
+  - apps/shell-e2e/**/*
+
+"@apps/sandbox":
+  - apps/sandbox/*
+  - apps/sandbox/**/*
+  - apps/sandbox-e2e/*
+  - apps/sandbox-e2e/**/*
+
+"@libs/ui":
+  - libs/ui/*
+  - libs/ui/**/*
+
+"@libs/devex":
+  - libs/devex/*
+  - libs/devex/**/*
