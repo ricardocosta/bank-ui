@@ -2,12 +2,21 @@ import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
-import routes from "../routes/main";
+import { getRoutes } from "../routes/main";
 
-export const renderWithRouter = (
-  { config, initialRoute } = { config: routes, initialRoute: "/" }
+import type { ReactElement } from "react";
+
+export const renderWithRouter = async (
+  component: ReactElement,
+  { config, initialRoute } = { config: undefined, initialRoute: "/" }
 ) => {
-  const router = createMemoryRouter(config, { initialEntries: [initialRoute] });
+  const routes = await getRoutes();
+  const router = createMemoryRouter(config ?? routes, { initialEntries: [initialRoute] });
 
-  return { user: userEvent.setup(), ...render(<RouterProvider router={router} />) };
+  return {
+    user: userEvent.setup(),
+    ...render(component, {
+      wrapper: () => <RouterProvider router={router} />,
+    }),
+  };
 };

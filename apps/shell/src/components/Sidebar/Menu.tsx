@@ -1,30 +1,35 @@
-import { useConst } from "@ricardocosta/ui-hooks";
+import { Icon } from "@ricardocosta/ui-icons";
 import { Flex, HStack, Link, Text } from "@ricardocosta/ui-layout";
+import { useEffect, useState } from "react";
+import { MdDashboard, MdOutlineCompareArrows } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-import routes from "../../routes/main";
+import { getNavigation } from "../../api/navigation";
 
 import type { FC } from "react";
-import type { RouteObject } from "react-router-dom";
+import type { IconType } from "react-icons";
 
-const hasPathFn = (route: RouteObject) => !!route.path;
-const isRenderable = (route: RouteObject) => route.path !== "*" && route.path !== "/";
+import type { NavigationItem } from "../../types/navigation";
 
-const convertToMenuEntries = (routesConfig: RouteObject[]) => {
-  const config = routesConfig.at(0) ?? {};
-
-  return (config.children ?? []).filter(hasPathFn).filter(isRenderable);
+const PATH_ICON_MAP: Record<string, IconType> = {
+  dashboard: MdDashboard,
+  transactions: MdOutlineCompareArrows,
 };
 
-// path is optional in RouteObject
-// But MenuEntry is only invoked with routes that have path defined
-type filteredRouteObject = RouteObject & { path: string };
+const convertToMenuEntries = (navigation: NavigationItem[]) =>
+  navigation.map((navItem) => ({
+    path: navItem.path,
+    name: navItem.name,
+    id: navItem.id,
+  }));
 
 type MenuEntryProps = {
-  route: filteredRouteObject;
+  path: string;
+  name: string;
+  id: string;
 };
 
-const MenuEntry: FC<MenuEntryProps> = ({ route }) => {
+const MenuEntry: FC<MenuEntryProps> = ({ path, name }) => {
   return (
     <Link
       _activeLink={{
@@ -44,11 +49,12 @@ const MenuEntry: FC<MenuEntryProps> = ({ route }) => {
       as={NavLink}
       borderLeftColor="gray.700"
       borderLeftWidth="4px"
-      to={route.path}
+      to={path}
     >
-      <HStack alignItems="flex-start" marginBlock="0" paddingX="4" paddingY="2">
+      <HStack alignItems="center" marginBlock="0" paddingX="4" paddingY="2">
+        <Icon as={PATH_ICON_MAP[path]} fill="gray.50" />
         <Text casing="capitalize" color="gray.50" fontSize="sm">
-          {route.path}
+          {name}
         </Text>
       </HStack>
     </Link>
@@ -56,12 +62,21 @@ const MenuEntry: FC<MenuEntryProps> = ({ route }) => {
 };
 
 export const Menu: FC = () => {
-  const menuEntries = useConst(convertToMenuEntries(routes)) as filteredRouteObject[];
+  const [menuItems, setMenuItems] = useState<MenuEntryProps[]>([]);
+
+  useEffect(() => {
+    const getNavigationFn = async () => {
+      const navigation = await getNavigation();
+      setMenuItems(convertToMenuEntries(navigation));
+    };
+
+    getNavigationFn();
+  }, []);
 
   return (
     <Flex direction="column" marginTop="8">
-      {menuEntries.map((route) => (
-        <MenuEntry key={route.path} route={route} />
+      {menuItems.map((item) => (
+        <MenuEntry key={item.id} {...item} />
       ))}
     </Flex>
   );

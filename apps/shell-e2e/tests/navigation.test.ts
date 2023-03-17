@@ -1,13 +1,17 @@
 import { expect, test } from "@playwright/test";
+import { NAVIGATION_API_URL } from "@ricardocosta/apps/shell/src/api/navigation";
 
 import { APP_BASE_URL } from "../constants";
+import { NAVIGATION_API_ROUTE_HANDLER } from "../mocks/navigation";
 import { getPageContent, getSidebar } from "../utils/navigation";
 
 test.describe("Navigation", () => {
   test("should land on the Dashboard page", async ({ browser }) => {
     const page = await browser.newPage();
-
+    await page.route(NAVIGATION_API_URL, NAVIGATION_API_ROUTE_HANDLER);
     await page.goto(APP_BASE_URL);
+
+    await getPageContent(page).getByText("Dashboard").waitFor();
 
     const pageContent = getPageContent(page);
 
@@ -17,6 +21,7 @@ test.describe("Navigation", () => {
 
   test("navigates to the Dashboard page", async ({ browser }) => {
     const page = await browser.newPage();
+    await page.route(NAVIGATION_API_URL, NAVIGATION_API_ROUTE_HANDLER);
     await page.goto(APP_BASE_URL);
 
     const sidebar = getSidebar(page);
@@ -29,6 +34,7 @@ test.describe("Navigation", () => {
 
   test("navigates to the Transactions page", async ({ browser }) => {
     const page = await browser.newPage();
+    await page.route(NAVIGATION_API_URL, NAVIGATION_API_ROUTE_HANDLER);
     await page.goto(APP_BASE_URL);
 
     const sidebar = getSidebar(page);
