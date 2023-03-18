@@ -15,5 +15,11 @@
         "content": "../pages/Transactions"
       }
     ]
+  },
+  "identity": {
+    "id": "852c8f3a-51a3-4daa-b082-10af3bd4439e",
+    "firstName": "John",
+    "lastName": "Smith",
+    "name": "John Smith"
   }
 }
