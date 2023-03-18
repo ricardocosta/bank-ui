@@ -78,7 +78,7 @@
     "@chakra-ui/tooltip": "^2.2.6",
     "@chakra-ui/transition": "^2.0.15",
     "@chakra-ui/visually-hidden": "^2.0.15",
-    "@emotion/react": "^11.10.5",
+    "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.5",
     "framer-motion": "^7.10.2",
     "react": "^18.2.0",
