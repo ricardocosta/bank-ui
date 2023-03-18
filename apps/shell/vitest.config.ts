@@ -12,6 +12,7 @@ export default mergeConfig(
       setupFiles: ["./src/test-utils/setupTests.ts", "./src/test-utils/routing.tsx"],
       coverage: {
         reporter: ["lcov", "text"],
+        reportsDirectory: "../../coverage/apps/shell",
       },
     },
   })

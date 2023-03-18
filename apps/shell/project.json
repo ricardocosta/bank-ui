@@ -38,12 +38,7 @@
     "testCoverage": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": [
-          "vitest run --coverage",
-          "rm -rf ../../coverage/apps/shell",
-          "mkdir -p ../../coverage/apps/shell",
-          "mv -v coverage/* ../../coverage/apps/shell"
-        ],
+        "commands": ["vitest run --coverage"],
         "parallel": false,
         "cwd": "apps/shell",
         "color": true
@@ -52,7 +47,7 @@
     "testUi": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "vitest --ui --open",
+        "command": "vitest --ui --open --coverage",
         "cwd": "apps/shell",
         "color": true
       }
