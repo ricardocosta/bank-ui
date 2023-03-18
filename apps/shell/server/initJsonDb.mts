@@ -4,6 +4,7 @@ import * as fs from "fs/promises";
 const BASE_PATH = "./server";
 const SOURCES: Record<string, string> = {
   navigation: "navigation.json",
+  identity: "identity.json",
 };
 
 let db = {};
