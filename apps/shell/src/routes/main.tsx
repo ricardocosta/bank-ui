@@ -1,9 +1,8 @@
-import { Spinner } from "@ricardocosta/ui-spinner";
 import { lazy, Suspense } from "react";
 import { Navigate } from "react-router-dom";
 
 import { getNavigation } from "../api/navigation";
-import { App, NotFound } from "../pages/";
+import { App, Loading, NotFound } from "../pages/";
 
 import type { NavigationItem } from "../types/navigation";
 
@@ -22,7 +21,7 @@ export const getRoutes = async () => {
     return {
       path: navItem.path,
       element: (
-        <Suspense fallback={<Spinner />}>
+        <Suspense fallback={<Loading />}>
           <Component />
         </Suspense>
       ),
