@@ -1,4 +1,4 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Generators / ChakraWrapper > adds Vite configuration 1`] = `
 "import { resolve } from \\"path\\";
@@ -49,7 +49,7 @@ exports[`Generators / ChakraWrapper > adds package.json 1`] = `
       \\"require\\": \\"./dist/ui-button.umd.cjs\\"
     }
   },
-  \\"peerDependencies\\": {\\"@emotion/react\\":\\"^11.10.6\\",\\"@emotion/styled\\":\\"^11.10.5\\",\\"framer-motion\\":\\"^7.10.2\\",\\"react\\":\\"^18.2.0\\",\\"react-dom\\":\\"^18.2.0\\"}
+  \\"peerDependencies\\": {\\"@emotion/react\\":\\"^11.10.6\\",\\"@emotion/styled\\":\\"^11.10.6\\",\\"framer-motion\\":\\"^7.10.2\\",\\"react\\":\\"^18.2.0\\",\\"react-dom\\":\\"^18.2.0\\"}
 }
 "
 `;
