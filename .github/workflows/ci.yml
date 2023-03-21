@@ -12,7 +12,7 @@ on:
       - main
 
 env:
-  node_version: 18.10.x
+  node_version: 19.8.x
   NX_COMMAND: ${{ github.event_name == 'pull_request' && 'affected' || 'run-many' }}
 
 jobs:
