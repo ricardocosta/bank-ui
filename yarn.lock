@@ -2310,6 +2310,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-context@npm:2.0.8":
+  version: 2.0.8
+  resolution: "@chakra-ui/react-context@npm:2.0.8"
+  peerDependencies:
+    react: ">=18"
+  checksum: 4513f6cc218c45665398fd60b688c5966c84433f33248703a16ac4efc4291a95427bf66581adeb0b5d8c4301ecd48582c4a1ad81a6b1cbfe006dc97580ac5b04
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-env@npm:3.0.0":
   version: 3.0.0
   resolution: "@chakra-ui/react-env@npm:3.0.0"
@@ -2690,16 +2699,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tag@npm:^2.0.17":
-  version: 2.0.17
-  resolution: "@chakra-ui/tag@npm:2.0.17"
+"@chakra-ui/tag@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@chakra-ui/tag@npm:2.0.18"
   dependencies:
     "@chakra-ui/icon": 3.0.16
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: d6ba00bcd9eebacf6ced973c2a1c8aa1edc86c6d033f982e3812bfb91df77fa827504a91abc5a88d810d484f3ad55b267772f63202225aa9389434d3b53305aa
+  checksum: f1210b02c3663e53a221e3295a71300e0a255c108612630fa3a9ffeef54e1fc11b7fb3f8f124b204232c01be4000be5b72fe6fa5fc7024d99423d9c17414abfb
   languageName: node
   linkType: hard
 
@@ -6805,7 +6814,7 @@ __metadata:
     "@chakra-ui/system": ^2.5.2
     "@chakra-ui/table": ^2.0.16
     "@chakra-ui/tabs": ^2.1.8
-    "@chakra-ui/tag": ^2.0.17
+    "@chakra-ui/tag": ^2.0.18
     "@chakra-ui/textarea": ^2.0.18
     "@chakra-ui/theme": ^2.2.5
     "@chakra-ui/theme-utils": ^2.0.12
