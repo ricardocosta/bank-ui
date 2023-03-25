@@ -2741,7 +2741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme@npm:2.2.5, @chakra-ui/theme@npm:^2.2.5":
+"@chakra-ui/theme@npm:2.2.5":
   version: 2.2.5
   resolution: "@chakra-ui/theme@npm:2.2.5"
   dependencies:
@@ -2751,6 +2751,19 @@ __metadata:
   peerDependencies:
     "@chakra-ui/styled-system": ">=2.0.0"
   checksum: 31b79610ca0ceb8a9f18a73072f3d6bd2e053acdcd6d31236ffbd9eaafe19e90c1767506ce31e828bff9af3849f5b9b9aedb05ce73cb377ea42f18b79af4824e
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/theme@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@chakra-ui/theme@npm:2.3.0"
+  dependencies:
+    "@chakra-ui/anatomy": 2.1.2
+    "@chakra-ui/shared-utils": 2.0.5
+    "@chakra-ui/theme-tools": 2.0.17
+  peerDependencies:
+    "@chakra-ui/styled-system": ">=2.0.0"
+  checksum: 17b80ae5b5e6a81c475f8b86cd66e0104b35094451a36a21fd96c2a8103b3312bdcf862c277147cceed423b9dde5e107982b0a03193fe980be43add050f01175
   languageName: node
   linkType: hard
 
@@ -6807,7 +6820,7 @@ __metadata:
     "@chakra-ui/tabs": ^2.1.8
     "@chakra-ui/tag": ^2.0.17
     "@chakra-ui/textarea": ^2.0.18
-    "@chakra-ui/theme": ^2.2.5
+    "@chakra-ui/theme": ^2.3.0
     "@chakra-ui/theme-utils": ^2.0.12
     "@chakra-ui/toast": ^6.0.2
     "@chakra-ui/tooltip": ^2.2.6
