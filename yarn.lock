@@ -2310,6 +2310,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-context@npm:2.0.8":
+  version: 2.0.8
+  resolution: "@chakra-ui/react-context@npm:2.0.8"
+  peerDependencies:
+    react: ">=18"
+  checksum: 4513f6cc218c45665398fd60b688c5966c84433f33248703a16ac4efc4291a95427bf66581adeb0b5d8c4301ecd48582c4a1ad81a6b1cbfe006dc97580ac5b04
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-env@npm:3.0.0":
   version: 3.0.0
   resolution: "@chakra-ui/react-env@npm:3.0.0"
@@ -2566,12 +2575,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/slider@npm:^2.0.22":
-  version: 2.0.22
-  resolution: "@chakra-ui/slider@npm:2.0.22"
+"@chakra-ui/slider@npm:^2.0.23":
+  version: 2.0.23
+  resolution: "@chakra-ui/slider@npm:2.0.23"
   dependencies:
     "@chakra-ui/number-utils": 2.0.7
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-types": 2.0.7
     "@chakra-ui/react-use-callback-ref": 2.0.7
     "@chakra-ui/react-use-controllable-state": 2.0.8
@@ -2583,7 +2592,7 @@ __metadata:
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 1c8e9252ba9e84e9b4fac7c0bb6132d94d058cc82248384f1881ef4f9dfc3e68113e7c659b1657e87e0c7dd5e029b3607148a5545cde68c6275f9666561e1400
+  checksum: 152ea41a7f50909d70c49df1c0ff08e05a359cab13f003cb6a326192d319a8676788de0f60da76df59677f362dc7764be9d8f4ea158a949592a4ca3262d2ffc9
   languageName: node
   linkType: hard
 
@@ -6797,7 +6806,7 @@ __metadata:
     "@chakra-ui/select": ^2.0.18
     "@chakra-ui/skeleton": ^2.0.24
     "@chakra-ui/skip-nav": ^2.0.15
-    "@chakra-ui/slider": ^2.0.22
+    "@chakra-ui/slider": ^2.0.23
     "@chakra-ui/spinner": ^2.0.13
     "@chakra-ui/stat": ^2.0.17
     "@chakra-ui/styled-system": ^2.6.2
