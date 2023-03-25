@@ -1806,18 +1806,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/button@npm:^2.0.16":
-  version: 2.0.16
-  resolution: "@chakra-ui/button@npm:2.0.16"
+"@chakra-ui/button@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@chakra-ui/button@npm:2.0.17"
   dependencies:
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/shared-utils": 2.0.5
     "@chakra-ui/spinner": 2.0.13
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: b749ddd8e2741034b0bf9f81aad0fe11fbae7dfa3a3b1bca838de317f62892ed7d73c11a21ae8a988c79b11d2508636766cd289ddfaea3e6504f801532fd8304
+  checksum: 1e5250ed1c1c12c61b26c3c16ef6b15b1214d0a7c368d24891bf87b208db396b2095241dd069344fd2d750815bdd89f3d1aa1bb121eb4d69790c6a107a5561a9
   languageName: node
   linkType: hard
 
@@ -2307,6 +2307,15 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 4b110bd5fa65fc8f3e230be09f841f9384baa45acb59d39ed168f1f60d84e36ecb1139968f24ef2c9f798120f11c43c94b501b4fc05f3d4c1863a87b1347b72f
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-context@npm:2.0.8":
+  version: 2.0.8
+  resolution: "@chakra-ui/react-context@npm:2.0.8"
+  peerDependencies:
+    react: ">=18"
+  checksum: 4513f6cc218c45665398fd60b688c5966c84433f33248703a16ac4efc4291a95427bf66581adeb0b5d8c4301ecd48582c4a1ad81a6b1cbfe006dc97580ac5b04
   languageName: node
   linkType: hard
 
@@ -6771,7 +6780,7 @@ __metadata:
     "@chakra-ui/alert": ^2.0.17
     "@chakra-ui/avatar": ^2.2.6
     "@chakra-ui/breadcrumb": ^2.1.4
-    "@chakra-ui/button": ^2.0.16
+    "@chakra-ui/button": ^2.0.17
     "@chakra-ui/card": ^2.1.6
     "@chakra-ui/checkbox": ^2.2.11
     "@chakra-ui/close-button": ^2.0.17
