@@ -1903,13 +1903,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/css-reset@npm:2.0.13, @chakra-ui/css-reset@npm:^2.0.13":
+"@chakra-ui/css-reset@npm:2.0.13":
   version: 2.0.13
   resolution: "@chakra-ui/css-reset@npm:2.0.13"
   peerDependencies:
     "@emotion/react": ">=10.0.35"
     react: ">=18"
   checksum: 5fa8bfbb45070b055b1c3c7c4b165228364852b07933720ea023f49aa53cb85fbb133383f37b2ef5b9e986430f25c0cb8a0072995e46cc8b424fa580eb9fdd07
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/css-reset@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@chakra-ui/css-reset@npm:2.1.0"
+  peerDependencies:
+    "@emotion/react": ">=10.0.35"
+    react: ">=18"
+  checksum: 1b253a65f728c60bb6d0289b7915176d7083b9232e30f10187abac2267ff5d0db5d8ae7ab4d9f78fcfae9ee0de12224c0e073a4b6dc230a86fc1dbf96c51a6c8
   languageName: node
   linkType: hard
 
@@ -6776,7 +6786,7 @@ __metadata:
     "@chakra-ui/checkbox": ^2.2.11
     "@chakra-ui/close-button": ^2.0.17
     "@chakra-ui/counter": ^2.0.14
-    "@chakra-ui/css-reset": ^2.0.13
+    "@chakra-ui/css-reset": ^2.1.0
     "@chakra-ui/editable": ^2.0.20
     "@chakra-ui/form-control": ^2.0.17
     "@chakra-ui/hooks": ^2.1.6
