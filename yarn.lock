@@ -5793,16 +5793,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^0.29.3":
-  version: 0.29.3
-  resolution: "@vitest/ui@npm:0.29.3"
+"@vitest/ui@npm:^0.29.8":
+  version: 0.29.8
+  resolution: "@vitest/ui@npm:0.29.8"
   dependencies:
     fast-glob: ^3.2.12
     flatted: ^3.2.7
     pathe: ^1.1.0
     picocolors: ^1.0.0
     sirv: ^2.0.2
-  checksum: 5c4cbd6484e06b46f24f7512fce668c3738c7d7933e5f5fc04b059abca3668898c6febd20714782a674942b4869769213ace35afb6b95b10210d1dabdab5c678
+  checksum: 0190c01a1a467b71a4e81563cd70370c651238f1b4e82c3ff5c6e8a6e6f35ffb6e66f987cd9c892df99ed1ec00ed20d804b2c07c24cdb996eb880c585d13dfcf
   languageName: node
   linkType: hard
 
@@ -6845,7 +6845,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.55.0
     "@vitejs/plugin-react-swc": ^3.2.0
     "@vitest/coverage-c8": ^0.29.3
-    "@vitest/ui": ^0.29.3
+    "@vitest/ui": ^0.29.8
     c8: ^7.13.0
     chalk: ^4.1.2
     eslint: ^8.36.0
