@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-select.umd.cjs",
   "module": "./dist/ui-select.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-select.js",
-      "require": "./dist/ui-select.umd.cjs"
+      "import": "./dist/ui-select.js"
     }
   },
   "peerDependencies": {

@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-hooks.umd.cjs",
   "module": "./dist/ui-hooks.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-hooks.js",
-      "require": "./dist/ui-hooks.umd.cjs"
+      "import": "./dist/ui-hooks.js"
     }
   },
   "peerDependencies": {

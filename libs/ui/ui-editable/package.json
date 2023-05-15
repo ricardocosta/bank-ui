@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-editable.umd.cjs",
   "module": "./dist/ui-editable.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-editable.js",
-      "require": "./dist/ui-editable.umd.cjs"
+      "import": "./dist/ui-editable.js"
     }
   },
   "peerDependencies": {

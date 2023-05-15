@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-modal.umd.cjs",
   "module": "./dist/ui-modal.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-modal.js",
-      "require": "./dist/ui-modal.umd.cjs"
+      "import": "./dist/ui-modal.js"
     }
   },
   "peerDependencies": {

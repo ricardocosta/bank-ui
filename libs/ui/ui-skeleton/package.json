@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-skeleton.umd.cjs",
   "module": "./dist/ui-skeleton.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-skeleton.js",
-      "require": "./dist/ui-skeleton.umd.cjs"
+      "import": "./dist/ui-skeleton.js"
     }
   },
   "peerDependencies": {

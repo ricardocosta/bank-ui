@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-tabs.umd.cjs",
   "module": "./dist/ui-tabs.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-tabs.js",
-      "require": "./dist/ui-tabs.umd.cjs"
+      "import": "./dist/ui-tabs.js"
     }
   },
   "peerDependencies": {

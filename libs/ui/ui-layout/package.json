@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-layout.umd.cjs",
   "module": "./dist/ui-layout.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-layout.js",
-      "require": "./dist/ui-layout.umd.cjs"
+      "import": "./dist/ui-layout.js"
     }
   },
   "peerDependencies": {

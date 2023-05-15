@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-radio.umd.cjs",
   "module": "./dist/ui-radio.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-radio.js",
-      "require": "./dist/ui-radio.umd.cjs"
+      "import": "./dist/ui-radio.js"
     }
   },
   "peerDependencies": {

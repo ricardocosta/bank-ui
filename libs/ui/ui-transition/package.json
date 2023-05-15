@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-transition.umd.cjs",
   "module": "./dist/ui-transition.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-transition.js",
-      "require": "./dist/ui-transition.umd.cjs"
+      "import": "./dist/ui-transition.js"
     }
   },
   "peerDependencies": {

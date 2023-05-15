@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-progress.umd.cjs",
   "module": "./dist/ui-progress.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-progress.js",
-      "require": "./dist/ui-progress.umd.cjs"
+      "import": "./dist/ui-progress.js"
     }
   },
   "peerDependencies": {

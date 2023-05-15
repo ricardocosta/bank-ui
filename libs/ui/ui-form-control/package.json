@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-form-control.umd.cjs",
   "module": "./dist/ui-form-control.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-form-control.js",
-      "require": "./dist/ui-form-control.umd.cjs"
+      "import": "./dist/ui-form-control.js"
     }
   },
   "peerDependencies": {

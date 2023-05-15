@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-menu.umd.cjs",
   "module": "./dist/ui-menu.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-menu.js",
-      "require": "./dist/ui-menu.umd.cjs"
+      "import": "./dist/ui-menu.js"
     }
   },
   "peerDependencies": {

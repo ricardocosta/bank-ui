@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-accordion.umd.cjs",
   "module": "./dist/ui-accordion.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-accordion.js",
-      "require": "./dist/ui-accordion.umd.cjs"
+      "import": "./dist/ui-accordion.js"
     }
   },
   "peerDependencies": {

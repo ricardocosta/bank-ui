@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-card.umd.cjs",
   "module": "./dist/ui-card.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-card.js",
-      "require": "./dist/ui-card.umd.cjs"
+      "import": "./dist/ui-card.js"
     }
   },
   "peerDependencies": {

@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-spinner.umd.cjs",
   "module": "./dist/ui-spinner.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-spinner.js",
-      "require": "./dist/ui-spinner.umd.cjs"
+      "import": "./dist/ui-spinner.js"
     }
   },
   "peerDependencies": {

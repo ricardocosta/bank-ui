@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-hidden.umd.cjs",
   "module": "./dist/ui-hidden.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-hidden.js",
-      "require": "./dist/ui-hidden.umd.cjs"
+      "import": "./dist/ui-hidden.js"
     }
   },
   "peerDependencies": {

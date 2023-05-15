@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-media-query.umd.cjs",
   "module": "./dist/ui-media-query.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-media-query.js",
-      "require": "./dist/ui-media-query.umd.cjs"
+      "import": "./dist/ui-media-query.js"
     }
   },
   "peerDependencies": {

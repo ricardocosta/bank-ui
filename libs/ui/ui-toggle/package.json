@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-toggle.umd.cjs",
   "module": "./dist/ui-toggle.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-toggle.js",
-      "require": "./dist/ui-toggle.umd.cjs"
+      "import": "./dist/ui-toggle.js"
     }
   },
   "peerDependencies": {

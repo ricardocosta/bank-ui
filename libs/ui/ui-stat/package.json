@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-stat.umd.cjs",
   "module": "./dist/ui-stat.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-stat.js",
-      "require": "./dist/ui-stat.umd.cjs"
+      "import": "./dist/ui-stat.js"
     }
   },
   "peerDependencies": {
