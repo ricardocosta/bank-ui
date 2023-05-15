@@ -27,7 +27,7 @@ describe("Page: <App />", () => {
 
     const sidebar = getSidebar();
     await waitFor(() => {
-      expect(queryLoadingElement(sidebar)).not.toBeInTheDocument();
+      expect(within(sidebar).getByText("Dashboard")).toBeInTheDocument();
     });
 
     expect(within(sidebar).getByText("Dashboard")).toBeInTheDocument();

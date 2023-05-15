@@ -1,35 +1,30 @@
-import { Icon } from "@ricardocosta/ui-icons";
+import { DynamicIcon } from "@ricardocosta/ui-icons";
 import { Flex, HStack, Link, Text } from "@ricardocosta/ui-layout";
 import { useEffect, useState } from "react";
-import { MdDashboard, MdOutlineCompareArrows } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 import { getNavigation } from "../../api/navigation";
 
 import type { FC } from "react";
-import type { IconType } from "react-icons";
 
 import type { NavigationItem } from "../../types/navigation";
-
-const PATH_ICON_MAP: Record<string, IconType> = {
-  dashboard: MdDashboard,
-  transactions: MdOutlineCompareArrows,
-};
 
 const convertToMenuEntries = (navigation: NavigationItem[]) =>
   navigation.map((navItem) => ({
     path: navItem.path,
     name: navItem.name,
+    icon: navItem.icon,
     id: navItem.id,
   }));
 
 type MenuEntryProps = {
   path: string;
   name: string;
+  icon: string;
   id: string;
 };
 
-const MenuEntry: FC<MenuEntryProps> = ({ path, name }) => {
+const MenuEntry: FC<MenuEntryProps> = ({ path, name, icon }) => {
   return (
     <Link
       _activeLink={{
@@ -52,7 +47,7 @@ const MenuEntry: FC<MenuEntryProps> = ({ path, name }) => {
       to={path}
     >
       <HStack alignItems="center" marginBlock="0" paddingX="4" paddingY="2">
-        <Icon as={PATH_ICON_MAP[path]} fill="gray.50" />
+        <DynamicIcon fill="gray.50" name={icon} />;
         <Text casing="capitalize" color="gray.50" fontSize="sm">
           {name}
         </Text>

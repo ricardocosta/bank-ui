@@ -9,10 +9,17 @@ describe("API: getNavigation", () => {
         id: "1",
         path: "dashboard",
         name: "Dashboard",
-        content: "../pages/Dashboard",
+        page: "Dashboard",
+        icon: "Dashboard",
         default: true,
       },
-      { id: "2", path: "transactions", name: "Transactions", content: "../pages/Transactions" },
+      {
+        id: "2",
+        path: "transactions",
+        name: "Transactions",
+        page: "Transactions",
+        icon: "ExchangeDollar",
+      },
     ]);
   });
 });

@@ -12,4 +12,10 @@ export default defineConfig({
   server: {
     port: configs.appPort,
   },
+  optimizeDeps: {
+    include: ["hoist-non-react-statics"],
+    esbuildOptions: {
+      target: "esnext",
+    },
+  },
 });
