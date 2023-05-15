@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-skip-nav.umd.cjs",
   "module": "./dist/ui-skip-nav.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-skip-nav.js",
-      "require": "./dist/ui-skip-nav.umd.cjs"
+      "import": "./dist/ui-skip-nav.js"
     }
   },
   "peerDependencies": {

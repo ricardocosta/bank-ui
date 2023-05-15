@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-icons.umd.cjs",
   "module": "./dist/ui-icons.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-icons.js",
-      "require": "./dist/ui-icons.umd.cjs"
+      "import": "./dist/ui-icons.js"
     }
   },
   "peerDependencies": {

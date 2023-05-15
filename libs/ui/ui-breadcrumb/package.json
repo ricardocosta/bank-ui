@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-breadcrumb.umd.cjs",
   "module": "./dist/ui-breadcrumb.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-breadcrumb.js",
-      "require": "./dist/ui-breadcrumb.umd.cjs"
+      "import": "./dist/ui-breadcrumb.js"
     }
   },
   "peerDependencies": {

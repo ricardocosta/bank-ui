@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-slider.umd.cjs",
   "module": "./dist/ui-slider.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-slider.js",
-      "require": "./dist/ui-slider.umd.cjs"
+      "import": "./dist/ui-slider.js"
     }
   },
   "peerDependencies": {

@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-portal.umd.cjs",
   "module": "./dist/ui-portal.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-portal.js",
-      "require": "./dist/ui-portal.umd.cjs"
+      "import": "./dist/ui-portal.js"
     }
   },
   "peerDependencies": {

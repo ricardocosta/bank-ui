@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-input.umd.cjs",
   "module": "./dist/ui-input.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-input.js",
-      "require": "./dist/ui-input.umd.cjs"
+      "import": "./dist/ui-input.js"
     }
   },
   "peerDependencies": {

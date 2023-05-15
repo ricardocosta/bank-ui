@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-avatar.umd.cjs",
   "module": "./dist/ui-avatar.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-avatar.js",
-      "require": "./dist/ui-avatar.umd.cjs"
+      "import": "./dist/ui-avatar.js"
     }
   },
   "peerDependencies": {

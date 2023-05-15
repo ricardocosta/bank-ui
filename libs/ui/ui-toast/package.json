@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-toast.umd.cjs",
   "module": "./dist/ui-toast.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-toast.js",
-      "require": "./dist/ui-toast.umd.cjs"
+      "import": "./dist/ui-toast.js"
     }
   },
   "peerDependencies": {

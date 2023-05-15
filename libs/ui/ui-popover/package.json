@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-popover.umd.cjs",
   "module": "./dist/ui-popover.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-popover.js",
-      "require": "./dist/ui-popover.umd.cjs"
+      "import": "./dist/ui-popover.js"
     }
   },
   "peerDependencies": {

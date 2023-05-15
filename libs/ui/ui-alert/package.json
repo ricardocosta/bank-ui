@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-alert.umd.cjs",
   "module": "./dist/ui-alert.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-alert.js",
-      "require": "./dist/ui-alert.umd.cjs"
+      "import": "./dist/ui-alert.js"
     }
   },
   "peerDependencies": {

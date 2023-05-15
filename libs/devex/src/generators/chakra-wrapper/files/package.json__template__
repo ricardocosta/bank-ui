@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/<%= projectName %>.umd.cjs",
   "module": "./dist/<%= projectName %>.js",
   "exports": {
     ".": {
-      "import": "./dist/<%= projectName %>.js",
-      "require": "./dist/<%= projectName %>.umd.cjs"
+      "import": "./dist/<%= projectName %>.js"
     }
   },
   "peerDependencies": <%-  JSON.stringify(peerDependencies) %>

@@ -5,12 +5,10 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui-button.umd.cjs",
   "module": "./dist/ui-button.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-button.js",
-      "require": "./dist/ui-button.umd.cjs"
+      "import": "./dist/ui-button.js"
     }
   },
   "peerDependencies": {
