@@ -5,14 +5,16 @@
         "id": "1",
         "path": "dashboard",
         "name": "Dashboard",
-        "content": "../pages/Dashboard",
+        "icon": "Dashboard",
+        "page": "Dashboard",
         "default": true
       },
       {
         "id": "2",
         "path": "transactions",
         "name": "Transactions",
-        "content": "../pages/Transactions"
+        "icon": "ExchangeDollar",
+        "page": "Transactions"
       }
     ]
   },

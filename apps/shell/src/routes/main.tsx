@@ -16,7 +16,7 @@ export const getRoutes = async () => {
   const navigation = await getNavigation();
 
   const navigationChildren = navigation.map((navItem) => {
-    const Component = lazy(() => import(/* @vite-ignore */ navItem.content));
+    const Component = lazy(() => import(`../pages/${navItem.page}.tsx`));
 
     return {
       path: navItem.path,
