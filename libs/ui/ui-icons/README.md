@@ -12,20 +12,20 @@ There are multiple ways to use icons:
 
 ⚠️ Avoid passing `onClick` handlers to the `Icon` component. If you need a clickable icon, use the `IconButton` instead.
 
-To use third-party icon libraries like `react-icons`, here are the steps:
+To use third-party icon libraries like `@emotion-icons/remix-fill`, here are the steps:
 
 1. Import the `Icon` component from `@ricardocosta/ui-icons`
 2. Pass the desired third party icon into the `as` prop
 
 ```tsx
+import { Dashboard } from "@emotion-icons/remix-fill";
 import { Icon, PhoneIcon } from "@ricardocosta/ui-icons";
-import { MdSettings } from "react-icons/md";
 
 // Basic usage with ChakraUI icons
 <PhoneIcon />;
 
-// With react-icons
-<Icon as={MdSettings} />;
+// With @emotion-icons/remix-fill
+<Icon as={Dashboard} />;
 ```
 
 [🔗 ChakraUI Icon](https://chakra-ui.com/docs/components/icon)
