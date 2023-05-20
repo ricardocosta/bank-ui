@@ -65,7 +65,7 @@
     "@chakra-ui/slider": "^2.0.22",
     "@chakra-ui/spinner": "^2.0.13",
     "@chakra-ui/stat": "^2.0.17",
-    "@chakra-ui/styled-system": "^2.6.2",
+    "@chakra-ui/styled-system": "^2.9.0",
     "@chakra-ui/switch": "^2.0.23",
     "@chakra-ui/system": "^2.5.2",
     "@chakra-ui/table": "^2.0.16",
