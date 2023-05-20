@@ -1,19 +1,18 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Generators / ChakraWrapper > adds Vite configuration 1`] = `
-"import { resolve } from \\"path\\";
-
-import excludeDependenciesFromBundle from \\"rollup-plugin-exclude-dependencies-from-bundle\\";
-import { defineConfig } from \\"vite\\";
+"import { resolve } from 'path';
+import excludeDependenciesFromBundle from 'rollup-plugin-exclude-dependencies-from-bundle';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [excludeDependenciesFromBundle()],
   build: {
     lib: {
-      entry: resolve(__dirname, \\"src/index.ts\\"),
-      name: \\"ui-button\\",
-      fileName: \\"ui-button\\",
-      formats: [\\"es\\"],
+      entry: resolve(__dirname, 'src/index.ts'),
+      name: 'ui-button',
+      fileName: 'ui-button',
+      formats: ['es'],
     },
   },
 });
@@ -34,7 +33,13 @@ exports[`Generators / ChakraWrapper > adds package.json 1`] = `
       \\"import\\": \\"./dist/ui-button.js\\"
     }
   },
-  \\"peerDependencies\\": {\\"@emotion/react\\":\\"^11.10.6\\",\\"@emotion/styled\\":\\"^11.10.6\\",\\"framer-motion\\":\\"^10.8.3\\",\\"react\\":\\"^18.2.0\\",\\"react-dom\\":\\"^18.2.0\\"}
+  \\"peerDependencies\\": {
+    \\"@emotion/react\\": \\"^11.10.6\\",
+    \\"@emotion/styled\\": \\"^11.10.6\\",
+    \\"framer-motion\\": \\"^10.8.3\\",
+    \\"react\\": \\"^18.2.0\\",
+    \\"react-dom\\": \\"^18.2.0\\"
+  }
 }
 "
 `;

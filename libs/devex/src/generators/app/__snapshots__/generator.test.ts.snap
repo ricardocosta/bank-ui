@@ -2,12 +2,11 @@
 
 exports[`Generators / App > adds Vite configuration 1`] = `
 "/// <reference types=\\"vite/client\\" />
-import react from \\"@vitejs/plugin-react-swc\\";
-import { defineConfig } from \\"vite\\";
-import svgr from \\"vite-plugin-svgr\\";
-import tsconfigPaths from \\"vite-tsconfig-paths\\";
-
-import configs from \\"./configs.json\\";
+import configs from './configs.json';
+import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
+import svgr from 'vite-plugin-svgr';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,20 +19,19 @@ export default defineConfig({
 `;
 
 exports[`Generators / App > adds Vitest configuration 1`] = `
-"import { mergeConfig } from \\"vite\\";
-import { defineConfig } from \\"vitest/config\\";
-
-import viteConfig from \\"./vite.config\\";
+"import viteConfig from './vite.config';
+import { mergeConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 
 export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
       globals: true,
-      environment: \\"jsdom\\",
-      setupFiles: \\"./setupTests.ts\\",
+      environment: 'jsdom',
+      setupFiles: './setupTests.ts',
       coverage: {
-        reporter: [\\"lcov\\", \\"text\\"],
+        reporter: ['lcov', 'text'],
       },
     },
   })
@@ -42,26 +40,25 @@ export default mergeConfig(
 `;
 
 exports[`Generators / App > when E2E app should be created > adds Playwright configuration 1`] = `
-"import { APP_PORT } from \\"./constants\\";
+"import { APP_PORT } from './constants';
+import type { PlaywrightTestConfig } from '@playwright/test';
 
-import type { PlaywrightTestConfig } from \\"@playwright/test\\";
-
-const browser = process.env.BROWSER ?? \\"chromium\\";
+const browser = process.env.BROWSER ?? 'chromium';
 const os = process.env.OS ?? process.platform;
 
 const config: PlaywrightTestConfig = {
   reporter: [
-    [process.env.CI ? \\"github\\" : \\"list\\"],
+    [process.env.CI ? 'github' : 'list'],
     [
-      \\"html\\",
+      'html',
       {
-        open: \\"on-failure\\",
+        open: 'on-failure',
         outputFolder: \`../../e2e/reports/apps/demo/\${os}/\${browser}\`,
       },
     ],
   ],
 
-  testDir: \\"tests\\",
+  testDir: 'tests',
   outputDir: \`../../e2e/results/apps/demo/\${os}/\${browser}\`,
 
   retries: 1,
@@ -72,16 +69,16 @@ const config: PlaywrightTestConfig = {
     ignoreHTTPSErrors: true,
     bypassCSP: true,
 
-    trace: \\"on-first-retry\\",
+    trace: 'on-first-retry',
     screenshot: {
-      mode: \\"on\\",
+      mode: 'on',
       fullPage: true,
     },
   },
 
   webServer: {
-    command: \\"yarn nx run demo:dev\\",
-    cwd: \\"../..\\",
+    command: 'yarn nx run demo:dev',
+    cwd: '../..',
     port: APP_PORT,
   },
 };

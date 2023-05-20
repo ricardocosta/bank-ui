@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-progress/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-progress",
         "configFile": "libs/ui/ui-progress/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-progress/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-progress/src/**/*.{ts,mts,tsx,js,jsx}"]

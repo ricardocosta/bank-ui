@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-avatar/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-avatar",
         "configFile": "libs/ui/ui-avatar/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-avatar/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-avatar/src/**/*.{ts,mts,tsx,js,jsx}"]

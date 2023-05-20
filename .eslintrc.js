@@ -5,7 +5,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  plugins: ["@nrwl/nx", "sonarjs"],
+  plugins: ["@nx/eslint-plugin", "sonarjs"],
   extends: [
     "eslint:recommended",
     "plugin:compat/recommended",
@@ -17,7 +17,7 @@ module.exports = {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
       extends: ["plugin:sonarjs/recommended"],
       rules: {
-        "@nrwl/nx/enforce-module-boundaries": [
+        "@nx/enforce-module-boundaries": [
           "error",
           {
             enforceBuildableLibDependency: true,
@@ -39,12 +39,12 @@ module.exports = {
     },
     {
       files: ["*.ts", "*.tsx"],
-      extends: ["plugin:@nrwl/nx/typescript"],
+      extends: ["plugin:@nx/typescript"],
       rules: {},
     },
     {
       files: ["*.js", "*.jsx"],
-      extends: ["plugin:@nrwl/nx/javascript"],
+      extends: ["plugin:@nx/javascript"],
       rules: {},
     },
   ],

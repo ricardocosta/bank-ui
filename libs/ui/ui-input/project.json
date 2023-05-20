@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-input/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-input",
         "configFile": "libs/ui/ui-input/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-input/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-input/src/**/*.{ts,mts,tsx,js,jsx}"]

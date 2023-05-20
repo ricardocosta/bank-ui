@@ -1,11 +1,11 @@
 {
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "name": "ui-button",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/ui/ui-button/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-button",
         "configFile": "libs/ui/ui-button/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-button/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-button/src/**/*.{ts,mts,tsx,js,jsx}"]
