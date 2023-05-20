@@ -1,5 +1,5 @@
-import { readJson, readProjectConfiguration } from "@nrwl/devkit";
-import { createTreeWithEmptyWorkspace } from "@nrwl/devkit/testing";
+import { readJson, readProjectConfiguration } from "@nx/devkit";
+import { createTreeWithEmptyWorkspace } from "@nx/devkit/testing";
 import { describe } from "vitest";
 
 import appGenerator from "./generator";

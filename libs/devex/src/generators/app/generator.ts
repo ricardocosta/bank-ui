@@ -9,9 +9,9 @@ import {
   names,
   offsetFromRoot,
   readJson,
-} from "@nrwl/devkit";
+} from "@nx/devkit";
 
-import type { TargetConfiguration, Tree } from "@nrwl/devkit";
+import type { TargetConfiguration, Tree } from "@nx/devkit";
 
 import type { AppGeneratorSchema } from "./schema";
 
@@ -25,10 +25,10 @@ interface NormalizedSchema extends AppGeneratorSchema {
 
 const NX_COMMANDS: Record<string, string> = {
   run: "nx:run-commands",
-  lint: "@nrwl/linter:eslint",
-  vite_build: "@nrwl/vite:build",
-  vite_serve: "@nrwl/vite:dev-server",
-  vite_preview: "@nrwl/vite:preview-server",
+  lint: "@nx/linter:eslint",
+  vite_build: "@nx/vite:build",
+  vite_serve: "@nx/vite:dev-server",
+  vite_preview: "@nx/vite:preview-server",
 };
 
 async function findAvailablePort(tree: Tree) {
@@ -87,7 +87,7 @@ function createAppTargets(options: NormalizedSchema) {
       defaultConfiguration: "development",
       options: {
         buildTarget: `${projectName}:build`,
-        configFile: `${projectRoot}/vite.config.ts`,
+        open: true,
       },
     },
     preview: {
@@ -95,7 +95,7 @@ function createAppTargets(options: NormalizedSchema) {
       defaultConfiguration: "development",
       options: {
         buildTarget: `${projectName}:build`,
-        configFile: `${projectRoot}/vite.config.ts`,
+        open: true,
       },
     },
     test: {

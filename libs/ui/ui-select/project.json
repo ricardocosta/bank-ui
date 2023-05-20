@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-select/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-select",
         "configFile": "libs/ui/ui-select/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-select/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-select/src/**/*.{ts,mts,tsx,js,jsx}"]

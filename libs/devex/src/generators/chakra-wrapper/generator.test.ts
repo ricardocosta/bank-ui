@@ -1,5 +1,5 @@
-import { readJson, readProjectConfiguration } from "@nrwl/devkit";
-import { createTreeWithEmptyWorkspace } from "@nrwl/devkit/testing";
+import { readJson, readProjectConfiguration } from "@nx/devkit";
+import { createTreeWithEmptyWorkspace } from "@nx/devkit/testing";
 import { HttpResponse, rest } from "msw";
 import { setupServer } from "msw/node";
 import { afterAll, afterEach, beforeAll, describe } from "vitest";

@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-toggle/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-toggle",
         "configFile": "libs/ui/ui-toggle/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-toggle/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-toggle/src/**/*.{ts,mts,tsx,js,jsx}"]

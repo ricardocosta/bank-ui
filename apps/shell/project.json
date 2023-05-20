@@ -5,22 +5,22 @@
   "sourceRoot": "apps/shell/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/apps/shell",
         "configFile": "apps/shell/vite.config.ts"
       }
     },
     "dev": {
-      "executor": "@nrwl/vite:dev-server",
+      "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "shell:build",
-        "configFile": "apps/shell/vite.config.ts"
+        "open": true
       }
     },
     "preview": {
-      "executor": "@nrwl/vite:preview-server",
+      "executor": "@nx/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "shell:build",
@@ -61,7 +61,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "apps/shell/.eslintrc.js",
         "lintFilePatterns": ["apps/shell/src/**/*.{ts,mts,tsx,js,jsx}"]

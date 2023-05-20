@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-transition/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-transition",
         "configFile": "libs/ui/ui-transition/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-transition/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-transition/src/**/*.{ts,mts,tsx,js,jsx}"]

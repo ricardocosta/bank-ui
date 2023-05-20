@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-portal/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-portal",
         "configFile": "libs/ui/ui-portal/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-portal/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-portal/src/**/*.{ts,mts,tsx,js,jsx}"]

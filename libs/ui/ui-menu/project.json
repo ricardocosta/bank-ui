@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-menu/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-menu",
         "configFile": "libs/ui/ui-menu/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-menu/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-menu/src/**/*.{ts,mts,tsx,js,jsx}"]

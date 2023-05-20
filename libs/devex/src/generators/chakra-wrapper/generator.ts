@@ -11,10 +11,10 @@ import {
   offsetFromRoot,
   readRootPackageJson,
   updateJson,
-} from "@nrwl/devkit";
+} from "@nx/devkit";
 import chalk from "chalk";
 
-import type { TargetConfiguration, Tree } from "@nrwl/devkit";
+import type { TargetConfiguration, Tree } from "@nx/devkit";
 
 import type { ChakraWrapperGeneratorSchema } from "./schema";
 
@@ -32,8 +32,8 @@ interface NormalizedSchema extends ChakraWrapperGeneratorSchema {
 
 const NX_COMMANDS: Record<string, string> = {
   run: "nx:run-commands",
-  lint: "@nrwl/linter:eslint",
-  vite_build: "@nrwl/vite:build",
+  lint: "@nx/linter:eslint",
+  vite_build: "@nx/vite:build",
 };
 
 async function normalizeOptions(

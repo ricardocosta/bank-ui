@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-skeleton/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-skeleton",
         "configFile": "libs/ui/ui-skeleton/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-skeleton/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-skeleton/src/**/*.{ts,mts,tsx,js,jsx}"]

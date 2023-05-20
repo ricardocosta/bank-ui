@@ -5,7 +5,7 @@
   "sourceRoot": "libs/ui/ui-popover/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nx/vite:build",
       "options": {
         "outputPath": "dist/libs/ui/ui-popover",
         "configFile": "libs/ui/ui-popover/vite.config.ts",
@@ -13,7 +13,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "eslintConfig": "libs/ui/ui-popover/.eslintrc.json",
         "lintFilePatterns": ["libs/ui/ui-popover/src/**/*.{ts,mts,tsx,js,jsx}"]
