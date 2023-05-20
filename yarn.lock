@@ -2910,7 +2910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/transition@npm:2.0.15, @chakra-ui/transition@npm:^2.0.15":
+"@chakra-ui/transition@npm:2.0.15":
   version: 2.0.15
   resolution: "@chakra-ui/transition@npm:2.0.15"
   dependencies:
@@ -2919,6 +2919,18 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
   checksum: 6b025082eca9d939fe45d417eff5b2c6c1605144bed122b2f62f0235db1f83f9f3f9b26cacbce3fb0e6f86911e59565c7ad0cfb5c8171a07abe7b187c62651e0
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/transition@npm:^2.0.16":
+  version: 2.0.16
+  resolution: "@chakra-ui/transition@npm:2.0.16"
+  dependencies:
+    "@chakra-ui/shared-utils": 2.0.5
+  peerDependencies:
+    framer-motion: ">=4.0.0"
+    react: ">=18"
+  checksum: 04ca812775b425a7aae1e066b81f803264b47759bde690ecbb0ddaf5269876d0b23567ca8e8a5303bbac999166e34a5506d20c68233d6615756e7c5db8d19d25
   languageName: node
   linkType: hard
 
@@ -6559,7 +6571,7 @@ __metadata:
     "@chakra-ui/theme-utils": ^2.0.12
     "@chakra-ui/toast": ^6.0.2
     "@chakra-ui/tooltip": ^2.2.6
-    "@chakra-ui/transition": ^2.0.15
+    "@chakra-ui/transition": ^2.0.16
     "@chakra-ui/visually-hidden": ^2.0.15
     "@commitlint/cli": ^17.6.3
     "@commitlint/config-conventional": ^17.4.4
