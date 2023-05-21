@@ -2001,7 +2001,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/form-control@npm:2.0.17, @chakra-ui/form-control@npm:^2.0.17":
+"@chakra-ui/form-control@npm:2.0.17":
   version: 2.0.17
   resolution: "@chakra-ui/form-control@npm:2.0.17"
   dependencies:
@@ -2017,7 +2017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/form-control@npm:2.0.18":
+"@chakra-ui/form-control@npm:2.0.18, @chakra-ui/form-control@npm:^2.0.18":
   version: 2.0.18
   resolution: "@chakra-ui/form-control@npm:2.0.18"
   dependencies:
@@ -6554,7 +6554,7 @@ __metadata:
     "@chakra-ui/counter": ^2.0.14
     "@chakra-ui/css-reset": ^2.0.13
     "@chakra-ui/editable": ^2.0.20
-    "@chakra-ui/form-control": ^2.0.17
+    "@chakra-ui/form-control": ^2.0.18
     "@chakra-ui/hooks": ^2.1.6
     "@chakra-ui/icons": ^2.0.17
     "@chakra-ui/image": ^2.0.15
