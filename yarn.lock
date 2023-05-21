@@ -2870,7 +2870,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme@npm:2.2.5, @chakra-ui/theme@npm:^2.2.5":
+"@chakra-ui/theme@npm:2.2.5":
   version: 2.2.5
   resolution: "@chakra-ui/theme@npm:2.2.5"
   dependencies:
@@ -2883,7 +2883,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme@npm:3.1.1":
+"@chakra-ui/theme@npm:3.1.1, @chakra-ui/theme@npm:^3.1.1":
   version: 3.1.1
   resolution: "@chakra-ui/theme@npm:3.1.1"
   dependencies:
@@ -6595,7 +6595,7 @@ __metadata:
     "@chakra-ui/tabs": ^2.1.8
     "@chakra-ui/tag": ^3.0.0
     "@chakra-ui/textarea": ^2.0.19
-    "@chakra-ui/theme": ^2.2.5
+    "@chakra-ui/theme": ^3.1.1
     "@chakra-ui/theme-utils": ^2.0.12
     "@chakra-ui/toast": ^6.0.2
     "@chakra-ui/tooltip": ^2.2.6
