@@ -2807,16 +2807,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tag@npm:^2.0.17":
-  version: 2.0.17
-  resolution: "@chakra-ui/tag@npm:2.0.17"
+"@chakra-ui/tag@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@chakra-ui/tag@npm:3.0.0"
   dependencies:
     "@chakra-ui/icon": 3.0.16
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: d6ba00bcd9eebacf6ced973c2a1c8aa1edc86c6d033f982e3812bfb91df77fa827504a91abc5a88d810d484f3ad55b267772f63202225aa9389434d3b53305aa
+  checksum: daba36da1ec7c50e126c19d775304a55df07ae5909c766ab1e7cce88da9d93e5eb860c5846f321ccf472dcb5790fc4dc16a1080bc8d2449c2e2b8a54b2845ec2
   languageName: node
   linkType: hard
 
@@ -6593,7 +6593,7 @@ __metadata:
     "@chakra-ui/system": ^2.5.2
     "@chakra-ui/table": ^2.0.16
     "@chakra-ui/tabs": ^2.1.8
-    "@chakra-ui/tag": ^2.0.17
+    "@chakra-ui/tag": ^3.0.0
     "@chakra-ui/textarea": ^2.0.19
     "@chakra-ui/theme": ^2.2.5
     "@chakra-ui/theme-utils": ^2.0.12
