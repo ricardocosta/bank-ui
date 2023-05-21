@@ -53,7 +53,7 @@
     "@chakra-ui/menu": "^2.1.10",
     "@chakra-ui/modal": "^2.2.9",
     "@chakra-ui/number-input": "^2.0.18",
-    "@chakra-ui/pin-input": "^2.0.19",
+    "@chakra-ui/pin-input": "^2.0.20",
     "@chakra-ui/popover": "^2.1.8",
     "@chakra-ui/portal": "^2.0.15",
     "@chakra-ui/progress": "^2.1.6",

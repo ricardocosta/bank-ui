@@ -1955,6 +1955,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/descendant@npm:3.0.14":
+  version: 3.0.14
+  resolution: "@chakra-ui/descendant@npm:3.0.14"
+  dependencies:
+    "@chakra-ui/react-context": 2.0.8
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: 6561544dfa75027d7fb7ef8eab7b9b375d6f94461cfe3a63ed72324dc3fa8b4e0d882bae8bad728b0a1dfe8729c85a7d91b12fa3f363f5e799c491722d64f2a9
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/dom-utils@npm:2.0.6":
   version: 2.0.6
   resolution: "@chakra-ui/dom-utils@npm:2.0.6"
@@ -2232,20 +2244,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/pin-input@npm:^2.0.19":
-  version: 2.0.19
-  resolution: "@chakra-ui/pin-input@npm:2.0.19"
+"@chakra-ui/pin-input@npm:^2.0.20":
+  version: 2.0.20
+  resolution: "@chakra-ui/pin-input@npm:2.0.20"
   dependencies:
-    "@chakra-ui/descendant": 3.0.13
+    "@chakra-ui/descendant": 3.0.14
     "@chakra-ui/react-children-utils": 2.0.6
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-use-controllable-state": 2.0.8
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: af69754d979650b1d43a72d0017bb5b2e622753580c976ed3e8e318902a93d75784e9d2f447c12e25617a3492c872d130d6401813d0a9bd7f18b1da789b720d1
+  checksum: 8db6d261471f23de4f0a72b0b03e60d35d40da0e0cf4d138f5aa441c1b9e24026b342b9ff3e71c1eba327415c5378213d2279655f39276d392c12ac5d281fbf4
   languageName: node
   linkType: hard
 
@@ -6564,7 +6576,7 @@ __metadata:
     "@chakra-ui/menu": ^2.1.10
     "@chakra-ui/modal": ^2.2.9
     "@chakra-ui/number-input": ^2.0.18
-    "@chakra-ui/pin-input": ^2.0.19
+    "@chakra-ui/pin-input": ^2.0.20
     "@chakra-ui/popover": ^2.1.8
     "@chakra-ui/portal": ^2.0.15
     "@chakra-ui/progress": ^2.1.6
