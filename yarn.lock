@@ -1964,11 +1964,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/editable@npm:^2.0.20":
-  version: 2.0.20
-  resolution: "@chakra-ui/editable@npm:2.0.20"
+"@chakra-ui/editable@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@chakra-ui/editable@npm:3.0.0"
   dependencies:
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-types": 2.0.7
     "@chakra-ui/react-use-callback-ref": 2.0.7
     "@chakra-ui/react-use-controllable-state": 2.0.8
@@ -1980,7 +1980,7 @@ __metadata:
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: e3654e9db5b4d1119207f4d60e218f8cbf40abc0026333fac9ad76a94bff88d6f34ed1b036a74d03a88abe028dc4ee8eb7150b6f75b959db3cc2ee29af1b1532
+  checksum: 31f84fcab322d53653de96bbf262e2436f86e3126e2761191eb10a5b8b1d2870d3ae87e2f850ba56e3f522655787594038f4af16181d10e0756461b6a21614be
   languageName: node
   linkType: hard
 
@@ -6524,7 +6524,7 @@ __metadata:
     "@chakra-ui/close-button": ^2.0.17
     "@chakra-ui/counter": ^2.0.14
     "@chakra-ui/css-reset": ^2.1.1
-    "@chakra-ui/editable": ^2.0.20
+    "@chakra-ui/editable": ^3.0.0
     "@chakra-ui/form-control": ^2.0.18
     "@chakra-ui/hooks": ^2.1.6
     "@chakra-ui/icons": ^2.0.17
