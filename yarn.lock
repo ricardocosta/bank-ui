@@ -2817,7 +2817,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/theme-utils@npm:2.0.17":
+"@chakra-ui/theme-utils@npm:2.0.17, @chakra-ui/theme-utils@npm:^2.0.17":
   version: 2.0.17
   resolution: "@chakra-ui/theme-utils@npm:2.0.17"
   dependencies:
@@ -2826,18 +2826,6 @@ __metadata:
     "@chakra-ui/theme": 3.1.1
     lodash.mergewith: 4.6.2
   checksum: 5e6dd5aae7365cbd96afe51cd13afcd408198d9cfbdb2acfd5fb1601194cdc685004bbb237b337f70e287aebb4eb022f7590d9292619967483806b2e234289e5
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/theme-utils@npm:^2.0.12":
-  version: 2.0.12
-  resolution: "@chakra-ui/theme-utils@npm:2.0.12"
-  dependencies:
-    "@chakra-ui/shared-utils": 2.0.5
-    "@chakra-ui/styled-system": 2.6.2
-    "@chakra-ui/theme": 2.2.5
-    lodash.mergewith: 4.6.2
-  checksum: baaf2e614c5b091c91b78e75988418c7e1532f8974484593d58e7d5eaf0e393ab11ded505794c075c0e3b2753d7a5a3df69a98a6d90e56a014f895aee98269be
   languageName: node
   linkType: hard
 
@@ -6567,7 +6555,7 @@ __metadata:
     "@chakra-ui/tag": ^3.0.0
     "@chakra-ui/textarea": ^2.0.19
     "@chakra-ui/theme": ^3.1.1
-    "@chakra-ui/theme-utils": ^2.0.12
+    "@chakra-ui/theme-utils": ^2.0.17
     "@chakra-ui/toast": ^6.0.2
     "@chakra-ui/tooltip": ^2.2.6
     "@chakra-ui/transition": ^2.0.16
