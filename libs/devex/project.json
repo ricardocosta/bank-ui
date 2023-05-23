@@ -61,7 +61,7 @@
     "testUi": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "vitest --ui --open",
+        "command": "vitest --coverage --ui --open",
         "cwd": "libs/devex",
         "color": true
       }

@@ -11,7 +11,7 @@ export default mergeConfig(
       environment: "jsdom",
       setupFiles: "./setupTests.ts",
       coverage: {
-        reporter: ["lcov", "text"],
+        reporter: ["lcov", "text", "html"],
       },
     },
   })
