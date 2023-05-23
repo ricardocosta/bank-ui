@@ -47,7 +47,7 @@
     "testUi": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "vitest --ui --open --coverage",
+        "command": "vitest --coverage --ui --open",
         "cwd": "apps/shell",
         "color": true
       }
