@@ -2370,18 +2370,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/modal@npm:^2.2.9":
-  version: 2.2.9
-  resolution: "@chakra-ui/modal@npm:2.2.9"
+"@chakra-ui/modal@npm:^2.2.11":
+  version: 2.2.11
+  resolution: "@chakra-ui/modal@npm:2.2.11"
   dependencies:
     "@chakra-ui/close-button": 2.0.17
     "@chakra-ui/focus-lock": 2.0.16
-    "@chakra-ui/portal": 2.0.15
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/portal": 2.0.16
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-types": 2.0.7
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/shared-utils": 2.0.5
-    "@chakra-ui/transition": 2.0.15
+    "@chakra-ui/transition": 2.0.16
     aria-hidden: ^1.2.2
     react-remove-scroll: ^2.5.5
   peerDependencies:
@@ -2389,7 +2389,7 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 1d10c5d36be45b286c585a5c6d2c9de6704acbb4f9375ad6251b5220690fe0aa9ddbccf72dec82890937664b03bb7b45ad4ed425d81ddb129fe464456f3cfbbd
+  checksum: fe0ffbd9dbd112c00610ca98b31390386e579a22b4c3ffa3bf9eb21e732bf3258741f5ecd1f59832b867e0bfdae69ef4a99f900505edd84df405e7dcc3bd82fa
   languageName: node
   linkType: hard
 
@@ -3112,7 +3112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/transition@npm:^2.0.16":
+"@chakra-ui/transition@npm:2.0.16, @chakra-ui/transition@npm:^2.0.16":
   version: 2.0.16
   resolution: "@chakra-ui/transition@npm:2.0.16"
   dependencies:
@@ -6625,7 +6625,7 @@ __metadata:
     "@chakra-ui/layout": ^2.1.19
     "@chakra-ui/media-query": ^3.2.12
     "@chakra-ui/menu": ^2.1.10
-    "@chakra-ui/modal": ^2.2.9
+    "@chakra-ui/modal": ^2.2.11
     "@chakra-ui/number-input": ^2.0.18
     "@chakra-ui/pin-input": ^2.0.20
     "@chakra-ui/popover": ^2.1.8
