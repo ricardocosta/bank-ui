@@ -2225,9 +2225,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/hooks@npm:^2.1.6":
-  version: 2.1.6
-  resolution: "@chakra-ui/hooks@npm:2.1.6"
+"@chakra-ui/hooks@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@chakra-ui/hooks@npm:2.2.0"
   dependencies:
     "@chakra-ui/react-utils": 2.0.12
     "@chakra-ui/utils": 2.0.15
@@ -2235,7 +2235,7 @@ __metadata:
     copy-to-clipboard: 3.3.3
   peerDependencies:
     react: ">=18"
-  checksum: 544f8d8d27be9c496610202bbbdd2e9e193815121bb13d9c4cc09ad1ad79248adfe95c7f29112a47e1c0f679c051e158cb1fb7dc3913158e5fca723423f5b9fd
+  checksum: 778313f236f3bbb7f303487f974305ab0656b40fbd1e0b3561e69ada8519d30eed67fb6289a18dcaa6880355e150d4e8e4066e3f08814a4b2fd378557d4b18a6
   languageName: node
   linkType: hard
 
@@ -6605,7 +6605,7 @@ __metadata:
     "@chakra-ui/css-reset": ^2.1.1
     "@chakra-ui/editable": ^3.0.0
     "@chakra-ui/form-control": ^2.0.18
-    "@chakra-ui/hooks": ^2.1.6
+    "@chakra-ui/hooks": ^2.2.0
     "@chakra-ui/icons": ^2.0.17
     "@chakra-ui/image": ^2.0.15
     "@chakra-ui/input": ^2.0.20
