@@ -6685,7 +6685,7 @@ __metadata:
     framer-motion: ^10.8.3
     husky: ^8.0.3
     jsdom: ^22.0.0
-    json-server: ^0.17.2
+    json-server: ^0.17.3
     lint-staged: ^13.2.2
     msw: next
     nx: ^16.2.1
@@ -11701,9 +11701,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-server@npm:^0.17.2":
-  version: 0.17.2
-  resolution: "json-server@npm:0.17.2"
+"json-server@npm:^0.17.3":
+  version: 0.17.3
+  resolution: "json-server@npm:0.17.3"
   dependencies:
     body-parser: ^1.19.0
     chalk: ^4.1.2
@@ -11727,7 +11727,7 @@ __metadata:
     yargs: ^17.0.1
   bin:
     json-server: lib/cli/bin.js
-  checksum: 77fb37536eb52f7211d54908cb8cc44e2673d02af2eeae4c1e568c1bf212aebaea58d1dce90b3e28664f4a8ec5f56285bf7ba18fccea0dfd238b948a03809e92
+  checksum: 615c657400eb8b0c56f8d937945820e128064b33d1281b07eb1c1b622f7930f0adfd824c06df96ef72c708799b32b9b5ffbe60823cbee17a12d1d8a85a2d31f9
   languageName: node
   linkType: hard
 
