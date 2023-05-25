@@ -1,0 +1,115 @@
+{
+  "name": "transactions",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/transactions/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/transactions",
+        "configFile": "apps/transactions/vite.config.ts"
+      }
+    },
+    "dev": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "transactions:build",
+        "open": true
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "transactions:build",
+        "open": true
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest run --reporter verbose",
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "testCoverage": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["vitest run --coverage"],
+        "parallel": false,
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "testUi": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest --coverage --ui --open",
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "testWatch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitest watch --reporter verbose",
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "eslintConfig": "apps/transactions/.eslintrc.js",
+        "lintFilePatterns": ["apps/transactions/src/**/*.{ts,mts,tsx,js,jsx}"]
+      }
+    },
+    "format": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --write '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "formatDry": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "prettier --check '**/*.{ts,mts,tsx,js,jsx,json,css}' --ignore-path ../../.prettierignore",
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "ts": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bash -c tsc --noEmit -p ./tsconfig.json",
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "seedDb": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "tsm ./server/initJsonDb.mts",
+          "prettier --write ./server/db.base.json ./server/db.json"
+        ],
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    },
+    "jsonServer": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["json-server ./server/db.json --routes ./server/routes.json --port 4003"],
+        "cwd": "apps/transactions",
+        "color": true
+      }
+    }
+  },
+  "tags": []
+}

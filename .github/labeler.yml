@@ -20,6 +20,12 @@
   - apps/shell-e2e/*
   - apps/shell-e2e/**/*
 
+"@apps/transactions":
+  - apps/transactions/*
+  - apps/transactions/**/*
+  - apps/transactions-e2e/*
+  - apps/transactions-e2e/**/*
+
 "@apps/sandbox":
   - apps/sandbox/*
   - apps/sandbox/**/*

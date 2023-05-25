@@ -29,6 +29,7 @@
     "useDefineForClassFields": true,
     "paths": {
       "@ricardocosta/apps/shell/*": ["apps/shell/*"],
+      "@ricardocosta/apps/transactions/*": ["apps/transactions/*"],
       "@ricardocosta/devex": ["libs/devex/src/index.ts"],
       "@ricardocosta/ui-accordion": ["libs/ui/ui-accordion/src/index.ts"],
       "@ricardocosta/ui-alert": ["libs/ui/ui-alert/src/index.ts"],
