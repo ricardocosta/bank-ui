@@ -2454,18 +2454,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/popover@npm:^2.1.8":
-  version: 2.1.8
-  resolution: "@chakra-ui/popover@npm:2.1.8"
+"@chakra-ui/popover@npm:^2.1.11":
+  version: 2.1.11
+  resolution: "@chakra-ui/popover@npm:2.1.11"
   dependencies:
     "@chakra-ui/close-button": 2.0.17
     "@chakra-ui/lazy-utils": 2.0.5
-    "@chakra-ui/popper": 3.0.13
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/popper": 3.0.14
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-types": 2.0.7
     "@chakra-ui/react-use-animation-state": 2.0.8
     "@chakra-ui/react-use-disclosure": 2.0.8
-    "@chakra-ui/react-use-focus-effect": 2.0.9
+    "@chakra-ui/react-use-focus-effect": 2.0.10
     "@chakra-ui/react-use-focus-on-pointer-down": 2.0.6
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/shared-utils": 2.0.5
@@ -2473,7 +2473,7 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: 9410e2ae8835034439f37484253aa7128ae7c7426be37d548823e0659c47f192256101b379636850cecea1cbfeedd5caebf06bb43fcfc5f2f7705155c3ed2da3
+  checksum: 35dc02f155516fa083210fd936a02e27555ae3c5b2b5869a6cffba0338a22e82726f7b18c89c696f9a0113716dc65130a5addca022a3511ccb032af8fca2fa3b
   languageName: node
   linkType: hard
 
@@ -2487,6 +2487,19 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: f01d762f76f7fa618ca22bfcf6168f8fa3a2a372277555c5c295b6315d99d2827e2ed2f0e7e0d0c4bf6e94f4c42c4eb2f47d12862bcd279bd88b4ad7b09be225
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/popper@npm:3.0.14":
+  version: 3.0.14
+  resolution: "@chakra-ui/popper@npm:3.0.14"
+  dependencies:
+    "@chakra-ui/react-types": 2.0.7
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@popperjs/core": ^2.9.3
+  peerDependencies:
+    react: ">=18"
+  checksum: 3a3a54d79b00f4feb8865f4eb15a9b906f287bbf1e920613724b953922f904c6425d1c51df0396dae2030ffb5225fa0b4c617d1b64421539fdcf486654ab31e4
   languageName: node
   linkType: hard
 
@@ -2661,6 +2674,20 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 8b77ad7ac602ac20e975ff8b76ffba337cb0bd6f3cd398a09193f7a8cff99677deddc8157f3f33bb245eaa8ff14db66a867fa993de8af90f723c4ddaebb94538
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-focus-effect@npm:2.0.10":
+  version: 2.0.10
+  resolution: "@chakra-ui/react-use-focus-effect@npm:2.0.10"
+  dependencies:
+    "@chakra-ui/dom-utils": 2.0.6
+    "@chakra-ui/react-use-event-listener": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/react-use-update-effect": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: 6145ca543f340c4c92796cbd7b6a5ac757c41e54be2a252efc74a23102528db45faf86dd26219252b4cadb456b09c1dc6fa6f3982eb1213e23d1a83d8ca8c65c
   languageName: node
   linkType: hard
 
@@ -6742,7 +6769,7 @@ __metadata:
     "@chakra-ui/modal": ^2.2.11
     "@chakra-ui/number-input": ^2.0.18
     "@chakra-ui/pin-input": ^2.0.20
-    "@chakra-ui/popover": ^2.1.8
+    "@chakra-ui/popover": ^2.1.11
     "@chakra-ui/portal": ^2.0.16
     "@chakra-ui/progress": ^2.1.6
     "@chakra-ui/provider": ^2.2.4
