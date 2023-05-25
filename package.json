@@ -58,7 +58,7 @@
     "@chakra-ui/portal": "^2.0.16",
     "@chakra-ui/progress": "^2.1.6",
     "@chakra-ui/provider": "^2.2.4",
-    "@chakra-ui/radio": "^2.0.20",
+    "@chakra-ui/radio": "^2.0.22",
     "@chakra-ui/select": "^2.0.19",
     "@chakra-ui/skeleton": "^2.0.24",
     "@chakra-ui/skip-nav": "^2.0.15",
