@@ -2961,15 +2961,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tabs@npm:^2.1.8":
-  version: 2.1.8
-  resolution: "@chakra-ui/tabs@npm:2.1.8"
+"@chakra-ui/tabs@npm:^2.1.9":
+  version: 2.1.9
+  resolution: "@chakra-ui/tabs@npm:2.1.9"
   dependencies:
     "@chakra-ui/clickable": 2.0.14
-    "@chakra-ui/descendant": 3.0.13
+    "@chakra-ui/descendant": 3.0.14
     "@chakra-ui/lazy-utils": 2.0.5
     "@chakra-ui/react-children-utils": 2.0.6
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-use-controllable-state": 2.0.8
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/react-use-safe-layout-effect": 2.0.5
@@ -2977,7 +2977,7 @@ __metadata:
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
-  checksum: 18a41a7d15e5b49d4a2051efbcac55156a8a053e32122c7e07ff01e8724880ca6a147b0af11dd7228ebeba834e6a0f3eb8ac5906be5ac86c83c3bbb6a4ab07e1
+  checksum: 6bbaa3b25d48744453bb9300d6e66379204c8595f4187a1833b2b5e412e249b6af30dd23aab03775d9245d7ed14c745e7ff1597aa6397708a460c8a4a4d145ba
   languageName: node
   linkType: hard
 
@@ -6757,7 +6757,7 @@ __metadata:
     "@chakra-ui/switch": ^2.0.23
     "@chakra-ui/system": ^2.5.7
     "@chakra-ui/table": ^2.0.16
-    "@chakra-ui/tabs": ^2.1.8
+    "@chakra-ui/tabs": ^2.1.9
     "@chakra-ui/tag": ^3.0.0
     "@chakra-ui/textarea": ^2.0.19
     "@chakra-ui/theme": ^3.1.1
