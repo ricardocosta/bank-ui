@@ -72,7 +72,7 @@ async function normalizeOptions(
 }
 
 function createAppTargets(options: NormalizedSchema) {
-  const { projectRoot, restServer, projectName } = options;
+  const { projectRoot, restServer, projectName, appPort } = options;
 
   const targets: Record<string, TargetConfiguration> = {
     build: {
@@ -109,12 +109,7 @@ function createAppTargets(options: NormalizedSchema) {
     testCoverage: {
       executor: NX_COMMANDS.run,
       options: {
-        commands: [
-          "vitest run --coverage",
-          `rm -rf ../../coverage/${projectRoot}`,
-          `mkdir -p ../../coverage/${projectRoot}`,
-          `mv -v coverage/* ../../coverage/${projectRoot}`,
-        ],
+        commands: ["vitest run --coverage"],
         parallel: false,
         cwd: projectRoot,
         color: true,
@@ -178,6 +173,17 @@ function createAppTargets(options: NormalizedSchema) {
         commands: [
           "tsm ./server/initJsonDb.mts",
           "prettier --write ./server/db.base.json ./server/db.json",
+        ],
+        cwd: projectRoot,
+        color: true,
+      },
+    };
+
+    targets["jsonServer"] = {
+      executor: NX_COMMANDS.run,
+      options: {
+        commands: [
+          `json-server ./server/db.json --routes ./server/routes.json --port ${appPort + 1000}`,
         ],
         cwd: projectRoot,
         color: true,
