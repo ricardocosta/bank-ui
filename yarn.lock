@@ -1937,22 +1937,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/accordion@npm:^2.1.9":
-  version: 2.1.9
-  resolution: "@chakra-ui/accordion@npm:2.1.9"
+"@chakra-ui/accordion@npm:^2.1.11":
+  version: 2.1.11
+  resolution: "@chakra-ui/accordion@npm:2.1.11"
   dependencies:
-    "@chakra-ui/descendant": 3.0.13
+    "@chakra-ui/descendant": 3.0.14
     "@chakra-ui/icon": 3.0.16
-    "@chakra-ui/react-context": 2.0.7
+    "@chakra-ui/react-context": 2.0.8
     "@chakra-ui/react-use-controllable-state": 2.0.8
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/shared-utils": 2.0.5
-    "@chakra-ui/transition": 2.0.15
+    "@chakra-ui/transition": 2.0.16
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: b343de5a4cafa21bb64501c77dbe6ed5a62d026ff7465692a271855c478b79281983de9c798c236a68fe4dbe628f50af50c66eeab9f106fb519486b770495f02
+  checksum: 7b042e9e1a87a85ff275b84b932ca8456d5ea95a24e896a518754e116857d8987a0ca38867b75ad62d386145a27aed5670ffba4b6b332776599109b5884e5eee
   languageName: node
   linkType: hard
 
@@ -6720,7 +6720,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bank-ui@workspace:."
   dependencies:
-    "@chakra-ui/accordion": ^2.1.9
+    "@chakra-ui/accordion": ^2.1.11
     "@chakra-ui/alert": ^2.0.17
     "@chakra-ui/avatar": ^2.2.10
     "@chakra-ui/breadcrumb": ^2.1.4
