@@ -1,0 +1,24 @@
+{
+  "name": "transactions-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/transactions-e2e/src",
+  "implicitDependencies": ["transactions"],
+  "targets": {
+    "e2e": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "playwright test",
+        "cwd": "apps/transactions-e2e",
+        "color": true
+      }
+    },
+    "codegen": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx run transactions:dev", "playwright codegen http://localhost:3003"],
+        "color": true
+      }
+    }
+  }
+}

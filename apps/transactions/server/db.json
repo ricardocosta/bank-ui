@@ -1,0 +1,10 @@
+{
+  "transactions": [
+    {
+      "id": "96cb308a-dfd4-4949-9b2c-c14b93d9d3cc",
+      "description": "Transaction 1",
+      "notes": "Note about this transaction",
+      "timestamp": 1685011991
+    }
+  ]
+}
