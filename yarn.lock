@@ -3175,15 +3175,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-nx-scopes@npm:^17.4.3":
-  version: 17.4.3
-  resolution: "@commitlint/config-nx-scopes@npm:17.4.3"
+"@commitlint/config-nx-scopes@npm:^17.6.4":
+  version: 17.6.4
+  resolution: "@commitlint/config-nx-scopes@npm:17.6.4"
   peerDependencies:
-    nx: ^14.0.0 || ^15.0.0
+    nx: ^14.0.0 || ^15.0.0 || ^16.0.0
   peerDependenciesMeta:
     nx:
       optional: true
-  checksum: f7e109e23fa02dadad75ec9fd3c996e607fef28ab857b48c781109ad29a0dcf126ea06784084867ab448db81eba319b9ab8c8b50a9f4bd67aca5aece10ff20da
+  checksum: 8ab240b7f864de3df9a1f3a8c7924951933a7f262425c43131627a9262634ef9841c73ec1bec80542b46395919ebff559402e7510e0e9d2d88c24c31e095a495
   languageName: node
   linkType: hard
 
@@ -6768,7 +6768,7 @@ __metadata:
     "@chakra-ui/visually-hidden": ^2.0.15
     "@commitlint/cli": ^17.6.3
     "@commitlint/config-conventional": ^17.4.4
-    "@commitlint/config-nx-scopes": ^17.4.3
+    "@commitlint/config-nx-scopes": ^17.6.4
     "@emotion-icons/remix-fill": ^3.14.0
     "@emotion/react": ^11.10.6
     "@emotion/styled": ^11.10.6
