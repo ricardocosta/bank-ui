@@ -1956,7 +1956,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/alert@npm:2.1.0":
+"@chakra-ui/alert@npm:2.1.0, @chakra-ui/alert@npm:^2.1.0":
   version: 2.1.0
   resolution: "@chakra-ui/alert@npm:2.1.0"
   dependencies:
@@ -1968,21 +1968,6 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     react: ">=18"
   checksum: 312549a7f1413e8854fc094fdd21b33aa4e0ed50280077c607dc24bb8dfc94bdb9c98f2a209800aac7f8f939a4641e22317c7ac3f7d69e35ef8d0c7155c42ac0
-  languageName: node
-  linkType: hard
-
-"@chakra-ui/alert@npm:^2.0.17":
-  version: 2.0.17
-  resolution: "@chakra-ui/alert@npm:2.0.17"
-  dependencies:
-    "@chakra-ui/icon": 3.0.16
-    "@chakra-ui/react-context": 2.0.7
-    "@chakra-ui/shared-utils": 2.0.5
-    "@chakra-ui/spinner": 2.0.13
-  peerDependencies:
-    "@chakra-ui/system": ">=2.0.0"
-    react: ">=18"
-  checksum: df9f08b81fb1c129889d7875753f1492d5527359dea0f90a715ed961b43a27b289aeaf19353566859251690ed27ba33a93a09080fcb2776ab6e47bd1f6e0c22b
   languageName: node
   linkType: hard
 
@@ -6706,7 +6691,7 @@ __metadata:
   resolution: "bank-ui@workspace:."
   dependencies:
     "@chakra-ui/accordion": ^2.1.11
-    "@chakra-ui/alert": ^2.0.17
+    "@chakra-ui/alert": ^2.1.0
     "@chakra-ui/avatar": ^2.2.10
     "@chakra-ui/breadcrumb": ^2.1.5
     "@chakra-ui/button": ^2.0.18
