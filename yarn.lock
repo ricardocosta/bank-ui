@@ -2043,7 +2043,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/checkbox@npm:2.2.11, @chakra-ui/checkbox@npm:^2.2.11":
+"@chakra-ui/checkbox@npm:2.2.15":
+  version: 2.2.15
+  resolution: "@chakra-ui/checkbox@npm:2.2.15"
+  dependencies:
+    "@chakra-ui/form-control": 2.0.18
+    "@chakra-ui/react-context": 2.0.8
+    "@chakra-ui/react-types": 2.0.7
+    "@chakra-ui/react-use-callback-ref": 2.0.7
+    "@chakra-ui/react-use-controllable-state": 2.0.8
+    "@chakra-ui/react-use-merge-refs": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/react-use-update-effect": 2.0.7
+    "@chakra-ui/shared-utils": 2.0.5
+    "@chakra-ui/visually-hidden": 2.0.15
+    "@zag-js/focus-visible": 0.2.2
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: f1a76b8b2ec0b8af02a55ca2cd6eadde10ac797fc36d03b43438132128ca1c38d544a6a359db8fb3dc59f39456e95605665b022fe0c8fbac8ba9d0743ea1646e
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/checkbox@npm:^2.2.11":
   version: 2.2.11
   resolution: "@chakra-ui/checkbox@npm:2.2.11"
   dependencies:
@@ -2898,17 +2920,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/switch@npm:^2.0.23":
-  version: 2.0.23
-  resolution: "@chakra-ui/switch@npm:2.0.23"
+"@chakra-ui/switch@npm:^2.0.27":
+  version: 2.0.27
+  resolution: "@chakra-ui/switch@npm:2.0.27"
   dependencies:
-    "@chakra-ui/checkbox": 2.2.11
+    "@chakra-ui/checkbox": 2.2.15
     "@chakra-ui/shared-utils": 2.0.5
   peerDependencies:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: 73e9a1c52b89c7748a82348c4190989377fe14ae09faf7ee81733a18dcfd7541db4407318b91e3bbe3a80677d85c4f5f571c03141ebe07ae0c52eec8e2dc7c9f
+  checksum: 82c4d279cce2cf1d45f4c89cc544f55767852fb227a8872ce663664dc74dc2a8cf1b551bc171bb949d2b003537695aec0763a3713f10919d39ee59afeda85707
   languageName: node
   linkType: hard
 
@@ -6724,7 +6746,7 @@ __metadata:
     "@chakra-ui/spinner": ^2.0.13
     "@chakra-ui/stat": ^2.0.18
     "@chakra-ui/styled-system": ^2.9.0
-    "@chakra-ui/switch": ^2.0.23
+    "@chakra-ui/switch": ^2.0.27
     "@chakra-ui/system": ^2.5.7
     "@chakra-ui/table": ^2.0.17
     "@chakra-ui/tabs": ^2.1.9
