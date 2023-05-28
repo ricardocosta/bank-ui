@@ -38,7 +38,7 @@
     "@chakra-ui/breadcrumb": "^2.1.5",
     "@chakra-ui/button": "^2.0.18",
     "@chakra-ui/card": "^2.1.6",
-    "@chakra-ui/checkbox": "^2.2.11",
+    "@chakra-ui/checkbox": "^2.2.15",
     "@chakra-ui/close-button": "^2.0.17",
     "@chakra-ui/counter": "^2.0.14",
     "@chakra-ui/css-reset": "^2.1.1",
