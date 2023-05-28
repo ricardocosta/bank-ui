@@ -135,7 +135,7 @@
     "msw": "next",
     "nx": "^16.2.1",
     "playwright": "^1.31.2",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.8",
     "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
     "standard-version": "^9.5.0",
     "tslib": "^2.5.2",
