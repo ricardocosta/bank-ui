@@ -98,7 +98,7 @@
     "@nx/linter": "^16.2.1",
     "@nx/plugin": "^16.2.1",
     "@nx/vite": "^16.2.1",
-    "@nx/workspace": "^16.2.1",
+    "@nx/workspace": "^16.2.2",
     "@playwright/test": "^1.31.2",
     "@swc-node/register": "^1.6.5",
     "@swc/cli": "~0.1.62",
