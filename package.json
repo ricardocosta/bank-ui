@@ -95,7 +95,7 @@
     "@nx/devkit": "^16.2.1",
     "@nx/eslint-plugin": "^16.2.1",
     "@nx/js": "^16.2.1",
-    "@nx/linter": "^16.2.1",
+    "@nx/linter": "^16.2.2",
     "@nx/plugin": "^16.2.1",
     "@nx/vite": "^16.2.1",
     "@nx/workspace": "^16.2.1",
