@@ -155,8 +155,9 @@ describe("Generators / App", () => {
 
       const config = readProjectConfiguration(appTree, "demo-e2e");
 
-      config.targets && expect(Object.keys(config.targets)).toHaveLength(2);
+      config.targets && expect(Object.keys(config.targets)).toHaveLength(3);
       expect(config.targets).toHaveProperty("e2e");
+      expect(config.targets).toHaveProperty("e2eUi");
       expect(config.targets).toHaveProperty("codegen");
     });
 

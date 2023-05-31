@@ -12,6 +12,14 @@
         "color": true
       }
     },
+    "e2eUi": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "playwright test --ui",
+        "cwd": "apps/shell-e2e",
+        "color": true
+      }
+    },
     "codegen": {
       "executor": "nx:run-commands",
       "options": {

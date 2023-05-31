@@ -65,6 +65,8 @@ jobs:
           node_version: ${{ env.node_version }}
       - name: Set NX SHAs
         uses: nrwl/nx-set-shas@v3
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
       - name: Run in ${{ matrix.browser }} [${{ matrix.os }}]
         run: yarn nx ${{ env.NX_COMMAND }} --target=e2e --parallel=1 --skip-nx-cache
         env:

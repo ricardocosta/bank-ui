@@ -206,6 +206,14 @@ function createE2ETargets(options: NormalizedSchema) {
         color: true,
       },
     },
+    e2eUi: {
+      executor: NX_COMMANDS.run,
+      options: {
+        command: "playwright test --ui",
+        cwd: `${projectRoot}-e2e`,
+        color: true,
+      },
+    },
     codegen: {
       executor: NX_COMMANDS.run,
       options: {
