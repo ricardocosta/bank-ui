@@ -32,7 +32,7 @@
     "release:tag": "standard-version --skip.bump --skip.changelog --skip.commit"
   },
   "dependencies": {
-    "@chakra-ui/accordion": "^2.1.11",
+    "@chakra-ui/accordion": "^2.2.0",
     "@chakra-ui/alert": "^2.1.0",
     "@chakra-ui/avatar": "^2.2.10",
     "@chakra-ui/breadcrumb": "^2.1.5",
