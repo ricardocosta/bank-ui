@@ -2823,7 +2823,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/styled-system@npm:2.9.0, @chakra-ui/styled-system@npm:^2.9.0":
+"@chakra-ui/styled-system@npm:2.9.0":
   version: 2.9.0
   resolution: "@chakra-ui/styled-system@npm:2.9.0"
   dependencies:
@@ -2831,6 +2831,17 @@ __metadata:
     csstype: ^3.0.11
     lodash.mergewith: 4.6.2
   checksum: 4f8863cf684ce274be4f5247c8ff8880ecb90e4373e581f2ac26e925d3958a1db057597a9485acd59cfd69412d26939cf9a4e498f13beb0513dd5200fe6a2143
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/styled-system@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "@chakra-ui/styled-system@npm:2.9.1"
+  dependencies:
+    "@chakra-ui/shared-utils": 2.0.5
+    csstype: ^3.0.11
+    lodash.mergewith: 4.6.2
+  checksum: 23ee15b4b49e3981e3ff28f040f410715e9abc1957d6808a6d3d625acdb2223201f3a89f714813da36988e11b921adcc5f842ec3ec992fffebfb89edee4dac4e
   languageName: node
   linkType: hard
 
@@ -6638,7 +6649,7 @@ __metadata:
     "@chakra-ui/slider": ^2.0.24
     "@chakra-ui/spinner": ^2.0.13
     "@chakra-ui/stat": ^2.0.18
-    "@chakra-ui/styled-system": ^2.9.0
+    "@chakra-ui/styled-system": ^2.9.1
     "@chakra-ui/switch": ^2.0.27
     "@chakra-ui/system": ^2.5.7
     "@chakra-ui/table": ^2.0.17
