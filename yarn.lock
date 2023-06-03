@@ -2142,6 +2142,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/dom-utils@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@chakra-ui/dom-utils@npm:2.1.0"
+  checksum: 935f5b4d3fb9af6030ae4beba14ae745c9ca9ca6c5476f5ebd72dc50934fb5ee7683bbad8172994dd029f59b3dfdd79e2be1e21b38156b6b9a70166341f5db07
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/editable@npm:^3.0.0":
   version: 3.0.0
   resolution: "@chakra-ui/editable@npm:3.0.0"
@@ -2986,10 +2993,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/tooltip@npm:^2.2.8":
-  version: 2.2.8
-  resolution: "@chakra-ui/tooltip@npm:2.2.8"
+"@chakra-ui/tooltip@npm:^2.2.9":
+  version: 2.2.9
+  resolution: "@chakra-ui/tooltip@npm:2.2.9"
   dependencies:
+    "@chakra-ui/dom-utils": 2.1.0
     "@chakra-ui/popper": 3.0.14
     "@chakra-ui/portal": 2.0.16
     "@chakra-ui/react-types": 2.0.7
@@ -3002,7 +3010,7 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 8197445437a001a27ac6c9eb1c85b058c12844415da4b3ac8f5a6dc5f13049dc9ec6cb559aacbe158d137b49faf3aa12e72f72dccc53ada5c4f6c3c7c3b34a75
+  checksum: 0c6a399d67bd1d86fcc8560765b7831e6fe89e9d2760ff2c4260277e288da0c35b369d4e13a592ea4127f17fbc19834da09f4c6e02282c130a11948051bf360d
   languageName: node
   linkType: hard
 
@@ -6648,7 +6656,7 @@ __metadata:
     "@chakra-ui/theme": ^3.1.1
     "@chakra-ui/theme-utils": ^2.0.17
     "@chakra-ui/toast": ^6.1.3
-    "@chakra-ui/tooltip": ^2.2.8
+    "@chakra-ui/tooltip": ^2.2.9
     "@chakra-ui/transition": ^2.0.16
     "@chakra-ui/visually-hidden": ^2.0.15
     "@commitlint/cli": ^17.6.3
