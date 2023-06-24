@@ -4338,6 +4338,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:16.4.0":
+  version: 16.4.0
+  resolution: "@nrwl/devkit@npm:16.4.0"
+  dependencies:
+    "@nx/devkit": 16.4.0
+  checksum: 60b156bfd1d53e97e0df29dea6a0b5fde812e0bbb72aedd9494c5d2454b806a743d22541c20c23734da1764f9bfa42f552b0128260692e81ec89878ad3acedf3
+  languageName: node
+  linkType: hard
+
 "@nrwl/eslint-plugin-nx@npm:16.2.2":
   version: 16.2.2
   resolution: "@nrwl/eslint-plugin-nx@npm:16.2.2"
@@ -4412,7 +4421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:16.2.2, @nx/devkit@npm:^16.2.2":
+"@nx/devkit@npm:16.2.2":
   version: 16.2.2
   resolution: "@nx/devkit@npm:16.2.2"
   dependencies:
@@ -4425,6 +4434,22 @@ __metadata:
   peerDependencies:
     nx: ">= 15 <= 17"
   checksum: cdf16df72a242a9d3a94dbeac5e9a68d05a78d0ee43841f84989902da7dd76d785ff59bf20e9f92f85623b1a025a9ce2f0666dfebda22f8f940e129a37a1f5be
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:16.4.0, @nx/devkit@npm:^16.4.0":
+  version: 16.4.0
+  resolution: "@nx/devkit@npm:16.4.0"
+  dependencies:
+    "@nrwl/devkit": 16.4.0
+    ejs: ^3.1.7
+    ignore: ^5.0.4
+    semver: 7.5.3
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 15 <= 17"
+  checksum: 2e892360c8f60d6f219005b3d3fa0b8a9d3b3748674dea8d69e801ae54bb339eec938251f2e9e7d0edc7db42ca14fcab7e9bbc650a0967b000bb847397205f91
   languageName: node
   linkType: hard
 
@@ -6658,7 +6683,7 @@ __metadata:
     "@emotion/react": ^11.10.6
     "@emotion/styled": ^11.10.6
     "@ianvs/prettier-plugin-sort-imports": ^3.7.1
-    "@nx/devkit": ^16.2.2
+    "@nx/devkit": ^16.4.0
     "@nx/eslint-plugin": ^16.2.2
     "@nx/js": ^16.2.2
     "@nx/linter": ^16.2.2
@@ -14566,6 +14591,17 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 2d266937756689a76f124ffb4c1ea3e1bbb2b263219f90ada8a11aebebe1280b13bb76cca2ca96bdee3dbc554cbc0b24752eb895b2a51577aa644427e9229f2b
+  languageName: node
+  linkType: hard
+
+"semver@npm:7.5.3":
+  version: 7.5.3
+  resolution: "semver@npm:7.5.3"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 9d58db16525e9f749ad0a696a1f27deabaa51f66e91d2fa2b0db3de3e9644e8677de3b7d7a03f4c15bc81521e0c3916d7369e0572dbde250d9bedf5194e2a8a7
   languageName: node
   linkType: hard
 
