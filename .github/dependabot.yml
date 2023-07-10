@@ -14,3 +14,24 @@ updates:
       prefix: "chore: "
     open-pull-requests-limit: 25
     versioning-strategy: increase
+    groups:
+      ui:
+        patterns:
+          - "@chakra-ui/*"
+          - "framer-motion"
+          - "@emotion-icons/*"
+          - "@emotion/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+      nx:
+        patterns:
+          - "@nx*"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
+      vitest:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
