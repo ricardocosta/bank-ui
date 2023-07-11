@@ -133,7 +133,7 @@
     "json-server": "^0.17.3",
     "lint-staged": "^13.2.2",
     "msw": "next",
-    "nx": "^16.2.2",
+    "nx": "^16.5.1",
     "prettier": "^2.8.8",
     "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
     "standard-version": "^9.5.0",
