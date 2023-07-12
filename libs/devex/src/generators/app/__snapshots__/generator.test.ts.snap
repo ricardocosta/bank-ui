@@ -2,11 +2,11 @@
 
 exports[`Generators / App > adds Vite configuration 1`] = `
 "/// <reference types=\\"vite/client\\" />
-import configs from './configs.json';
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import svgr from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import configs from './configs.json';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,9 +19,9 @@ export default defineConfig({
 `;
 
 exports[`Generators / App > adds Vitest configuration 1`] = `
-"import viteConfig from './vite.config';
-import { mergeConfig } from 'vite';
+"import { mergeConfig } from 'vite';
 import { defineConfig } from 'vitest/config';
+import viteConfig from './vite.config';
 
 export default mergeConfig(
   viteConfig,
@@ -41,8 +41,8 @@ export default mergeConfig(
 `;
 
 exports[`Generators / App > when E2E app should be created > adds Playwright configuration 1`] = `
-"import { APP_PORT } from './constants';
-import type { PlaywrightTestConfig } from '@playwright/test';
+"import type { PlaywrightTestConfig } from '@playwright/test';
+import { APP_PORT } from './constants';
 
 const browser = process.env.BROWSER ?? 'chromium';
 const os = process.env.OS ?? process.platform;
