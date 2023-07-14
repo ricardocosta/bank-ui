@@ -2223,6 +2223,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/dom-utils@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@chakra-ui/dom-utils@npm:2.1.0"
+  checksum: 935f5b4d3fb9af6030ae4beba14ae745c9ca9ca6c5476f5ebd72dc50934fb5ee7683bbad8172994dd029f59b3dfdd79e2be1e21b38156b6b9a70166341f5db07
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/editable@npm:^3.0.0":
   version: 3.0.0
   resolution: "@chakra-ui/editable@npm:3.0.0"
@@ -2383,9 +2390,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/menu@npm:^2.1.14":
-  version: 2.1.14
-  resolution: "@chakra-ui/menu@npm:2.1.14"
+"@chakra-ui/menu@npm:^2.1.15":
+  version: 2.1.15
+  resolution: "@chakra-ui/menu@npm:2.1.15"
   dependencies:
     "@chakra-ui/clickable": 2.0.14
     "@chakra-ui/descendant": 3.0.14
@@ -2393,10 +2400,10 @@ __metadata:
     "@chakra-ui/popper": 3.0.14
     "@chakra-ui/react-children-utils": 2.0.6
     "@chakra-ui/react-context": 2.0.8
-    "@chakra-ui/react-use-animation-state": 2.0.8
+    "@chakra-ui/react-use-animation-state": 2.0.9
     "@chakra-ui/react-use-controllable-state": 2.0.8
     "@chakra-ui/react-use-disclosure": 2.0.8
-    "@chakra-ui/react-use-focus-effect": 2.0.10
+    "@chakra-ui/react-use-focus-effect": 2.0.11
     "@chakra-ui/react-use-merge-refs": 2.0.7
     "@chakra-ui/react-use-outside-click": 2.1.0
     "@chakra-ui/react-use-update-effect": 2.0.7
@@ -2406,7 +2413,7 @@ __metadata:
     "@chakra-ui/system": ">=2.0.0"
     framer-motion: ">=4.0.0"
     react: ">=18"
-  checksum: 682ee33b2db0748880c3f8eb81f19d4c00967a558d63d03e756964fe60337dc09343682821c6d3caa51d1ea06da9351d10f03112a3c87b700ae08f0ea0e9a76a
+  checksum: 1849b62c7cf48a9167869ce78358dbacc36a86f7d89c0a54083c9bdaba30d3338f730bf89c271e1725ec57b0cc4da53d101a73a4a070b914aa0474411265fc88
   languageName: node
   linkType: hard
 
@@ -2633,6 +2640,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/react-use-animation-state@npm:2.0.9":
+  version: 2.0.9
+  resolution: "@chakra-ui/react-use-animation-state@npm:2.0.9"
+  dependencies:
+    "@chakra-ui/dom-utils": 2.1.0
+    "@chakra-ui/react-use-event-listener": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: 7eda71fb3ea9e3cece62eeeed647a08d97655d1f791846a134ec93734b954a37911d19c94b471607c85e017ab2c10f698cda4440c8197ecd075a1b4f8174b0e4
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/react-use-callback-ref@npm:2.0.7":
   version: 2.0.7
   resolution: "@chakra-ui/react-use-callback-ref@npm:2.0.7"
@@ -2686,6 +2705,20 @@ __metadata:
   peerDependencies:
     react: ">=18"
   checksum: 6145ca543f340c4c92796cbd7b6a5ac757c41e54be2a252efc74a23102528db45faf86dd26219252b4cadb456b09c1dc6fa6f3982eb1213e23d1a83d8ca8c65c
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/react-use-focus-effect@npm:2.0.11":
+  version: 2.0.11
+  resolution: "@chakra-ui/react-use-focus-effect@npm:2.0.11"
+  dependencies:
+    "@chakra-ui/dom-utils": 2.1.0
+    "@chakra-ui/react-use-event-listener": 2.0.7
+    "@chakra-ui/react-use-safe-layout-effect": 2.0.5
+    "@chakra-ui/react-use-update-effect": 2.0.7
+  peerDependencies:
+    react: ">=18"
+  checksum: b31ce625fc1e112f80c9808150f653488761e993811ef3314dad2b9522213f882438231a4e83021c89ea2e8980476370894cf18d58aadbd7e3696c7df6b6fecb
   languageName: node
   linkType: hard
 
@@ -6702,7 +6735,7 @@ __metadata:
     "@chakra-ui/input": ^2.0.22
     "@chakra-ui/layout": ^2.1.19
     "@chakra-ui/media-query": ^3.2.12
-    "@chakra-ui/menu": ^2.1.14
+    "@chakra-ui/menu": ^2.1.15
     "@chakra-ui/modal": ^2.2.11
     "@chakra-ui/number-input": ^2.0.19
     "@chakra-ui/pin-input": ^2.0.20
