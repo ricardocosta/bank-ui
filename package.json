@@ -89,7 +89,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.6",
     "@commitlint/config-nx-scopes": "^17.6.4",
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@nx/devkit": "^16.2.2",
