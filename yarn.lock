@@ -6801,7 +6801,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-sonarjs: ^0.19.0
     eslint-plugin-testing-library: ^5.11.0
-    fast-glob: ^3.2.12
+    fast-glob: ^3.3.0
     framer-motion: ^10.12.21
     husky: ^8.0.3
     jsdom: ^22.1.0
@@ -9642,7 +9642,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.12, fast-glob@npm:^3.2.5, fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.5, fast-glob@npm:^3.2.9":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
   dependencies:
