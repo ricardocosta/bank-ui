@@ -27,7 +27,8 @@ updates:
           - "react-dom"
       nx:
         patterns:
-          - "@nx*"
+          - "nx"
+          - "@nx/*"
       typescript-eslint:
         patterns:
           - "@typescript-eslint/*"
