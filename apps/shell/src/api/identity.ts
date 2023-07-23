@@ -11,6 +11,5 @@ export const getIdentity = async () => {
     throw new Error(`HTTP error! Status: ${response.status}: ${response.statusText}`);
   }
 
-  const identity: Identity = await response.json();
-  return identity;
+  return (await response.json()) as Identity;
 };

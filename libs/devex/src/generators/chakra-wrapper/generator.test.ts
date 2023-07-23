@@ -6,6 +6,8 @@ import { afterAll, afterEach, beforeAll, describe } from "vitest";
 
 import chakraWrapperGenerator from "./generator";
 
+import type { PackageJson } from "type-fest";
+
 import type { ChakraWrapperGeneratorSchema } from "./schema";
 
 const UI_BUTTON_ROOT = "libs/ui/ui-button";
@@ -102,7 +104,7 @@ describe("Generators / ChakraWrapper", () => {
     const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
-    const packageJsonFile = readJson(tree, "package.json");
+    const packageJsonFile = readJson<PackageJson>(tree, "package.json");
     expect(packageJsonFile.dependencies).toHaveProperty(BUTTON_PACKAGE_NAME, "^2.0.13");
   });
 
@@ -110,7 +112,7 @@ describe("Generators / ChakraWrapper", () => {
     const tree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await chakraWrapperGenerator(tree, options);
 
-    const packageJsonFile = readJson(tree, "package.json");
+    const packageJsonFile = readJson<PackageJson>(tree, "package.json");
     expect(packageJsonFile.dependencies).toHaveProperty(SYSTEM_PACKAGE_NAME, "^2.3.4");
   });
 

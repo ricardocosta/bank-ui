@@ -15,12 +15,12 @@ import {
 import chalk from "chalk";
 
 import type { TargetConfiguration, Tree } from "@nx/devkit";
+import type { PackageJson } from "type-fest";
+import type { CompilerOptions } from "typescript";
 
 import type { ChakraWrapperGeneratorSchema } from "./schema";
 
-interface PeerDependency {
-  [key: string]: string;
-}
+type PeerDependency = PackageJson.Dependency;
 
 interface NormalizedSchema extends ChakraWrapperGeneratorSchema {
   projectName: string;
@@ -36,10 +36,7 @@ const NX_COMMANDS: Record<string, string> = {
   vite_build: "@nx/vite:build",
 };
 
-async function normalizeOptions(
-  tree: Tree,
-  options: ChakraWrapperGeneratorSchema
-): Promise<NormalizedSchema> {
+function normalizeOptions(tree: Tree, options: ChakraWrapperGeneratorSchema): NormalizedSchema {
   const name = names(options.name).fileName;
   const projectDirectory = `${names("ui").fileName}/${name}`;
   const projectName = name.replace(new RegExp("/", "g"), "-");
@@ -57,26 +54,26 @@ async function normalizeOptions(
   };
 }
 
-function getPackageInfo(packageName: string): Promise<Record<string, unknown>> {
+function getPackageInfo(packageName: string): Promise<PackageJson> {
   return fetch(`https://registry.npmjs.org/${packageName}/latest`, {
     headers: {
       "Accept-Encoding": "application/json",
     },
   }).then((response) => {
-    return response.json();
+    return response.json() as Promise<PackageJson>;
   });
 }
 
 function getLatestVersion(packageName: string): Promise<string> {
   console.log(chalk.yellow("Fetching latest version of", packageName));
 
-  return getPackageInfo(packageName).then((json) => json.version as string);
+  return getPackageInfo(packageName).then((json) => json.version!);
 }
 
 function getPeerDependencies(packageName: string): Promise<PeerDependency> {
   console.log(chalk.yellow("Fetching peer dependencies of", packageName));
 
-  return getPackageInfo(packageName).then((json) => json.peerDependencies as PeerDependency);
+  return getPackageInfo(packageName).then((json) => json.peerDependencies!);
 }
 
 function createProjectTargets(options: NormalizedSchema) {
@@ -128,11 +125,7 @@ function createProjectTargets(options: NormalizedSchema) {
   return targets;
 }
 
-function addLibFiles(
-  tree: Tree,
-  options: NormalizedSchema,
-  peerDependencies: Record<string, string | undefined>
-) {
+function addLibFiles(tree: Tree, options: NormalizedSchema, peerDependencies: PeerDependency) {
   const templateOptions = {
     ...options,
     ...names(options.name),
@@ -145,7 +138,7 @@ function addLibFiles(
 }
 
 function updatedTsConfig(tree: Tree, options: NormalizedSchema) {
-  updateJson(tree, "./tsconfig.base.json", (value) => ({
+  updateJson<{ compilerOptions: CompilerOptions }>(tree, "./tsconfig.base.json", (value) => ({
     ...value,
     compilerOptions: {
       ...value.compilerOptions,
@@ -158,18 +151,18 @@ function updatedTsConfig(tree: Tree, options: NormalizedSchema) {
 }
 
 export default async function (tree: Tree, options: ChakraWrapperGeneratorSchema) {
-  const normalizedOptions = await normalizeOptions(tree, options);
+  const normalizedOptions = normalizeOptions(tree, options);
   const projectTargets = createProjectTargets(normalizedOptions);
   const packageName = normalizedOptions.packageName;
   const packageVersion = await getLatestVersion(packageName);
 
   // Keep the same versions as in root when specifying peer dependencies for the new lib
-  const peerDependencies: Record<string, string | undefined> = {};
+  const peerDependencies: PeerDependency = {};
   const rootPackageJson = readRootPackageJson();
   peerDependencies["@emotion/react"] = rootPackageJson.dependencies?.["@emotion/react"];
   peerDependencies["@emotion/styled"] = rootPackageJson.dependencies?.["@emotion/styled"];
   peerDependencies["framer-motion"] = rootPackageJson.dependencies?.["framer-motion"];
-  peerDependencies["react"] = rootPackageJson.dependencies?.["react"];
+  peerDependencies.react = rootPackageJson.dependencies?.react;
   peerDependencies["react-dom"] = rootPackageJson.dependencies?.["react-dom"];
 
   addProjectConfiguration(tree, normalizedOptions.projectName, {

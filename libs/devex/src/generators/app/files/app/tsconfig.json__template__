@@ -4,6 +4,5 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
     "noEmit": true,
-    "types": ["vitest/globals"]
   }
 }

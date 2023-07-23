@@ -8,9 +8,9 @@ import type { ReactNode } from "react";
 
 import type { Identity } from "../types/identity";
 
-type IdentityContextProviderProps = {
+interface IdentityContextProviderProps {
   children: ReactNode;
-};
+}
 
 export const IdentityContext = createContext<Identity | undefined>(undefined);
 
@@ -31,7 +31,7 @@ export const IdentityProvider = ({ children }: IdentityContextProviderProps) => 
       }
     };
 
-    getIdentityFn();
+    void getIdentityFn();
   }, []);
 
   if (isLoading) {

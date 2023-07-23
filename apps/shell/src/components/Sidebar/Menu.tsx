@@ -17,12 +17,12 @@ const convertToMenuEntries = (navigation: NavigationItem[]) =>
     id: navItem.id,
   }));
 
-type MenuEntryProps = {
+interface MenuEntryProps {
   path: string;
   name: string;
   icon: string;
   id: string;
-};
+}
 
 const MenuEntry: FC<MenuEntryProps> = ({ path, name, icon }) => {
   return (
@@ -65,7 +65,7 @@ export const Menu: FC = () => {
       setMenuItems(convertToMenuEntries(navigation));
     };
 
-    getNavigationFn();
+    void getNavigationFn();
   }, []);
 
   return (

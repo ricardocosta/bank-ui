@@ -23,6 +23,10 @@ interface NormalizedSchema extends AppGeneratorSchema {
   appPort: number;
 }
 
+export interface ConfigFile {
+  appPort: number;
+}
+
 const NX_COMMANDS: Record<string, string> = {
   run: "nx:run-commands",
   lint: "@nx/linter:eslint",
@@ -31,27 +35,24 @@ const NX_COMMANDS: Record<string, string> = {
   vite_preview: "@nx/vite:preview-server",
 };
 
-async function findAvailablePort(tree: Tree) {
+function findAvailablePort(tree: Tree) {
   const projects = getProjects(tree);
   const appsDir = getWorkspaceLayout(tree).appsDir;
 
   // Get all the applications's configs.json files
-  const configFiles = Array.from(projects)
-    .filter(([_, config]) => config.root.startsWith(appsDir) && !config.name?.endsWith(`-e2e`))
-    .map(([_, config]) => path.join(config.root, "configs.json"));
+  const configFiles = Array.from(projects.values())
+    .filter((config) => config.root.startsWith(appsDir) && !config.name?.endsWith(`-e2e`))
+    .map((config) => path.join(config.root, "configs.json"));
 
   const usedPorts: number[] = configFiles.map((file) => {
-    const jsonFile = readJson(tree, file);
+    const jsonFile = readJson<ConfigFile>(tree, file);
     return jsonFile.appPort;
   });
 
   return usedPorts.length === 0 ? 3001 : Math.max(...usedPorts) + 1;
 }
 
-async function normalizeOptions(
-  tree: Tree,
-  options: AppGeneratorSchema
-): Promise<NormalizedSchema> {
+function normalizeOptions(tree: Tree, options: AppGeneratorSchema): NormalizedSchema {
   const name = names(options.name).fileName;
   const projectDirectory = options.directory
     ? `${names(options.directory).fileName}/${name}`
@@ -59,7 +60,7 @@ async function normalizeOptions(
   const projectName = projectDirectory.replace(new RegExp("/", "g"), "-");
   const projectRoot = `${getWorkspaceLayout(tree).appsDir}/${projectDirectory}`;
   const parsedTags = options.tags ? options.tags.split(",").map((s) => s.trim()) : [];
-  const appPort = await findAvailablePort(tree);
+  const appPort = findAvailablePort(tree);
 
   return {
     ...options,
@@ -167,7 +168,7 @@ function createAppTargets(options: NormalizedSchema) {
   };
 
   if (restServer) {
-    targets["seedDb"] = {
+    targets.seedDb = {
       executor: NX_COMMANDS.run,
       options: {
         commands: [
@@ -179,7 +180,7 @@ function createAppTargets(options: NormalizedSchema) {
       },
     };
 
-    targets["jsonServer"] = {
+    targets.jsonServer = {
       executor: NX_COMMANDS.run,
       options: {
         commands: [
@@ -265,7 +266,7 @@ function addE2EAppFiles(tree: Tree, options: NormalizedSchema) {
 }
 
 export default async function (tree: Tree, options: AppGeneratorSchema) {
-  const normalizedOptions = await normalizeOptions(tree, options);
+  const normalizedOptions = normalizeOptions(tree, options);
   const appTargets = createAppTargets(normalizedOptions);
 
   addProjectConfiguration(tree, normalizedOptions.projectName, {
