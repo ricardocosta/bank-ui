@@ -27,6 +27,8 @@
     "strict": true,
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "typeRoots": ["./node_modules/@types", "./customTypes"],
+    "noEmit": true,
     "paths": {
       "@ricardocosta/apps/shell/*": ["apps/shell/*"],
       "@ricardocosta/apps/transactions/*": ["apps/transactions/*"],

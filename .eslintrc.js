@@ -12,6 +12,11 @@ module.exports = {
     "plugin:json/recommended",
     "prettier",
   ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   overrides: [
     {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -30,22 +35,39 @@ module.exports = {
             ],
           },
         ],
-        "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
-        "@typescript-eslint/consistent-type-imports": [
-          "error",
-          { prefer: "type-imports", fixStyle: "separate-type-imports" },
-        ],
       },
     },
     {
       files: ["*.ts", "*.tsx"],
-      extends: ["plugin:@nx/typescript"],
-      rules: {},
+      plugins: ["@typescript-eslint"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: { project: ["./tsconfig.base.json"] },
+      extends: [
+        "plugin:@nx/typescript",
+        "plugin:@typescript-eslint/stylistic-type-checked",
+        "plugin:@typescript-eslint/recommended-type-checked",
+      ],
+      rules: {
+        "@typescript-eslint/consistent-type-exports": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+      },
     },
     {
       files: ["*.js", "*.jsx"],
       extends: ["plugin:@nx/javascript"],
       rules: {},
+    },
+    {
+      files: ["*.tsx", "*.jsx"],
+      rules: {
+        "react/jsx-sort-props": [
+          "error",
+          {
+            callbacksLast: true,
+            reservedFirst: true,
+          },
+        ],
+      },
     },
   ],
 };

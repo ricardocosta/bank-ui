@@ -16,6 +16,7 @@ export const getRoutes = async () => {
   const navigation = await getNavigation();
 
   const navigationChildren = navigation.map((navItem) => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     const Component = lazy(() => import(`../pages/${navItem.page}.tsx`));
 
     return {

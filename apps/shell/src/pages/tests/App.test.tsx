@@ -34,7 +34,7 @@ describe("Page: <App />", () => {
     expect(within(sidebar).getByText("Transactions")).toBeInTheDocument();
   });
 
-  describe("when there is no default route", async () => {
+  describe("when there is no default route", () => {
     const noDefaultNavigationResponseMock = {
       appMenu: [
         { id: "1", path: "dashboard", name: "Dashboard", content: "../pages/Dashboard" },

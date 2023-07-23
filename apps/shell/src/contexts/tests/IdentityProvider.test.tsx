@@ -22,7 +22,7 @@ const TestComponent: FC = () => {
 
 describe("Context: Identity", () => {
   describe("when data is being fetched", () => {
-    it("shows a loading indicator", async () => {
+    it("shows a loading indicator", () => {
       render(
         <IdentityProvider>
           <TestComponent />

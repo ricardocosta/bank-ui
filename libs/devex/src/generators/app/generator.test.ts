@@ -4,6 +4,7 @@ import { describe } from "vitest";
 
 import appGenerator from "./generator";
 
+import type { ConfigFile } from "./generator";
 import type { AppGeneratorSchema } from "./schema";
 
 const DEMO_APP_ROOT = "apps/demo";
@@ -76,8 +77,8 @@ describe("Generators / App", () => {
     const appTree = createTreeWithEmptyWorkspace({ layout: "apps-libs" });
     await appGenerator(appTree, options);
 
-    const configFile = readJson(appTree, `${DEMO_APP_ROOT}/configs.json`);
-    expect(configFile["appPort"]).toEqual(3001);
+    const configFile = readJson<ConfigFile>(appTree, `${DEMO_APP_ROOT}/configs.json`);
+    expect(configFile.appPort).toEqual(3001);
   });
 
   it("increments app port if another app already exists", async () => {
@@ -87,8 +88,8 @@ describe("Generators / App", () => {
     const anotherAppOptions = { ...options, name: "another-app" };
     await appGenerator(appTree, anotherAppOptions);
 
-    const configFile = readJson(appTree, "apps/another-app/configs.json");
-    expect(configFile["appPort"]).toEqual(3002);
+    const configFile = readJson<ConfigFile>(appTree, "apps/another-app/configs.json");
+    expect(configFile.appPort).toEqual(3002);
   });
 
   it("adds Vite configuration", async () => {
