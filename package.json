@@ -136,7 +136,7 @@
     "prettier": "^2.8.8",
     "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
     "standard-version": "^9.5.0",
-    "tslib": "^2.6.0",
+    "tslib": "^2.6.1",
     "tsm": "^2.3.0",
     "type-fest": "^4.0.0",
     "typescript": "^5.1.3",
