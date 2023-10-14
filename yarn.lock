@@ -4001,23 +4001,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ianvs/prettier-plugin-sort-imports@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@ianvs/prettier-plugin-sort-imports@npm:4.0.2"
+"@ianvs/prettier-plugin-sort-imports@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@ianvs/prettier-plugin-sort-imports@npm:4.1.1"
   dependencies:
     "@babel/core": ^7.21.8
     "@babel/generator": ^7.21.5
     "@babel/parser": ^7.21.8
     "@babel/traverse": ^7.21.5
     "@babel/types": ^7.21.5
-    semver: ^7.5.0
+    semver: ^7.5.2
   peerDependencies:
     "@vue/compiler-sfc": ">=3.0.0"
-    prettier: 2.x
+    prettier: 2 || 3
   peerDependenciesMeta:
     "@vue/compiler-sfc":
       optional: true
-  checksum: 9ca899617fe2a021337593f4846d8a9eb91b9618e44513dbb25a5f4e0c32ca53b252f167639f4f97d4afbf67a643c4eeef0e3b29d43ae10dc6679c53581f08c3
+  checksum: 786c770e9175df919e4100dd803cfcc337d5bc72de3f363546cb7163484172af2f7539706f5d9c77237a276de808891dbe3f25bf59e05fdc214cb8476bc7fc8a
   languageName: node
   linkType: hard
 
@@ -6835,7 +6835,7 @@ __metadata:
     "@emotion-icons/remix-fill": ^3.14.0
     "@emotion/react": ^11.11.1
     "@emotion/styled": ^11.11.0
-    "@ianvs/prettier-plugin-sort-imports": ^4.0.2
+    "@ianvs/prettier-plugin-sort-imports": ^4.1.1
     "@nx/devkit": ^16.2.2
     "@nx/eslint-plugin": ^16.2.2
     "@nx/js": ^16.2.2
@@ -14706,7 +14706,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.5.0, semver@npm:^7.5.4":
+"semver@npm:^7.5.2, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
